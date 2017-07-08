@@ -1,7 +1,7 @@
 # To-do
 
 - [x] Displays 3 letters in a circle.
-- [ ] Clicks to select or unselect letter.
+- [ ] Types to select or unselect letter.
 - [ ] Reads selected lettters.
 - [ ] Displays rows of blank squares.
 - [ ] Displays letters darken over time.
