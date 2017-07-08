@@ -78,3 +78,82 @@ Finegamedesign.Utils.LetterInputController:UpdateButtons() (at Assets/Scripts/Le
 Finegamedesign.Utils.LetterInputController:Update() (at Assets/Scripts/LetterInputController.cs:28)
 Finegamedesign.WordSizzle.AnagramView:Update() (at Assets/Scripts/AnagramView.cs:28)
 
+
+
+Sat, Jul  8, 2017  2:56:40 PM
+Assets/Editor/Tests/TestLetterInputModel.cs(12,29): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `texts' and no extension method `texts' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 12)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(13,31): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `texts' and no extension method `texts' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 13)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(14,31): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `texts' and no extension method `texts' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 14)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(15,31): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `texts' and no extension method `texts' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 15)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(16,29): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `states' and no extension method `states' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 16)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(17,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `beginState' and no extension method `beginState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 17)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(17,44): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `states' and no extension method `states' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 17)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(18,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `beginState' and no extension method `beginState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 18)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(18,44): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `states' and no extension method `states' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 18)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(19,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `beginState' and no extension method `beginState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 19)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(19,44): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `states' and no extension method `states' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 19)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(27,10): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `Add' and no extension method `Add' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 27)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(28,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `beginState' and no extension method `beginState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 28)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(29,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `selectedState' and no extension method `selectedState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 29)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(30,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `beginState' and no extension method `beginState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 30)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(31,10): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `Add' and no extension method `Add' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 31)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(32,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `beginState' and no extension method `beginState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 32)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(33,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `selectedState' and no extension method `selectedState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 33)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(34,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `beginState' and no extension method `beginState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 34)
+

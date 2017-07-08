@@ -25,7 +25,14 @@ namespace Finegamedesign.Utils
 
 		public void Update()
 		{
+			UpdateInput();
 			UpdateButtons();
+		}
+
+		private void UpdateInput()
+		{
+			string keyInput = KeyView.InputString();
+			model.Add(keyInput);
 		}
 
 		private void UpdateButtons()

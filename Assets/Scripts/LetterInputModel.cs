@@ -23,14 +23,22 @@ namespace Finegamedesign.Utils
 		public WordViewModel submits = new WordViewModel();
 		public WordViewModel hints = new WordViewModel();
 
+		public string beginState = "begin";
+		public string selectedState = "selected";
+
 		public void Populate(string word)
 		{
 			buttons.texts = DataUtil.Split(word, "");
 			buttons.states.Clear();
 			for (int index = 0, end = buttons.texts.Count; index < end; ++index)
 			{
-				buttons.states.Add("begin");
+				buttons.states.Add(beginState);
 			}
+		}
+
+		public void Add(string letter)
+		{
+			
 		}
 	}
 }
