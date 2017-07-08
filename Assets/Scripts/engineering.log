@@ -1,0 +1,80 @@
+
+Sat, Jul  8, 2017  1:41:39 PM
+Assets/Scripts/AnagramView.cs(8,10): error CS0246: The type or namespace name `LetterInputView' could not be found. Are you missing `Finegamedesign.Utils' using directive?
+
+Sat, Jul  8, 2017  1:43:12 PM
+Assets/Scripts/LetterInputModel.cs(29,30): error CS0103: The name `letters' does not exist in the current context
+
+Assets/Scripts/LetterInputView.cs(23,29): error CS1502: The best overloaded method match for `Finegamedesign.Utils.SceneNodeView.GetChildrenByPattern(UnityEngine.GameObject, string, int)' has some invalid arguments
+
+Assets/Scripts/LetterInputView.cs(23,50): error CS1503: Argument `#1' cannot convert `Finegamedesign.Utils.LetterInputView' expression to type `UnityEngine.GameObject'
+
+Sat, Jul  8, 2017  1:53:40 PM
+Assets/Scripts/LetterInputController.cs(27,18): error CS0117: `Finegamedesign.Utils.AnimationView' does not contain a definition for `SetStates'
+
+ssets/Scripts/LetterInputController.cs(28,13): error CS0117: `Finegamedesign.Utils.TextView' does not contain a definition for `SetTexts'
+
+
+Sat, Jul  8, 2017  1:59:30 PM
+Assets/Scripts/LetterInputController.cs(27,18): error CS1502: The best overloaded method match for `Finegamedesign.Utils.AnimationView.SetStates(System.Collections.Generic.List<UnityEngine.GameObject>, System.Collections.Generic.List<string>)' has some invalid arguments
+
+Assets/Scripts/LetterInputController.cs(27,33): error CS1503: Argument `#1' cannot convert `Finegamedesign.Utils.WordView' expression to type `System.Collections.Generic.List<UnityEngine.GameObject>'
+
+Assets/Scripts/LetterInputController.cs(28,13): error CS1502: The best overloaded method match for `Finegamedesign.Utils.TextView.SetTexts(System.Collections.Generic.List<UnityEngine.GameObject>, System.Collections.Generic.List<string>)' has some invalid arguments
+
+Assets/Scripts/LetterInputController.cs(28,27): error CS1503: Argument `#1' cannot convert `Finegamedesign.Utils.WordView' expression to type `System.Collections.Generic.List<UnityEngine.GameObject>'
+
+Sat, Jul  8, 2017  2:02:52 PM
+NullReferenceException: Object reference not set to an instance of an object
+Finegamedesign.Utils.LetterInputController.UpdateButtons () (at Assets/Scripts/LetterInputController.cs:32)
+Finegamedesign.Utils.LetterInputController.Update () (at Assets/Scripts/LetterInputController.cs:27)
+Finegamedesign.WordSizzle.AnagramView.Update () (at Assets/Scripts/AnagramView.cs:27)
+
+Sat, Jul  8, 2017  2:05:13 PM
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+Finegamedesign.Utils.AnimationView.SetStates (System.Collections.Generic.List`1 animatorOwner, System.Collections.Generic.List`1 states) (at Assets/UnityToykit/AnimationView.cs:68)
+Finegamedesign.Utils.LetterInputController.UpdateButtons () (at Assets/Scripts/LetterInputController.cs:32)
+Finegamedesign.Utils.LetterInputController.Update () (at Assets/Scripts/LetterInputController.cs:27)
+Finegamedesign.WordSizzle.AnagramView.Update () (at Assets/Scripts/AnagramView.cs:28)
+
+
+Sat, Jul  8, 2017  2:14:42 PM
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+Finegamedesign.Utils.AnimationView.SetStates (System.Collections.Generic.List`1 animatorOwners, System.Collections.Generic.List`1 states) (at Assets/UnityToykit/AnimationView.cs:68)
+Finegamedesign.Utils.LetterInputController.UpdateButtons () (at Assets/Scripts/LetterInputController.cs:33)
+Finegamedesign.Utils.LetterInputController.Update () (at Assets/Scripts/LetterInputController.cs:28)
+Finegamedesign.WordSizzle.AnagramView.Update () (at Assets/Scripts/AnagramView.cs:28)
+
+
+Sat, Jul  8, 2017  2:16:55 PM
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) (at /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633)
+Finegamedesign.Utils.TextView.SetTexts (System.Collections.Generic.List`1 textOwners, System.Collections.Generic.List`1 texts) (at Assets/UnityToykit/TextView.cs:59)
+Finegamedesign.Utils.LetterInputController.UpdateButtons () (at Assets/Scripts/LetterInputController.cs:34)
+Finegamedesign.Utils.LetterInputController.Update () (at Assets/Scripts/LetterInputController.cs:28)
+Finegamedesign.WordSizzle.AnagramView.Update () (at Assets/Scripts/AnagramView.cs:28)
+
+Sat, Jul  8, 2017  2:17:52 PM
+1448ms AnimationView.SetState: Does animator exist? Canvas/LetterInputView/Pan/LetterContainer_0: begin
+UnityEngine.Debug:Log(Object)
+DebugUtil:Log(String) (at Assets/UnityToykit/DebugUtil.cs:17)
+Finegamedesign.Utils.AnimationView:SetState(GameObject, String, Boolean, Boolean) (at Assets/UnityToykit/AnimationView.cs:57)
+Finegamedesign.Utils.AnimationView:SetStates(List`1, List`1) (at Assets/UnityToykit/AnimationView.cs:68)
+Finegamedesign.Utils.LetterInputController:UpdateButtons() (at Assets/Scripts/LetterInputController.cs:33)
+Finegamedesign.Utils.LetterInputController:Update() (at Assets/Scripts/LetterInputController.cs:28)
+Finegamedesign.WordSizzle.AnagramView:Update() (at Assets/Scripts/AnagramView.cs:28)
+
+Sat, Jul  8, 2017  2:21:24 PM
+Animator.GotoState: State could not be found
+UnityEngine.Animator:Play(String)
+Finegamedesign.Utils.AnimationView:SetState(GameObject, String, Boolean, Boolean) (at Assets/UnityToykit/AnimationView.cs:41)
+Finegamedesign.Utils.AnimationView:SetStates(List`1, List`1) (at Assets/UnityToykit/AnimationView.cs:68)
+Finegamedesign.Utils.LetterInputController:UpdateButtons() (at Assets/Scripts/LetterInputController.cs:33)
+Finegamedesign.Utils.LetterInputController:Update() (at Assets/Scripts/LetterInputController.cs:28)
+Finegamedesign.WordSizzle.AnagramView:Update() (at Assets/Scripts/AnagramView.cs:28)
+
