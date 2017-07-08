@@ -1,8 +1,9 @@
 # To-do
 
 - [x] Displays 3 letters in a circle.
-- [ ] Types to select or unselect letter.
-- [ ] Reads selected lettters.
+- [x] Types to select letter.
+- [ ] When spell word, animates "You win".
+- [ ] Backspaces or delete to delete letter.
 - [ ] Displays rows of blank squares.
 - [ ] Displays letters darken over time.
 - [ ] Displays smoke over time.

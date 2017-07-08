@@ -157,3 +157,129 @@ Assets/Editor/Tests/TestLetterInputModel.cs(34,26): error CS1061: Type `Finegame
  
 (Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 34)
 
+
+
+Sat, Jul  8, 2017  3:40:19 PM
+Assets/Scripts/LetterInputModel.cs(51,53): error CS1525: Unexpected symbol `}'
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 51)
+
+Assets/Scripts/LetterInputModel.cs(69,42): error CS1525: Unexpected symbol `<', expecting `)', `,', `;', or `='
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 69)
+
+Assets/Scripts/LetterInputModel.cs(69,69): error CS1525: Unexpected symbol `}'
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 69)
+
+
+Sat, Jul  8, 2017  3:41:25 PM
+Assets/Scripts/LetterInputController.cs(43,33): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `selects' and no extension method `selects' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 43)
+
+Assets/Scripts/LetterInputController.cs(44,27): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `selects' and no extension method `selects' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 44)
+
+Assets/Scripts/LetterInputModel.cs(71,25): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 71)
+
+Assets/Scripts/LetterInputModel.cs(75,21): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 75)
+
+Assets/Scripts/LetterInputModel.cs(76,20): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 76)
+
+
+Sat, Jul  8, 2017  3:43:51 PM
+Assets/Scripts/LetterInputModel.cs(71,25): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 71)
+
+Assets/Scripts/LetterInputModel.cs(75,21): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 75)
+
+Assets/Scripts/LetterInputModel.cs(76,20): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 76)
+
+Sat, Jul  8, 2017  3:45:04 PM
+Assets/Editor/Tests/TestLetterInputModel.cs(63,23): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 63)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(64,20): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 64)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(64,38): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 64)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(65,20): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 65)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(65,38): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 65)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(66,20): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 66)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(66,38): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 66)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(67,23): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 67)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(68,20): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 68)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(68,38): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 68)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(69,20): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 69)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(69,38): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 69)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(70,20): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 70)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(70,38): error CS0103: The name `input' does not exist in the current context
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 70)
+
+
+Sat, Jul  8, 2017  3:53:43 PM
+
+AddFirstThenRepeat (0.017s)
+---
+Expected string length 5 but was 8. Strings differ at index 0.
+  Expected: "begin"
+  But was:  "selected"
+  -----------^
+---
+at Finegamedesign.Utils.TestLetterInputModel.AddFirstThenRepeat () [0x00107] in C:\Users\Ethan\workspace\word-sizzle\Assets\Editor\Tests\TestLetterInputModel.cs:39
+
+
+Sat, Jul  8, 2017  3:57:21 PM
+Assets/Editor/Tests/TestLetterInputModel.cs(102,29): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `texts' and no extension method `texts' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 102)
+

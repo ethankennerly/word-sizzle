@@ -26,7 +26,7 @@ namespace Finegamedesign.Utils
 		public void Update()
 		{
 			UpdateInput();
-			UpdateButtons();
+			UpdateLetters();
 		}
 
 		private void UpdateInput()
@@ -35,10 +35,13 @@ namespace Finegamedesign.Utils
 			model.Add(keyInput);
 		}
 
-		private void UpdateButtons()
+		private void UpdateLetters()
 		{
 			AnimationView.SetStates(view.buttons.states, model.buttons.states);
 			TextView.SetTexts(view.buttons.texts, model.buttons.texts);
+
+			AnimationView.SetStates(view.selects.states, model.selects.states);
+			TextView.SetTexts(view.selects.texts, model.selects.texts);
 		}
 	}
 }
