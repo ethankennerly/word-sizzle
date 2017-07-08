@@ -38,7 +38,12 @@ namespace Finegamedesign.Utils
 
 		public void Add(string letter)
 		{
-			
+			int index = buttons.texts.IndexOf(letter);
+			if (index < 0)
+			{
+				return;
+			}
+			buttons.states[index] = selectedState;
 		}
 	}
 }

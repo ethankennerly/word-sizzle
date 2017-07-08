@@ -34,8 +34,26 @@ namespace Finegamedesign.Utils
 			Assert.AreEqual(input.beginState, input.buttons.states[2]);
 		}
 
-		// TODO:
-		// public void AddNone()
-		// public void AddOther()
+		[Test]
+		public void AddNone()
+		{
+			var input = new LetterInputModel();
+			input.Populate("NOW");
+			input.Add("");
+			Assert.AreEqual(input.beginState, input.buttons.states[0]);
+			Assert.AreEqual(input.beginState, input.buttons.states[1]);
+			Assert.AreEqual(input.beginState, input.buttons.states[2]);
+		}
+
+		[Test]
+		public void AddOther()
+		{
+			var input = new LetterInputModel();
+			input.Populate("NEW");
+			input.Add("A");
+			Assert.AreEqual(input.beginState, input.buttons.states[0]);
+			Assert.AreEqual(input.beginState, input.buttons.states[1]);
+			Assert.AreEqual(input.beginState, input.buttons.states[2]);
+		}
 	}
 }
