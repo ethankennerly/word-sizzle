@@ -17,3 +17,7 @@
 - [ ] Spelling longest word unlocks next level.
 - [ ] Reads QUICK when spelling quickly.
 - [ ] Upgrades pan to burn slower.
+- [ ] Coin particles lock on to coin count.
+- [ ] Coin count increments as each particle hits it.
+- [ ] All letters in alphabet make a set worth 100 coins.
+- [ ] Spend 1 coin to spin a dial that adds one letter to collect.
