@@ -1,0 +1,3 @@
+[submodule "WordSizzle/Assets/UnityToykit"]
+	path = WordSizzle/Assets/UnityToykit
+	url = git@github.com:ethankennerly/UnityToykit.git
