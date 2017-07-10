@@ -23,6 +23,8 @@ namespace Finegamedesign.Utils
 		public WordViewModel submits = new WordViewModel();
 		public WordViewModel hints = new WordViewModel();
 
+		public string selection = "";
+
 		public string emptyState = "";
 		public string beginState = "begin";
 		public string selectedState = "selected";
@@ -44,6 +46,7 @@ namespace Finegamedesign.Utils
 				selects.texts.Add(emptyState);
 				selects.states.Add(beginState);
 			}
+			selection = "";
 		}
 
 		public void Add(string letter)
@@ -87,6 +90,7 @@ namespace Finegamedesign.Utils
 				}
 				selects.states[selectIndex] = selectedState;
 				selects.texts[selectIndex] = letter;
+				selection += letter;
 				break;
 			}
 		}

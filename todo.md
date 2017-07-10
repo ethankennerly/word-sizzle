@@ -4,6 +4,8 @@
 - [x] Types to select letter.
 - [ ] When spell word, animates "You win".
 - [ ] Backspaces or delete to delete letter.
+- [ ] When spell alternate word, animates "You win".
+- [ ] Display 3 to 7 letters in a circle.
 - [ ] Displays rows of blank squares.
 - [ ] Displays letters darken over time.
 - [ ] Displays smoke over time.
