@@ -1,3 +1,5 @@
+using Finegamedesign.Utils;
+
 namespace Finegamedesign.WordSizzle
 {
 	[System.Serializable]
@@ -23,6 +25,7 @@ namespace Finegamedesign.WordSizzle
 			view.input.controller.Update();
 			model.selection = view.input.controller.model.selection;
 			model.Update(deltaTime);
+			AnimationView.SetState(view.result.animatorOwner, model.state);
 		}
 	}
 }

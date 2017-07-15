@@ -296,3 +296,13 @@ Assets/Scripts/AnagramController.cs(26,28): error CS1061: Type `Finegamedesign.W
 
 
 			model.selection = model.view.input.controller.model.selection;
+
+
+Sat, Jul 15, 2017 11:14:49 AM
+Assets/Scripts/AnagramController.cs(26,4): error CS0103: The name `AnimationView' does not exist in the current context
+
+
+Sat, Jul 15, 2017 11:17:02 AM
+NullReferenceException: Object reference not set to an instance of an object
+Finegamedesign.WordSizzle.AnagramView.Setup () (at Assets/Scripts/AnagramView.cs:28)
+Finegamedesign.WordSizzle.AnagramView.Start () (at Assets/Scripts/AnagramView.cs:15)

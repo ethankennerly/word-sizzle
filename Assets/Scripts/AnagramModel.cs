@@ -15,7 +15,7 @@ namespace Finegamedesign.WordSizzle
 			word = nextWord;
 			selection = "";
 			isComplete = false;
-			state = "begin";
+			state = "play_begin";
 		}
 
 		public void Update(float deltaTime)
