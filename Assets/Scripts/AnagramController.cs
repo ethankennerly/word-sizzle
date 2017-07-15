@@ -1,5 +1,3 @@
-
-
 namespace Finegamedesign.WordSizzle
 {
 	[System.Serializable]
@@ -8,7 +6,7 @@ namespace Finegamedesign.WordSizzle
 		public AnagramModel model = new AnagramModel();
 		internal AnagramView view;
 
-		public void Setup();
+		public void Setup()
 		{
 			view.input.Setup();
 			TestWord();
@@ -23,7 +21,7 @@ namespace Finegamedesign.WordSizzle
 		public void Update(float deltaTime)
 		{
 			view.input.controller.Update();
-			model.selection = model.view.input.controller.model.selection;
+			model.selection = view.input.controller.model.selection;
 			model.Update(deltaTime);
 		}
 	}

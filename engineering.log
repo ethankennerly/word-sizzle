@@ -283,3 +283,16 @@ Assets/Editor/Tests/TestLetterInputModel.cs(102,29): error CS1061: Type `Finegam
  
 (Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 102)
 
+
+
+Sat, Jul 15, 2017 10:34:13 AM
+Assets/Scripts/AnagramController.cs(12,3): error CS9010: Primary constructor body is not allowed
+
+		public void Setup();
+
+
+Sat, Jul 15, 2017 10:34:42 AM
+Assets/Scripts/AnagramController.cs(26,28): error CS1061: Type `Finegamedesign.WordSizzle.AnagramModel' does not contain a definition for `view' and no extension method `view' of type `Finegamedesign.WordSizzle.AnagramModel' could be found. Are you missing an assembly reference?
+
+
+			model.selection = model.view.input.controller.model.selection;
