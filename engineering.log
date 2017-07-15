@@ -318,3 +318,27 @@ Assets/UnityToykit/KeyView.cs(43,17): error CS0246: The type or namespace name `
 
 Sat, Jul 15, 2017 12:22:02 PM
 Assets/Editor/Tests/TestLetterInputModel.cs(32,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `selectedState' and no extension method `selectedState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+
+
+Sat, Jul 15, 2017  1:04:44 PM
+Assets/Scripts/AnagramModel.cs(42,24): error CS1061: Type `Finegamedesign.Utils.Words' does not contain a definition for `ContainsKey' and no extension method `ContainsKey' of type `Finegamedesign.Utils.Words' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/AnagramModel.cs Line: 42)
+
+Assets/Scripts/Words.cs(13,8): error CS0103: The name `words' does not exist in the current context
+ 
+(Filename: Assets/Scripts/Words.cs Line: 13)
+
+Assets/Scripts/Words.cs(15,12): error CS0103: The name `words' does not exist in the current context
+ 
+(Filename: Assets/Scripts/Words.cs Line: 15)
+
+Assets/Scripts/Words.cs(15,5): error CS0127: `Finegamedesign.Utils.Words.Setup()': A return keyword must not be followed by any expression when method returns void
+ 
+(Filename: Assets/Scripts/Words.cs Line: 15)
+
+
+Sat, Jul 15, 2017  1:06:48 PM
+Assets/Scripts/Words.cs(15,5): error CS0127: `Finegamedesign.Utils.Words.Setup()': A return keyword must not be followed by any expression when method returns void
+ 
+(Filename: Assets/Scripts/Words.cs Line: 15)

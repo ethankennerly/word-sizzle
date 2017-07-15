@@ -11,12 +11,13 @@ namespace Finegamedesign.WordSizzle
 		public void Setup()
 		{
 			view.input.Setup();
+			model.Setup();
 			TestWord();
 		}
 
 		private void TestWord()
 		{
-			model.Populate("WIN");
+			model.Populate("ART");
 			view.input.controller.model.Populate(model.word);
 		}
 

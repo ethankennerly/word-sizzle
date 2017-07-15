@@ -10,8 +10,16 @@ namespace Finegamedesign.WordSizzle
 		public string word;
 
 		public bool isComplete = false;
+		private bool isFull = false;
 
 		public string state = "none";
+
+		public Words words = new Words();
+
+		public void Setup()
+		{
+			words.Setup();
+		}
 
 		public void Populate(string nextWord)
 		{
@@ -23,10 +31,19 @@ namespace Finegamedesign.WordSizzle
 
 		public void Update(float deltaTime)
 		{
-			isComplete = selection == word;
-			if (isComplete)
+			UpdateComplete();
+		}
+
+		private void UpdateComplete()
+		{
+			isFull = DataUtil.Length(selection) == DataUtil.Length(word);
+			if (isFull)
 			{
-				state = "win_begin";
+				isComplete = words.all.ContainsKey(selection);
+				if (isComplete)
+				{
+					state = "win_begin";
+				}
 			}
 		}
 	}
