@@ -1,5 +1,8 @@
+using Finegamedesign.Utils;
+
 namespace Finegamedesign.WordSizzle
 {
+	[System.Serializable]
 	public sealed class AnagramModel
 	{
 		public string selection;
