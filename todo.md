@@ -2,8 +2,8 @@
 
 - [x] Displays 3 letters in a circle.
 - [x] Types to select letter.
-- [ ] When spell word, animates "You win".
-- [ ] Backspaces or delete to delete letter.
+- [x] When spell word, animates "You win".
+- [x] Backspaces or delete to delete letter.
 - [ ] When spell alternate word, animates "You win".
 - [ ] Display 3 to 7 letters in a circle.
 - [ ] Displays rows of blank squares.

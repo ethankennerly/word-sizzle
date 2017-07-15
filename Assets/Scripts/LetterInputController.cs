@@ -21,6 +21,7 @@ namespace Finegamedesign.Utils
 
 		public void Setup()
 		{
+			model.backspaceCharacter = KeyView.backspaceCharacter;
 		}
 
 		public void Update()
@@ -31,8 +32,7 @@ namespace Finegamedesign.Utils
 
 		private void UpdateInput()
 		{
-			string keyInput = KeyView.InputString();
-			model.Add(keyInput);
+			model.Input(KeyView.InputList());
 		}
 
 		private void UpdateLetters()

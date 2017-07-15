@@ -196,7 +196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &51484293
 RectTransform:
   m_ObjectHideFlags: 0
@@ -868,6 +868,8 @@ MonoBehaviour:
       emptyState: 
       beginState: begin
       selectedState: selected
+      selectEndState: selectEnd
+      backspaceCharacter: "\b"
 --- !u!1 &603785266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,6 +1101,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: {fileID: 0}
   result: {fileID: 0}
+  controller:
+    model:
+      selection: 
+      word: 
+      isComplete: 0
+      state: none
 --- !u!4 &1294802842
 Transform:
   m_ObjectHideFlags: 0

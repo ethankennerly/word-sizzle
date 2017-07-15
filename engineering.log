@@ -306,3 +306,15 @@ Sat, Jul 15, 2017 11:17:02 AM
 NullReferenceException: Object reference not set to an instance of an object
 Finegamedesign.WordSizzle.AnagramView.Setup () (at Assets/Scripts/AnagramView.cs:28)
 Finegamedesign.WordSizzle.AnagramView.Start () (at Assets/Scripts/AnagramView.cs:15)
+
+
+
+Sat, Jul 15, 2017 12:06:55 PM
+Assets/Scripts/LetterInputModel.cs(58,2): error CS1525: Unexpected symbol `}'
+
+Sat, Jul 15, 2017 12:08:50 PM
+Assets/UnityToykit/KeyView.cs(43,17): error CS0246: The type or namespace name `List' could not be found. Are you missing `System.Collections.Generic' or `Boo.Lang' using directive?
+
+
+Sat, Jul 15, 2017 12:22:02 PM
+Assets/Editor/Tests/TestLetterInputModel.cs(32,26): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `selectedState' and no extension method `selectedState' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?

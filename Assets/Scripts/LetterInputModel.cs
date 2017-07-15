@@ -23,11 +23,16 @@ namespace Finegamedesign.Utils
 		public WordViewModel submits = new WordViewModel();
 		public WordViewModel hints = new WordViewModel();
 
+		public List<int> buttonIndexes = new List<int>();
+
 		public string selection = "";
 
 		public string emptyState = "";
 		public string beginState = "begin";
-		public string selectedState = "selected";
+		public string selectBeginState = "select_begin";
+		public string selectEndState = "select_end";
+
+		public string backspaceCharacter = "\b";
 
 		public void Populate(string word)
 		{
@@ -47,6 +52,23 @@ namespace Finegamedesign.Utils
 				selects.states.Add(beginState);
 			}
 			selection = "";
+			buttonIndexes.Clear();
+		}
+
+		public void Input(List<string> inputs)
+		{
+			for (int index = 0, end = DataUtil.Length(inputs); index < end; ++index)
+			{
+				string input = inputs[index];
+				if (input == backspaceCharacter)
+				{
+					Backspace();
+				}
+				else
+				{
+					Add(input);
+				}
+			}
 		}
 
 		public void Add(string letter)
@@ -56,6 +78,21 @@ namespace Finegamedesign.Utils
 			{
 				SetFirstSelect(letter);
 			}
+		}
+
+		public void Backspace()
+		{
+			int index = DataUtil.Length(selection) - 1;
+			if (index < 0)
+			{
+				return;
+			}
+			selection = selection.Substring(0, index);
+			selects.states[index] = selectEndState;
+			selects.texts[index] = emptyState;
+			int buttonIndex = buttonIndexes[index];
+			buttons.states[buttonIndex] = selectEndState;
+			DataUtil.RemoveAt(buttonIndexes, index);
 		}
 
 		private bool SetFirstButton(string letter)
@@ -68,12 +105,13 @@ namespace Finegamedesign.Utils
 				{
 					continue;
 				}
-				if (buttons.states[index] == selectedState)
+				if (buttons.states[index] == selectBeginState)
 				{
 					continue;
 				}
-				buttons.states[index] = selectedState;
+				buttons.states[index] = selectBeginState;
 				buttons.texts[index] = letter;
+				buttonIndexes.Add(index);
 				isSelected = true;
 				break;
 			}
@@ -84,11 +122,11 @@ namespace Finegamedesign.Utils
 		{
 			for (int selectIndex = 0, end = selects.states.Count; selectIndex < end; ++selectIndex)
 			{
-				if (selects.states[selectIndex] == selectedState)
+				if (selects.states[selectIndex] == selectBeginState)
 				{
 					continue;
 				}
-				selects.states[selectIndex] = selectedState;
+				selects.states[selectIndex] = selectBeginState;
 				selects.texts[selectIndex] = letter;
 				selection += letter;
 				break;

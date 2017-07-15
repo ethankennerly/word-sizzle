@@ -29,14 +29,14 @@ namespace Finegamedesign.Utils
 			input.Add("A");
 			Assert.AreEqual(3, input.buttons.states.Count);
 			Assert.AreEqual(input.beginState, input.buttons.states[0]);
-			Assert.AreEqual(input.selectedState, input.buttons.states[1]);
+			Assert.AreEqual(input.selectBeginState, input.buttons.states[1]);
 			Assert.AreEqual(input.beginState, input.buttons.states[2]);
 			input.Add("A");
 			Assert.AreEqual(input.beginState, input.buttons.states[0]);
-			Assert.AreEqual(input.selectedState, input.buttons.states[1]);
+			Assert.AreEqual(input.selectBeginState, input.buttons.states[1]);
 			Assert.AreEqual(input.beginState, input.buttons.states[2]);
 
-			Assert.AreEqual(input.selectedState, input.selects.states[0]);
+			Assert.AreEqual(input.selectBeginState, input.selects.states[0]);
 			Assert.AreEqual(input.beginState, input.selects.states[1]);
 			Assert.AreEqual(input.beginState, input.selects.states[2]);
 			Assert.AreEqual("A", input.selects.texts[0]);
@@ -91,12 +91,12 @@ namespace Finegamedesign.Utils
 			input.Populate("EEL");
 			input.Add("E");
 			Assert.AreEqual(3, input.buttons.states.Count);
-			Assert.AreEqual(input.selectedState, input.buttons.states[0]);
+			Assert.AreEqual(input.selectBeginState, input.buttons.states[0]);
 			Assert.AreEqual(input.beginState, input.buttons.states[1]);
 			Assert.AreEqual(input.beginState, input.buttons.states[2]);
 			input.Add("E");
-			Assert.AreEqual(input.selectedState, input.buttons.states[0]);
-			Assert.AreEqual(input.selectedState, input.buttons.states[1]);
+			Assert.AreEqual(input.selectBeginState, input.buttons.states[0]);
+			Assert.AreEqual(input.selectBeginState, input.buttons.states[1]);
 			Assert.AreEqual(input.beginState, input.buttons.states[2]);
 
 			Assert.AreEqual(3, input.selects.texts.Count);
@@ -104,8 +104,8 @@ namespace Finegamedesign.Utils
 			Assert.AreEqual("E", input.selects.texts[1]);
 			Assert.AreEqual(input.emptyState, input.selects.texts[2]);
 			Assert.AreEqual(3, input.selects.states.Count);
-			Assert.AreEqual(input.selectedState, input.selects.states[0]);
-			Assert.AreEqual(input.selectedState, input.selects.states[1]);
+			Assert.AreEqual(input.selectBeginState, input.selects.states[0]);
+			Assert.AreEqual(input.selectBeginState, input.selects.states[1]);
 			Assert.AreEqual(input.beginState, input.selects.states[2]);
 		}
 
@@ -118,7 +118,7 @@ namespace Finegamedesign.Utils
 			Assert.AreEqual(3, input.buttons.states.Count);
 			Assert.AreEqual(input.beginState, input.buttons.states[0]);
 			Assert.AreEqual(input.beginState, input.buttons.states[1]);
-			Assert.AreEqual(input.selectedState, input.buttons.states[2]);
+			Assert.AreEqual(input.selectBeginState, input.buttons.states[2]);
 			Assert.AreEqual("N", input.selects.texts[0]);
 		}
 	}
