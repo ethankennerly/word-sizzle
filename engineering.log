@@ -342,3 +342,30 @@ Sat, Jul 15, 2017  1:06:48 PM
 Assets/Scripts/Words.cs(15,5): error CS0127: `Finegamedesign.Utils.Words.Setup()': A return keyword must not be followed by any expression when method returns void
  
 (Filename: Assets/Scripts/Words.cs Line: 15)
+
+
+
+Sat, Jul 15, 2017  1:43:51 PM
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.WordLevels.Current () [0x0000d] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\WordLevels.cs:30 
+  at Finegamedesign.WordSizzle.AnagramModel.Setup () [0x00013] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramModel.cs:24 
+  at Finegamedesign.WordSizzle.AnagramController.Setup () [0x00017] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:14 
+  at Finegamedesign.WordSizzle.AnagramView.Setup () [0x00078] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:30 
+  at Finegamedesign.WordSizzle.AnagramView.Start () [0x00002] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:15 
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 30)
+
+
+
+Sat, Jul 15, 2017  1:46:43 PM
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) [0x0000c] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633 
+  at Finegamedesign.Utils.AnimationView.SetStates (System.Collections.Generic.List`1 animatorOwners, System.Collections.Generic.List`1 states) [0x00012] in C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\AnimationView.cs:68 
+  at Finegamedesign.Utils.LetterInputController.UpdateLetters () [0x00021] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:40 
+  at Finegamedesign.Utils.LetterInputController.Update () [0x00008] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:30 
+  at Finegamedesign.WordSizzle.AnagramController.Update (Single deltaTime) [0x00011] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:26 
+  at Finegamedesign.WordSizzle.AnagramView.Update () [0x0000c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:35 
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 633)
+

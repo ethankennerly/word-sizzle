@@ -5,10 +5,11 @@
 - [x] When spell word, animates "You win".
 - [x] Backspaces or delete to delete letter.
 - [x] When spell alternate word, animates "You win".
-- [ ] Display 3 to 7 letters in a circle.
-- [ ] Displays rows of blank squares.
+- [ ] Displays 3 to 12 letters in a circle and selection.
+- [ ] Spelling word advances to next word.
 - [ ] Displays letters darken over time.
 - [ ] Displays smoke over time.
+- [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.
 - [ ] Spelling a word replaces letters with light letters.
 - [ ] Sounds sizzle, crackle, explosion.

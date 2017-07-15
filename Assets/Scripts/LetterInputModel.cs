@@ -16,7 +16,7 @@ namespace Finegamedesign.Utils
 	[System.Serializable]
 	public sealed class LetterInputModel
 	{
-		public int letterMax = 3;
+		public int letterMax = 12;
 
 		public WordViewModel buttons = new WordViewModel();
 		public WordViewModel selects = new WordViewModel();

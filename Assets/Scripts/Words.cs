@@ -16,9 +16,8 @@ namespace Finegamedesign.Utils
 			}
 			string text = StringUtil.Read(path);
 			string[] lines = text.Split('\n');
-			int length = lines.Length;
 			all = new Dictionary<string, object>();
-			for (int i = 0; i < length; i++)
+			for (int i = 0, length = lines.Length; i < length; ++i)
 			{
 				string word = lines[i];
 				all[word] = true;
