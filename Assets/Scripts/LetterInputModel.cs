@@ -38,11 +38,15 @@ namespace Finegamedesign.Utils
 		// Hides extra letters.
 		// Otherwise, when going from a longer word to a shorter word,
 		// then the last letters are not hidden.
+		//
+		// Shuffles order of button texts.
+		// Otherwise, the spelling order can be inferred.
 		public void Populate(string word)
 		{
 			int length = DataUtil.Length(word);
 			int index, end;
 			buttons.texts = DataUtil.Split(word, "");
+			Deck.ShuffleList(buttons.texts);
 			buttons.states.Clear();
 			for (index = 0, end = length; index < end; ++index)
 			{
