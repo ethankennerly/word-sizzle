@@ -9,6 +9,8 @@ namespace Finegamedesign.WordSizzle
 
 		public string word;
 
+		public bool isPopulateNext = false;
+		public bool isPopulateNow = false;
 		public bool isComplete = false;
 		private bool wasComplete = false;
 		private bool isFull = false;
@@ -22,13 +24,16 @@ namespace Finegamedesign.WordSizzle
 		{
 			words.Setup();
 			levels.Setup();
-			Populate(levels.Current());
+			isPopulateNext = false;
+			isPopulateNow = false;
+			Populate();
 		}
 
 		public void Populate(string nextWord = null)
 		{
 			if (nextWord == null)
 			{
+				levels.Next();
 				nextWord = levels.Current();
 			}
 			word = nextWord;
@@ -36,10 +41,13 @@ namespace Finegamedesign.WordSizzle
 			isComplete = false;
 			wasComplete = false;
 			state = "play_begin";
+			isPopulateNext = true;
 		}
 
 		public void Update(float deltaTime)
 		{
+			isPopulateNow = isPopulateNext;
+			isPopulateNext = false;
 			UpdateComplete();
 		}
 

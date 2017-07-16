@@ -13,21 +13,23 @@ namespace Finegamedesign.WordSizzle
 			view.result.controller.model = model;
 			view.input.Setup();
 			model.Setup();
-			Populate();
 		}
 
 		private void Populate()
 		{
-			model.Populate();
 			view.input.controller.model.Populate(model.word);
 		}
 
 		public void Update(float deltaTime)
 		{
 			view.input.controller.Update();
+			view.result.controller.Update();
 			model.selection = view.input.controller.model.selection;
 			model.Update(deltaTime);
-			view.result.controller.Update();
+			if (model.isPopulateNow)
+			{
+				Populate();
+			}
 		}
 	}
 }

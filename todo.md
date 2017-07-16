@@ -25,3 +25,9 @@
 - [ ] Coin count increments as each particle hits it.
 - [ ] All letters in alphabet make a set worth 100 coins.
 - [ ] Spend 1 coin to spin a dial that adds one letter to collect.
+- [ ] Buffer news.  Example:
+	news.Post(populateNews);
+	...
+	news.Update();
+	...
+	if model.news.IsNow(model.populateNews) { view.Populate(model.word); }
