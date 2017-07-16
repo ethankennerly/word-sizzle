@@ -369,3 +369,89 @@ Parameter name: index
  
 (Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 633)
 
+
+
+Sat, Jul 15, 2017  2:04:43 PM
+Assets/Scripts/LevelResultController.cs(39,3): error CS1525: Unexpected symbol `AnimationView'
+ 
+(Filename: Assets/Scripts/LevelResultController.cs Line: 39)
+
+
+Sat, Jul 15, 2017  2:09:35 PM
+Assets/Scripts/LevelResultController.cs(10,10): error CS0246: The type or namespace name `InputController' could not be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LevelResultController.cs Line: 10)
+
+
+
+Sat, Jul 15, 2017  2:10:44 PM
+Assets/Scripts/AnagramController.cs(13,16): error CS1061: Type `Finegamedesign.WordSizzle.LevelResultView' does not contain a definition for `model' and no extension method `model' of type `Finegamedesign.WordSizzle.LevelResultView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/AnagramController.cs Line: 13)
+
+Assets/Scripts/LevelResultController.cs(15,15): error CS1061: Type `Finegamedesign.Utils.ButtonView' does not contain a definition for `listen' and no extension method `listen' of type `Finegamedesign.Utils.ButtonView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LevelResultController.cs Line: 15)
+
+Assets/Scripts/LevelResultController.cs(21,21): error CS1061: Type `Finegamedesign.WordSizzle.LevelResultView' does not contain a definition for `result' and no extension method `result' of type `Finegamedesign.WordSizzle.LevelResultView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LevelResultController.cs Line: 21)
+
+Assets/Scripts/LevelResultController.cs(26,32): error CS1061: Type `Finegamedesign.WordSizzle.LevelResultView' does not contain a definition for `result' and no extension method `result' of type `Finegamedesign.WordSizzle.LevelResultView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LevelResultController.cs Line: 26)
+
+Assets/Scripts/LevelResultView.cs(17,17): error CS0103: The name `SceneNodeView' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LevelResultView.cs Line: 17)
+
+
+
+Sat, Jul 15, 2017  2:19:35 PM
+Assets/Scripts/AnagramController.cs(13,16): error CS1061: Type `Finegamedesign.WordSizzle.LevelResultView' does not contain a definition for `model' and no extension method `model' of type `Finegamedesign.WordSizzle.LevelResultView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/AnagramController.cs Line: 13)
+
+Assets/Scripts/LevelResultController.cs(15,15): error CS1061: Type `Finegamedesign.Utils.ButtonView' does not contain a definition for `listen' and no extension method `listen' of type `Finegamedesign.Utils.ButtonView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LevelResultController.cs Line: 15)
+
+Assets/Scripts/LevelResultView.cs(17,17): error CS0103: The name `SceneNodeView' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LevelResultView.cs Line: 17)
+
+
+Sat, Jul 15, 2017  4:58:23 PM
+Assets/Scripts/LevelResultController.cs(15,10): error CS1061: Type `Finegamedesign.Utils.ButtonController' does not contain a definition for `listen' and no extension method `listen' of type `Finegamedesign.Utils.ButtonController' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LevelResultController.cs Line: 15)
+
+Assets/Scripts/LevelResultView.cs(17,17): error CS0103: The name `SceneNodeView' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LevelResultView.cs Line: 17)
+
+Sat, Jul 15, 2017  5:03:19 PM
+
+Assets/Scripts/LevelResultController.cs(15,10): error CS1061: Type `Finegamedesign.Utils.ButtonController' does not contain a definition for `Listen' and no extension method `Listen' of type `Finegamedesign.Utils.ButtonController' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LevelResultController.cs Line: 15)
+
+Assets/Scripts/LevelResultView.cs(17,17): error CS0103: The name `SceneNodeView' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LevelResultView.cs Line: 17)
+
+Sat, Jul 15, 2017  5:04:01 PM
+Assets/Scripts/LevelResultView.cs(17,17): error CS0103: The name `SceneNodeView' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LevelResultView.cs Line: 17)
+
+
+Sat, Jul 15, 2017  5:05:17 PM
+
+InvalidOperationException: Expected child <NextButton> in <Canvas/LevelResult>
+  at Finegamedesign.Utils.SceneNodeView.GetChild (UnityEngine.GameObject parent, System.String name, UnityEngine.GameObject overrideChild) [0x0005f] in C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\SceneNodeView.cs:30 
+  at Finegamedesign.WordSizzle.LevelResultView.Setup () [0x00032] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LevelResultView.cs:18 
+  at Finegamedesign.WordSizzle.AnagramView.Setup () [0x00061] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:28 
+  at Finegamedesign.WordSizzle.AnagramView.Start () [0x00002] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:15 
+ 
+(Filename: Assets/UnityToykit/SceneNodeView.cs Line: 30)

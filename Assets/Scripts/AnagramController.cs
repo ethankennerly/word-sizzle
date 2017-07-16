@@ -10,6 +10,7 @@ namespace Finegamedesign.WordSizzle
 
 		public void Setup()
 		{
+			view.result.controller.model = model;
 			view.input.Setup();
 			model.Setup();
 			Populate();
@@ -26,7 +27,7 @@ namespace Finegamedesign.WordSizzle
 			view.input.controller.Update();
 			model.selection = view.input.controller.model.selection;
 			model.Update(deltaTime);
-			AnimationView.SetState(view.result.animatorOwner, model.state);
+			view.result.controller.Update();
 		}
 	}
 }
