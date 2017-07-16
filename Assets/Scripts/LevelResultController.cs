@@ -9,6 +9,7 @@ namespace Finegamedesign.WordSizzle
 		internal LevelResultView view;
 		public ButtonController input = new ButtonController();
 		public AnagramModel model;
+		public LetterInputModel letterInput;
 
 		public void Setup()
 		{
@@ -20,6 +21,7 @@ namespace Finegamedesign.WordSizzle
 			input.Update();
 			UpdateNext();
 			AnimationView.SetState(view.animatorOwner, model.state);
+			AnimationView.SetState(view.tutor, letterInput.isTutorKey ? "begin" : "none");
 		}
 
 		// Pressing next button or enter key advances to next word.

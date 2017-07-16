@@ -444,7 +444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &51484293
 RectTransform:
   m_ObjectHideFlags: 0
@@ -457,6 +457,7 @@ RectTransform:
   m_Children:
   - {fileID: 1015835093}
   - {fileID: 603785267}
+  - {fileID: 1447760475}
   m_Father: {fileID: 824642438}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -837,6 +838,74 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
     type: 2}
   m_PrefabInternal: {fileID: 228233724}
+--- !u!1 &276140694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 276140695}
+  - component: {fileID: 276140697}
+  - component: {fileID: 276140696}
+  m_Layer: 5
+  m_Name: NextButtonShadow
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &276140695
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 276140694}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 603785267}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4, y: -153}
+  m_SizeDelta: {x: 160, y: 77.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &276140696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 276140694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &276140697
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 276140694}
 --- !u!1001 &302176731
 Prefab:
   m_ObjectHideFlags: 0
@@ -1358,7 +1427,7 @@ RectTransform:
   m_Children:
   - {fileID: 726829668}
   m_Father: {fileID: 603785267}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1856,10 +1925,12 @@ MonoBehaviour:
       backspaceCharacter: "\b"
       tutorState: none
       tutorText: 
+      taskText: Spell a word.
       addKeyText: To spell, you can also press a key on the KEYBOARD.
       backspaceKeyText: To delete a letter, you can also press backspace or delete
         on the KEYBOARD.
       isTutorKey: 0
+      isTutorTask: 1
 --- !u!1 &603785266
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +1959,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3614174}
+  - {fileID: 276140695}
   - {fileID: 427023928}
   m_Father: {fileID: 51484293}
   m_RootOrder: 1
@@ -2069,8 +2141,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animatorOwner: {fileID: 0}
+  tutor: {fileID: 0}
   nextButton: {fileID: 0}
   nextButtonPath: LevelResultContainer/Panel/NextButton
+  tutorPath: LevelResultContainer/Tutor
   controller:
     isNextNow: 0
     model:
@@ -2081,6 +2155,36 @@ MonoBehaviour:
       isComplete: 0
       state: none
       winBeginState: win_begin
+    letterInput:
+      letterMax: 12
+      buttons:
+        states: []
+        texts: []
+      selects:
+        states: []
+        texts: []
+      submits:
+        states: []
+        texts: []
+      hints:
+        states: []
+        texts: []
+      buttonIndexes: 
+      selection: 
+      emptyState: 
+      noneState: none
+      beginState: begin
+      selectBeginState: select_begin
+      selectEndState: select_end
+      backspaceCharacter: "\b"
+      tutorState: none
+      tutorText: 
+      taskText: Spell a word.
+      addKeyText: To spell, you can also press a key on the KEYBOARD.
+      backspaceKeyText: To delete a letter, you can also press backspace or delete
+        on the KEYBOARD.
+      isTutorKey: 0
+      isTutorTask: 1
 --- !u!1 &1015835092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2624,6 +2728,58 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1447760474
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1447760475}
+  - component: {fileID: 1447760476}
+  m_Layer: 5
+  m_Name: Tutor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1447760475
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1447760474}
+  m_LocalRotation: {x: -0, y: -0, z: 0.002441409, w: 0.999997}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1678610332}
+  m_Father: {fileID: 51484293}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -200}
+  m_SizeDelta: {x: 230, y: 35}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1447760476
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1447760474}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5a6836bb3b7b319459f97d43a126ab3f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1581904826
 Prefab:
   m_ObjectHideFlags: 0
@@ -2748,6 +2904,80 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
     type: 2}
   m_PrefabInternal: {fileID: 1581904826}
+--- !u!1 &1678610331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1678610332}
+  - component: {fileID: 1678610334}
+  - component: {fileID: 1678610333}
+  m_Layer: 5
+  m_Name: TutorText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1678610332
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678610331}
+  m_LocalRotation: {x: -0, y: -0, z: -0.002441409, w: 0.999997}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1447760475}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 280, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1678610333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678610331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Press the ENTER key
+--- !u!222 &1678610334
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1678610331}
 --- !u!1001 &1678771034
 Prefab:
   m_ObjectHideFlags: 0

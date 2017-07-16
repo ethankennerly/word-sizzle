@@ -14,20 +14,23 @@
 	- [ ] Advance logarithm.
 	- [ ] Composite z-scores of frequency and length.
 - [x] Shuffle letters on buttons.
-- [ ] 2017-07-15 Jennifer Russ: Trackpad, click next. Not responding. x5
-	- [ ] Text on webGL build:  Press ENTER key
+- [x] 2017-07-15 Jennifer Russ: Trackpad, click next. Not responding. x5
+	- [x] Text on webGL build:  Press ENTER key
 - [ ] Jennifer types to spell a word on the web.
-- [ ] 2017-07-15 Jennifer Russ: Click You Win.  No response.  x2
-	- [ ] Bevel button.
-- [ ] 2017-07-15 Jennifer Russ: At first she asked if she was supposed to spell a word.
-	- [ ] First trial text:  SPELL a word.
-- [ ] 2017-07-15 Jennifer Russ: At first she tapped the letters and selection letters.
-	- [ ] On web build read:  You can also type on the keyboard.
-	- [ ] Button tap selects letter.
+- [x] 2017-07-15 Jennifer Russ: Click You Win.  No response.  x2
+	- [x] Bevel button.
+	- [ ] Animate button.
+	- [ ] Button collider includes win text.
+- [x] 2017-07-15 Jennifer Russ: At first she asked if she was supposed to spell a word.
+	- [x] First trial text:  SPELL a word.
+- [x] 2017-07-15 Jennifer Russ: At first she tapped the letters and selection letters.
+	- [x] On web build read:  You can also type on the keyboard.
+	- [x] Button tap selects letter.
+	- [x] Tap selection backspaces letter.
 - [ ] 2017-07-15 Jennifer Russ: Is the black circle a pan?
 	- [ ] Illustrates pan.
-- [ ] Delete button.
 - [ ] Jennifer plays on Android phone.
+- [ ] Delete button.
 - [ ] Displays letters darken over time.
 - [ ] Displays smoke over time.
 - [ ] Displays rows of blank squares.

@@ -11,6 +11,7 @@ namespace Finegamedesign.WordSizzle
 		public void Setup()
 		{
 			view.result.controller.model = model;
+			view.result.controller.letterInput = view.input.controller.model;
 			view.input.Setup();
 			model.Setup();
 		}

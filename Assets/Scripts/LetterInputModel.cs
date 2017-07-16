@@ -37,10 +37,12 @@ namespace Finegamedesign.Utils
 
 		public string tutorState = "none";
 		public string tutorText = "";
+		public string taskText = "Spell a word.";
 		public string addKeyText = "To spell, you can also press a key on the KEYBOARD.";
 		public string backspaceKeyText = "To delete a letter, you can also press backspace or delete on the KEYBOARD.";
 
 		public bool isTutorKey = false;
+		public bool isTutorTask = true;
 
 		// Hides extra letters.
 		// Otherwise, when going from a longer word to a shorter word,
@@ -78,6 +80,7 @@ namespace Finegamedesign.Utils
 			}
 			selection = "";
 			buttonIndexes.Clear();
+			MayTutorTask();
 		}
 
 		public void Input(List<string> inputs)
@@ -104,6 +107,16 @@ namespace Finegamedesign.Utils
 				SetFirstSelect(letter);
 			}
 			MayTutorKey(isButton, addKeyText);
+		}
+
+		private void MayTutorTask()
+		{
+			if (isTutorTask)
+			{
+				tutorState = "begin";
+				tutorText = taskText;
+				isTutorTask = false;
+			}
 		}
 
 		// If tutoring and pressing a button, sets tutor text and state.
