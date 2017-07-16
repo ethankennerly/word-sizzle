@@ -28,28 +28,42 @@ namespace Finegamedesign.Utils
 		public string selection = "";
 
 		public string emptyState = "";
+		public string noneState = "none";
 		public string beginState = "begin";
 		public string selectBeginState = "select_begin";
 		public string selectEndState = "select_end";
 
 		public string backspaceCharacter = "\b";
 
+		// Hides extra letters.
+		// Otherwise, when going from a longer word to a shorter word,
+		// then the last letters are not hidden.
 		public void Populate(string word)
 		{
 			int length = DataUtil.Length(word);
+			int index, end;
 			buttons.texts = DataUtil.Split(word, "");
 			buttons.states.Clear();
-			for (int index = 0, end = length; index < end; ++index)
+			for (index = 0, end = length; index < end; ++index)
 			{
 				buttons.states.Add(beginState);
+			}
+			for (; index < letterMax; ++index)
+			{
+				buttons.states.Add(noneState);
 			}
 
 			selects.texts.Clear();
 			selects.states.Clear();
-			for (int index = 0, end = length; index < end; ++index)
+			for (index = 0, end = length; index < end; ++index)
 			{
 				selects.texts.Add(emptyState);
 				selects.states.Add(beginState);
+			}
+			for (; index < letterMax; ++index)
+			{
+				selects.texts.Add(emptyState);
+				selects.states.Add(noneState);
 			}
 			selection = "";
 			buttonIndexes.Clear();

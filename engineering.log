@@ -455,3 +455,23 @@ InvalidOperationException: Expected child <NextButton> in <Canvas/LevelResult>
   at Finegamedesign.WordSizzle.AnagramView.Start () [0x00002] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:15 
  
 (Filename: Assets/UnityToykit/SceneNodeView.cs Line: 30)
+
+
+Sat, Jul 15, 2017  5:46:51 PM
+Assets/Scripts/LetterInputModel.cs(47,20): error CS0103: The name `end' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 47)
+
+Assets/Scripts/LetterInputModel.cs(47,42): error CS0103: The name `end' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 47)
+
+Assets/Scripts/LetterInputModel.cs(58,20): error CS0103: The name `end' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 58)
+
+Assets/Scripts/LetterInputModel.cs(58,42): error CS0103: The name `end' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 58)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.005226 seconds (Nothing changed)

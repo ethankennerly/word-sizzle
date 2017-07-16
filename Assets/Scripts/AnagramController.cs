@@ -23,8 +23,8 @@ namespace Finegamedesign.WordSizzle
 		public void Update(float deltaTime)
 		{
 			view.input.controller.Update();
-			view.result.controller.Update();
 			model.selection = view.input.controller.model.selection;
+			view.result.controller.Update();
 			model.Update(deltaTime);
 			if (model.isPopulateNow)
 			{

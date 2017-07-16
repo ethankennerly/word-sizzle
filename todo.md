@@ -5,12 +5,13 @@
 - [x] When spell word, animates "You win".
 - [x] Backspaces or delete to delete letter.
 - [x] When spell alternate word, animates "You win".
-- [ ] Displays 3 to 12 letters in a circle and selection.
-- [ ] Spelling word advances to next word.
+- [x] Displays 3 to 12 letters in a circle and selection.
+- [x] Spelling word advances to next word.
 - [ ] Displays letters darken over time.
 - [ ] Displays smoke over time.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.
+- [ ] If not a word, shake letters then clear selection.
 - [ ] Spelling a word replaces letters with light letters.
 - [ ] Sounds sizzle, crackle, explosion.
 - [ ] Jennifer types to spell a word on the web.
