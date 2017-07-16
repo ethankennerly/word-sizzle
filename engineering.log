@@ -475,3 +475,58 @@ Assets/Scripts/LetterInputModel.cs(58,42): error CS0103: The name `end' does not
 (Filename: Assets/Scripts/LetterInputModel.cs Line: 58)
 
 Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.005226 seconds (Nothing changed)
+
+
+
+Sun, Jul 16, 2017  1:36:19 PM
+Assets/Scripts/LetterInputView.cs(26,0): error CS1024: Wrong preprocessor directive
+ 
+(Filename: Assets/Scripts/LetterInputView.cs Line: 26)
+
+Assets/Scripts/LetterInputView.cs(28,0): error CS1028: Unexpected processor directive (no #if for this #elif)
+ 
+(Filename: Assets/Scripts/LetterInputView.cs Line: 28)
+
+Assets/Scripts/LetterInputView.cs(30,0): error CS1028: Unexpected processor directive (no #if for this #else)
+ 
+(Filename: Assets/Scripts/LetterInputView.cs Line: 30)
+
+Assets/Scripts/LetterInputView.cs(32,0): error CS1028: Unexpected processor directive (no #if for this #endif)
+ 
+(Filename: Assets/Scripts/LetterInputView.cs Line: 32)
+
+Assets/Scripts/WordView.cs(15,8): error CS1519: Unexpected symbol `public' in class, struct, or interface member declaration
+ 
+(Filename: Assets/Scripts/WordView.cs Line: 15)
+
+
+Sun, Jul 16, 2017  1:37:33 PM
+Assets/Scripts/WordView.cs(15,8): error CS1519: Unexpected symbol `public' in class, struct, or interface member declaration
+ 
+(Filename: Assets/Scripts/WordView.cs Line: 15)
+		public string pathSuffix = "LetterContainer_{0}/LetterButton",
+
+
+Sun, Jul 16, 2017  1:41:10 PM
+Assets/UnityToykit/ButtonView.cs(46,23): error CS0246: The type or namespace name `List' could not be found. Are you missing `System.Collections.Generic' or `Boo.Lang' using directive?
+ 
+(Filename: Assets/UnityToykit/ButtonView.cs Line: 46)
+
+
+Sun, Jul 16, 2017  1:42:05 PM
+Assets/Scripts/LetterInputView.cs(18,4): error CS0103: The name `MayTutorKey' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputView.cs Line: 18)
+
+Assets/Scripts/WordView.cs(22,6): error CS0103: The name `gameObject' does not exist in the current context
+ 
+(Filename: Assets/Scripts/WordView.cs Line: 22)
+
+Assets/Scripts/WordView.cs(28,6): error CS0103: The name `gameObject' does not exist in the current context
+ 
+(Filename: Assets/Scripts/WordView.cs Line: 28)
+
+Assets/Scripts/WordView.cs(34,6): error CS0103: The name `gameObject' does not exist in the current context
+ 
+(Filename: Assets/Scripts/WordView.cs Line: 34)
+

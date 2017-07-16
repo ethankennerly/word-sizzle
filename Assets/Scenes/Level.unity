@@ -237,7 +237,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -768,7 +768,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -892,7 +892,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -1016,7 +1016,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -1264,7 +1264,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -1816,11 +1816,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttons:
+    buttons: []
     states: []
     texts: []
+    statePathSuffix: LetterContainer_{0}
+    buttonPathSuffix: LetterContainer_{0}/LetterButton
+    textPathSuffix: LetterContainer_{0}/LetterButton/Text
   selects:
+    buttons: []
     states: []
     texts: []
+    statePathSuffix: LetterContainer_{0}
+    buttonPathSuffix: LetterContainer_{0}/LetterButton
+    textPathSuffix: LetterContainer_{0}/LetterButton/Text
+  tutor: {fileID: 0}
+  tutorText: {fileID: 0}
   controller:
     model:
       letterMax: 12
@@ -1844,6 +1854,12 @@ MonoBehaviour:
       selectBeginState: select_begin
       selectEndState: select_end
       backspaceCharacter: "\b"
+      tutorState: none
+      tutorText: 
+      addKeyText: To spell, you can also press a key on the KEYBOARD.
+      backspaceKeyText: To delete a letter, you can also press backspace or delete
+        on the KEYBOARD.
+      isTutorKey: 0
 --- !u!1 &603785266
 GameObject:
   m_ObjectHideFlags: 0
@@ -2188,7 +2204,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -2787,7 +2803,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -3115,7 +3131,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -3239,7 +3255,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -3706,7 +3722,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -3830,7 +3846,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -3954,7 +3970,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -38.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}

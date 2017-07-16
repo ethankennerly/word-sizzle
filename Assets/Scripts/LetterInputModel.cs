@@ -35,6 +35,13 @@ namespace Finegamedesign.Utils
 
 		public string backspaceCharacter = "\b";
 
+		public string tutorState = "none";
+		public string tutorText = "";
+		public string addKeyText = "To spell, you can also press a key on the KEYBOARD.";
+		public string backspaceKeyText = "To delete a letter, you can also press backspace or delete on the KEYBOARD.";
+
+		public bool isTutorKey = false;
+
 		// Hides extra letters.
 		// Otherwise, when going from a longer word to a shorter word,
 		// then the last letters are not hidden.
@@ -89,16 +96,32 @@ namespace Finegamedesign.Utils
 			}
 		}
 
-		public void Add(string letter)
+		public void Add(string letter, bool isButton = false)
 		{
 			letter = letter.ToUpper();
 			if (SetFirstButton(letter))
 			{
 				SetFirstSelect(letter);
 			}
+			MayTutorKey(isButton, addKeyText);
 		}
 
-		public void Backspace()
+		// If tutoring and pressing a button, sets tutor text and state.
+		// Otherwise if tutor state was showing, hides tutor state.
+		private void MayTutorKey(bool isButton, string text)
+		{
+			if (isTutorKey && isButton)
+			{
+				tutorState = "begin";
+				tutorText = text;
+			}
+			else if (tutorState != "none" && tutorState != "end")
+			{
+				tutorState = "end";
+			}
+		}
+
+		public void Backspace(bool isButton = false)
 		{
 			int index = DataUtil.Length(selection) - 1;
 			if (index < 0)
@@ -111,6 +134,7 @@ namespace Finegamedesign.Utils
 			int buttonIndex = buttonIndexes[index];
 			buttons.states[buttonIndex] = selectEndState;
 			DataUtil.RemoveAt(buttonIndexes, index);
+			MayTutorKey(isButton, backspaceKeyText);
 		}
 
 		private bool SetFirstButton(string letter)

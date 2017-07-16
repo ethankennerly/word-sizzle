@@ -26,6 +26,8 @@
 	- [ ] Button tap selects letter.
 - [ ] 2017-07-15 Jennifer Russ: Is the black circle a pan?
 	- [ ] Illustrates pan.
+- [ ] Delete button.
+- [ ] Jennifer plays on Android phone.
 - [ ] Displays letters darken over time.
 - [ ] Displays smoke over time.
 - [ ] Displays rows of blank squares.

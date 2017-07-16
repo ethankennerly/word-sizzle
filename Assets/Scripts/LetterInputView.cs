@@ -7,43 +7,35 @@ namespace Finegamedesign.Utils
 	{
 		public WordView buttons = new WordView();
 		public WordView selects = new WordView();
+		public GameObject tutor;
+		public GameObject tutorText;
 		public LetterInputController controller = new LetterInputController();
 
 		public void Setup()
 		{
 			MayFindObjects();
-
+			controller.model.isTutorKey = IsKeyboard();
 			controller.view = this;
 			controller.Setup();
 		}
 
+		private bool IsKeyboard()
+		{
+#if UNITY_WEBGL
+			return true;
+#elif UNITY_STANDALONE
+			return true;
+#else
+			return false;
+#endif
+		}
+
 		private void MayFindObjects()
 		{
-			if (buttons.states == null || buttons.states.Count == 0)
-			{
-				buttons.states = SceneNodeView.GetChildrenByPattern(
-					gameObject, "Buttons/LetterContainer_{0}",
-					controller.model.letterMax);
-			}
-			if (buttons.texts == null || buttons.texts.Count == 0)
-			{
-				buttons.texts = SceneNodeView.GetChildrenByPattern(
-					gameObject, "Buttons/LetterContainer_{0}/LetterButton/Text",
-					controller.model.letterMax);
-			}
-
-			if (selects.states == null || selects.states.Count == 0)
-			{
-				selects.states = SceneNodeView.GetChildrenByPattern(
-					gameObject, "Selects/LetterContainer_{0}",
-					controller.model.letterMax);
-			}
-			if (selects.texts == null || selects.texts.Count == 0)
-			{
-				selects.texts = SceneNodeView.GetChildrenByPattern(
-					gameObject, "Selects/LetterContainer_{0}/LetterButton/Text",
-					controller.model.letterMax);
-			}
+			buttons.MayFindObjects(gameObject, "Buttons/", controller.model.letterMax);
+			selects.MayFindObjects(gameObject, "Selects/", controller.model.letterMax);
+			tutor = SceneNodeView.GetChild(gameObject, "Tutor", tutor);
+			tutorText = SceneNodeView.GetChild(gameObject, "Tutor/TutorText", tutorText);
 		}
 	}
 }
