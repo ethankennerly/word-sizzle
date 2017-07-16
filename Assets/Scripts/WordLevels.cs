@@ -8,6 +8,7 @@ namespace Finegamedesign.Utils
 
 		public List<string> words;
 		public int index = 0;
+		public int step = 50;
 
 		public void Setup()
 		{
@@ -30,11 +31,16 @@ namespace Finegamedesign.Utils
 			return words[index];
 		}
 
-		public void Next()
+		public void Next(int nextStep = -999)
 		{
-			if (index + 1 < DataUtil.Length(words))
+			if (nextStep == -999)
 			{
-				++index;
+				nextStep = step;
+			}
+			int nextIndex = index + nextStep;
+			if (nextIndex < DataUtil.Length(words))
+			{
+				index = nextIndex;
 			}
 		}
 	}

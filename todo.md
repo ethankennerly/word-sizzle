@@ -9,10 +9,11 @@
 - [x] Spelling word advances to next word.
 - [x] In editor, Jennifer types to spell 30 words.
 - [x] Press ENTER to advance to next word.
-- [ ] 2017-07-15 Jennifer Russ: Are the words becoming more difficult?
-	- [ ] Advance 50 per step.
+- [x] 2017-07-15 Jennifer Russ: Are the words becoming more difficult?
+	- [x] Advance 50 per step.
 	- [ ] Advance logarithm.
 	- [ ] Composite z-scores of frequency and length.
+- [ ] Shuffle letters on buttons.
 - [ ] 2017-07-15 Jennifer Russ: Trackpad, click next. Not responding. x5
 	- [ ] Text:  Press ENTER key
 - [ ] Jennifer types to spell a word on the web.
