@@ -13,9 +13,9 @@
 	- [x] Advance 50 per step.
 	- [ ] Advance logarithm.
 	- [ ] Composite z-scores of frequency and length.
-- [ ] Shuffle letters on buttons.
+- [x] Shuffle letters on buttons.
 - [ ] 2017-07-15 Jennifer Russ: Trackpad, click next. Not responding. x5
-	- [ ] Text:  Press ENTER key
+	- [ ] Text on webGL build:  Press ENTER key
 - [ ] Jennifer types to spell a word on the web.
 - [ ] 2017-07-15 Jennifer Russ: Click You Win.  No response.  x2
 	- [ ] Bevel button.
