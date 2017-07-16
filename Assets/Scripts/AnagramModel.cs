@@ -16,6 +16,7 @@ namespace Finegamedesign.WordSizzle
 		private bool isFull = false;
 
 		public string state = "none";
+		public string winBeginState = "win_begin";
 
 		public Words words = new Words();
 		public WordLevels levels = new WordLevels();
@@ -60,7 +61,7 @@ namespace Finegamedesign.WordSizzle
 				isComplete = words.all.ContainsKey(selection);
 				if (isComplete && !wasComplete)
 				{
-					state = "win_begin";
+					state = winBeginState;
 				}
 			}
 		}

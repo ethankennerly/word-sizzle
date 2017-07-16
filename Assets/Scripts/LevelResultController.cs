@@ -18,12 +18,20 @@ namespace Finegamedesign.WordSizzle
 		public void Update()
 		{
 			input.Update();
-			isNextNow = view.nextButton == input.view.target;
+			UpdateNext();
+			AnimationView.SetState(view.animatorOwner, model.state);
+		}
+
+		// Pressing next button or enter key advances to next word.
+		private void UpdateNext()
+		{
+			isNextNow = model.state == model.winBeginState
+				&& (view.nextButton == input.view.target
+					|| KeyView.InputString() == KeyView.newlineCharacter);
 			if (isNextNow)
 			{
 				model.Populate();
 			}
-			AnimationView.SetState(view.animatorOwner, model.state);
 		}
 	}
 }

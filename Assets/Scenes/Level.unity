@@ -237,7 +237,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -768,7 +768,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -892,7 +892,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -1016,7 +1016,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -1264,7 +1264,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -1764,6 +1764,7 @@ MonoBehaviour:
       buttonIndexes: 
       selection: 
       emptyState: 
+      noneState: none
       beginState: begin
       selectBeginState: select_begin
       selectEndState: select_end
@@ -1984,8 +1985,11 @@ MonoBehaviour:
     model:
       selection: 
       word: 
+      isPopulateNext: 0
+      isPopulateNow: 0
       isComplete: 0
       state: none
+      winBeginState: win_begin
 --- !u!1 &1015835092
 GameObject:
   m_ObjectHideFlags: 0
@@ -2109,7 +2113,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -2211,8 +2215,11 @@ MonoBehaviour:
     model:
       selection: 
       word: 
+      isPopulateNext: 0
+      isPopulateNow: 0
       isComplete: 0
       state: none
+      winBeginState: win_begin
 --- !u!4 &1294802842
 Transform:
   m_ObjectHideFlags: 0
@@ -2653,7 +2660,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -2981,7 +2988,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -3105,7 +3112,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -3572,7 +3579,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -3696,7 +3703,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -3820,7 +3827,7 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -38.1
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
