@@ -530,3 +530,11 @@ Assets/Scripts/WordView.cs(34,6): error CS0103: The name `gameObject' does not e
  
 (Filename: Assets/Scripts/WordView.cs Line: 34)
 
+
+
+Sat, Jul 22, 2017  2:35:10 PM
+NullReferenceException: Object reference not set to an instance of an object
+Finegamedesign.WordSizzle.AnagramView.Setup () (at Assets/Scripts/AnagramView.cs:28)
+Finegamedesign.WordSizzle.AnagramView.Start () (at Assets/Scripts/AnagramView.cs:15)
+
+
