@@ -538,3 +538,9 @@ Finegamedesign.WordSizzle.AnagramView.Setup () (at Assets/Scripts/AnagramView.cs
 Finegamedesign.WordSizzle.AnagramView.Start () (at Assets/Scripts/AnagramView.cs:15)
 
 
+Sat, Jul 22, 2017  2:58:22 PM
+InvalidOperationException: Expected child <Selects/LetterContainer_10> in <Canvas/LetterInputView>
+Finegamedesign.Utils.SceneNodeView.GetChild (UnityEngine.GameObject parent, System.String name, UnityEngine.GameObject overrideChild) (at Assets/UnityToykit/SceneNodeView.cs:30)
+Finegamedesign.Utils.SceneNodeView.GetChildrenByPattern (UnityEngine.GameObject parent, System.String namePattern, Int32 countMax) (at Assets/UnityToykit/SceneNodeView.cs:45)
+Finegamedesign.Utils.WordView.MayFindObjects (UnityEngine.GameObject parent, System.String pathPrefix, Int32 letterMax) (at Assets/Scripts/WordView.cs:21)
+Finegamedesign.Utils.LetterInputView.MayFindObjects () (at Assets/Scripts/LetterInputView.cs:36)
