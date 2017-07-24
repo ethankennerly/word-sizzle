@@ -7,6 +7,7 @@ namespace Finegamedesign.Utils
 	{
 		public WordView buttons = new WordView();
 		public WordView selects = new WordView();
+		public GameObject backspaceButton;
 		public GameObject tutor;
 		public GameObject tutorText;
 		public LetterInputController controller = new LetterInputController();
@@ -36,6 +37,7 @@ namespace Finegamedesign.Utils
 			selects.MayFindObjects(gameObject, "Selects/", controller.model.letterMax);
 			tutor = SceneNodeView.GetChild(gameObject, "Tutor", tutor);
 			tutorText = SceneNodeView.GetChild(gameObject, "Tutor/TutorText", tutorText);
+			backspaceButton = SceneNodeView.GetChild(gameObject, "BackspaceButton", backspaceButton);
 		}
 	}
 }

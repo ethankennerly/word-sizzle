@@ -28,10 +28,20 @@
 	- [x] Button tap selects letter.
 	- [x] Tap selection backspaces letter.
 - [ ] 2017-07-15 Jennifer Russ: Is the black circle a pan?
-	- [ ] Illustrates pan.
+	- [x] Illustrates pan.
+	- [ ] Animates pan.
+	- [ ] Particles.
 - [ ] Jennifer plays on Android phone.
-- [ ] Delete button.
+- [ ] Delete button on mobile.
+- [ ] 2017-07-22 Jennifer Russ: Hint????
+- [ ] 2017-07-22 Jennifer Russ: Is the radial progress meter moving?
+- [ ] 2017-07-22 Jennifer Russ: Show which letter buttons were selected?
+- [ ] 2017-07-22 Jennifer Russ: Shuffle?
+- [ ] 2017-07-22 Jennifer Russ: Harder when letters in a circle than in a row.
+- [ ] 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.
+- [ ] 2017-07-22 Jennifer Russ: [When jumping each 50, there are only about 60 anagrams to solve.]
 - [ ] Displays letters darken over time.
+- [ ] Button unburns letters.
 - [ ] Displays smoke over time.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.

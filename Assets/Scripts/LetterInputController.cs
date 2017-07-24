@@ -25,31 +25,37 @@ namespace Finegamedesign.Utils
 			model.backspaceCharacter = KeyView.backspaceCharacter;
 			button.view.Listens(view.buttons.buttons);
 			button.view.Listens(view.selects.buttons);
+			button.view.Listen(view.backspaceButton);
 		}
 
 		public void Update()
 		{
 			UpdateInput();
 			UpdateLetters();
+			AnimationView.SetState(view.tutor, model.tutorState);
+			TextView.SetText(view.tutorText, model.tutorText);
 		}
 
 		private void UpdateInput()
 		{
 			model.Input(KeyView.InputList());
 			button.Update();
-			int addIndex = view.buttons.buttons.IndexOf(button.view.target);
+			var target = button.view.target;
+			if (target == null)
+			{
+				return;
+			}
+			int addIndex = view.buttons.buttons.IndexOf(target);
 			if (addIndex >= 0)
 			{
 				string letter = model.buttons.texts[addIndex];
 				model.Add(letter, true);
 			}
-			int backspaceIndex = view.selects.buttons.IndexOf(button.view.target);
-			if (backspaceIndex >= 0)
+			int backspaceIndex = view.selects.buttons.IndexOf(target);
+			if (backspaceIndex >= 0 || target == view.backspaceButton)
 			{
 				model.Backspace(true);
 			}
-			AnimationView.SetState(view.tutor, model.tutorState);
-			TextView.SetText(view.tutorText, model.tutorText);
 		}
 
 		private void UpdateLetters()
