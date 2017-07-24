@@ -21,7 +21,8 @@ namespace Finegamedesign.Utils
 		public WordViewModel buttons = new WordViewModel();
 		public WordViewModel selects = new WordViewModel();
 		public WordViewModel submits = new WordViewModel();
-		public WordViewModel hints = new WordViewModel();
+
+		public HintModel hint = new HintModel();
 
 		public List<int> buttonIndexes = new List<int>();
 
@@ -55,6 +56,7 @@ namespace Finegamedesign.Utils
 			int length = DataUtil.Length(word);
 			int index, end;
 			buttons.texts = DataUtil.Split(word, "");
+			hint.Populate(buttons.texts);
 			Deck.ShuffleList(buttons.texts);
 			buttons.states.Clear();
 			for (index = 0, end = length; index < end; ++index)
@@ -92,6 +94,9 @@ namespace Finegamedesign.Utils
 				{
 					Backspace();
 				}
+				else if (hint.Input(input))
+				{
+				}
 				else
 				{
 					Add(input);
@@ -117,6 +122,12 @@ namespace Finegamedesign.Utils
 				tutorText = taskText;
 				isTutorTask = false;
 			}
+		}
+
+		public void HintButton()
+		{
+			hint.Select(true);
+			MayTutorKey(true, hint.tutorKeyText);
 		}
 
 		// If tutoring and pressing a button, sets tutor text and state.

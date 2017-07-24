@@ -26,6 +26,7 @@ namespace Finegamedesign.Utils
 			button.view.Listens(view.buttons.buttons);
 			button.view.Listens(view.selects.buttons);
 			button.view.Listen(view.backspaceButton);
+			button.view.Listen(view.hintButton);
 		}
 
 		public void Update()
@@ -50,11 +51,18 @@ namespace Finegamedesign.Utils
 			{
 				string letter = model.buttons.texts[addIndex];
 				model.Add(letter, true);
+				return;
 			}
 			int backspaceIndex = view.selects.buttons.IndexOf(target);
 			if (backspaceIndex >= 0 || target == view.backspaceButton)
 			{
 				model.Backspace(true);
+				return;
+			}
+			if (target == view.hintButton)
+			{
+				model.HintButton();
+				return;
 			}
 		}
 
@@ -65,6 +73,9 @@ namespace Finegamedesign.Utils
 
 			AnimationView.SetStates(view.selects.states, model.selects.states);
 			TextView.SetTexts(view.selects.texts, model.selects.texts);
+
+			AnimationView.SetStates(view.hints.states, model.hint.selects.states);
+			TextView.SetTexts(view.hints.texts, model.hint.selects.texts);
 		}
 	}
 }

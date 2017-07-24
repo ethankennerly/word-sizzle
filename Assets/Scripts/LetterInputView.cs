@@ -7,10 +7,17 @@ namespace Finegamedesign.Utils
 	{
 		public WordView buttons = new WordView();
 		public WordView selects = new WordView();
+
+		public WordView hints = new WordView();
+		public GameObject hintButton;
+
 		public GameObject backspaceButton;
+
 		public GameObject tutor;
 		public GameObject tutorText;
+
 		public LetterInputController controller = new LetterInputController();
+
 
 		public void Setup()
 		{
@@ -38,6 +45,9 @@ namespace Finegamedesign.Utils
 			tutor = SceneNodeView.GetChild(gameObject, "Tutor", tutor);
 			tutorText = SceneNodeView.GetChild(gameObject, "Tutor/TutorText", tutorText);
 			backspaceButton = SceneNodeView.GetChild(gameObject, "BackspaceButton", backspaceButton);
+
+			hints.MayFindObjects(gameObject, "Hints/", controller.model.letterMax);
+			hintButton = SceneNodeView.GetChild(gameObject, "HintButton", hintButton);
 		}
 	}
 }

@@ -544,3 +544,212 @@ Finegamedesign.Utils.SceneNodeView.GetChild (UnityEngine.GameObject parent, Syst
 Finegamedesign.Utils.SceneNodeView.GetChildrenByPattern (UnityEngine.GameObject parent, System.String namePattern, Int32 countMax) (at Assets/UnityToykit/SceneNodeView.cs:45)
 Finegamedesign.Utils.WordView.MayFindObjects (UnityEngine.GameObject parent, System.String pathPrefix, Int32 letterMax) (at Assets/Scripts/WordView.cs:21)
 Finegamedesign.Utils.LetterInputView.MayFindObjects () (at Assets/Scripts/LetterInputView.cs:36)
+
+
+
+Mon, Jul 24, 2017  8:36:15 AM
+Assets/Scripts/HintModel.cs(21,23): error CS1041: Identifier expected, `int' is a keyword
+			for (int index = 0, int end = froms.Count; index < end; ++index)
+
+
+Mon, Jul 24, 2017  8:37:53 AM
+Assets/Scripts/HintModel.cs(30,14): error CS1501: No overload for method `Copy' takes `1' arguments
+Assets/Scripts/HintModel.cs(18,23): (Location of the symbol related to previous error)
+Assets/Scripts/HintModel.cs(33,18): error CS0031: Constant value `0' cannot be converted to a `bool'
+Assets/Scripts/HintModel.cs(48,8): error CS0019: Operator `>=' cannot be applied to operands of type `bool' and `int'
+Assets/Scripts/HintModel.cs(53,39): error CS1502: The best overloaded method match for `System.Collections.Generic.List<string>.this[int]' has some invalid arguments
+C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll (Location of the symbol related to previous error)
+Assets/Scripts/HintModel.cs(53,40): error CS1503: Argument `#1' cannot convert `bool' expression to type `int'
+Assets/Scripts/HintModel.cs(53,12): error CS1061: Type `Finegamedesign.Utils.WordViewModel' does not contain a definition for `text' and no extension method `text' of type `Finegamedesign.Utils.WordViewModel' could be found. Are you missing an assembly reference?
+Assets/Scripts/WordViewModel.cs(17,22): (Location of the symbol related to previous error)
+Assets/Scripts/HintModel.cs(54,18): error CS1502: The best overloaded method match for `System.Collections.Generic.List<string>.this[int]' has some invalid arguments
+C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\unity\mscorlib.dll (Location of the symbol related to previous error)
+Assets/Scripts/HintModel.cs(54,19): error CS1503: Argument `#1' cannot convert `bool' expression to type `int'
+Assets/Scripts/HintModel.cs(55,4): error CS0023: The `++' operator cannot be applied to operand of type `bool'
+Assets/Scripts/HintModel.cs(11,29): error CS0031: Constant value `0' cannot be converted to a `bool'
+Assets/Scripts/LetterInputController.cs(29,28): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hintButton' and no extension method `hintButton' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+Assets/Scripts/LetterInputView.cs(6,22): (Location of the symbol related to previous error)
+Assets/Scripts/LetterInputController.cs(62,23): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hintButton' and no extension method `hintButton' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+Assets/Scripts/LetterInputView.cs(6,22): (Location of the symbol related to previous error)
+Assets/Scripts/LetterInputController.cs(77,33): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hints' and no extension method `hints' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+Assets/Scripts/LetterInputView.cs(6,22): (Location of the symbol related to previous error)
+Assets/Scripts/LetterInputController.cs(78,27): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hints' and no extension method `hints' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+Assets/Scripts/LetterInputView.cs(6,22): (Location of the symbol related to previous error)
+-----EndCompilerOutput---------------
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+Assets/Scripts/HintModel.cs(30,14): error CS1501: No overload for method `Copy' takes `1' arguments
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 30)
+
+Assets/Scripts/HintModel.cs(33,18): error CS0031: Constant value `0' cannot be converted to a `bool'
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 33)
+
+Assets/Scripts/HintModel.cs(48,8): error CS0019: Operator `>=' cannot be applied to operands of type `bool' and `int'
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 48)
+
+Assets/Scripts/HintModel.cs(53,39): error CS1502: The best overloaded method match for `System.Collections.Generic.List<string>.this[int]' has some invalid arguments
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 53)
+
+Assets/Scripts/HintModel.cs(53,40): error CS1503: Argument `#1' cannot convert `bool' expression to type `int'
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 53)
+
+Assets/Scripts/HintModel.cs(53,12): error CS1061: Type `Finegamedesign.Utils.WordViewModel' does not contain a definition for `text' and no extension method `text' of type `Finegamedesign.Utils.WordViewModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 53)
+
+Assets/Scripts/HintModel.cs(54,18): error CS1502: The best overloaded method match for `System.Collections.Generic.List<string>.this[int]' has some invalid arguments
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 54)
+
+Assets/Scripts/HintModel.cs(54,19): error CS1503: Argument `#1' cannot convert `bool' expression to type `int'
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 54)
+
+Assets/Scripts/HintModel.cs(55,4): error CS0023: The `++' operator cannot be applied to operand of type `bool'
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 55)
+
+Assets/Scripts/HintModel.cs(11,29): error CS0031: Constant value `0' cannot be converted to a `bool'
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 11)
+
+Assets/Scripts/LetterInputController.cs(29,28): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hintButton' and no extension method `hintButton' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 29)
+
+Assets/Scripts/LetterInputController.cs(62,23): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hintButton' and no extension method `hintButton' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 62)
+
+Assets/Scripts/LetterInputController.cs(77,33): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hints' and no extension method `hints' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 77)
+
+Assets/Scripts/LetterInputController.cs(78,27): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hints' and no extension method `hints' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 78)
+
+
+Mon, Jul 24, 2017  8:40:02 AM
+Assets/Scripts/HintModel.cs(53,12): error CS1061: Type `Finegamedesign.Utils.WordViewModel' does not contain a definition for `text' and no extension method `text' of type `Finegamedesign.Utils.WordViewModel' could be found. Are you missing an assembly reference?
+Assets/Scripts/WordViewModel.cs(17,22): (Location of the symbol related to previous error)
+Assets/Scripts/LetterInputController.cs(29,28): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hintButton' and no extension method `hintButton' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+Assets/Scripts/LetterInputView.cs(6,22): (Location of the symbol related to previous error)
+Assets/Scripts/LetterInputController.cs(62,23): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hintButton' and no extension method `hintButton' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+Assets/Scripts/LetterInputView.cs(6,22): (Location of the symbol related to previous error)
+Assets/Scripts/LetterInputController.cs(77,33): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hints' and no extension method `hints' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+Assets/Scripts/LetterInputView.cs(6,22): (Location of the symbol related to previous error)
+Assets/Scripts/LetterInputController.cs(78,27): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hints' and no extension method `hints' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+Assets/Scripts/LetterInputView.cs(6,22): (Location of the symbol related to previous error)
+-----EndCompilerOutput---------------
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+Assets/Scripts/HintModel.cs(53,12): error CS1061: Type `Finegamedesign.Utils.WordViewModel' does not contain a definition for `text' and no extension method `text' of type `Finegamedesign.Utils.WordViewModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 53)
+
+Assets/Scripts/LetterInputController.cs(29,28): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hintButton' and no extension method `hintButton' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 29)
+
+Assets/Scripts/LetterInputController.cs(62,23): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hintButton' and no extension method `hintButton' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 62)
+
+Assets/Scripts/LetterInputController.cs(77,33): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hints' and no extension method `hints' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 77)
+
+Assets/Scripts/LetterInputController.cs(78,27): error CS1061: Type `Finegamedesign.Utils.LetterInputView' does not contain a definition for `hints' and no extension method `hints' of type `Finegamedesign.Utils.LetterInputView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 78)
+
+
+
+
+Mon, Jul 24, 2017  8:43:16 AM
+UnassignedReferenceException: The variable hintButton of LetterInputView has not been assigned.
+You probably need to assign the hintButton variable of the LetterInputView script in the inspector.
+  at (wrapper managed-to-native) UnityEngine.GameObject:GetComponentFastPath (System.Type,intptr)
+  at UnityEngine.GameObject.GetComponent[ButtonBehaviour] () [0x00020] in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:38 
+  at Finegamedesign.Utils.ButtonView.Listen (UnityEngine.GameObject button) [0x00002] in C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\ButtonView.cs:38 
+  at Finegamedesign.Utils.LetterInputController.Setup () [0x00082] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:29 
+  at Finegamedesign.Utils.LetterInputView.Setup () [0x0002f] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputView.cs:27 
+  at Finegamedesign.WordSizzle.AnagramController.Setup () [0x00051] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:15 
+  at Finegamedesign.WordSizzle.AnagramView.Setup () [0x00078] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:30 
+  at Finegamedesign.WordSizzle.AnagramView.Start () [0x00002] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:15 
+ 
+(Filename: Assets/UnityToykit/ButtonView.cs Line: 38)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.WordSizzle.AnagramModel.UpdateComplete () [0x00049] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramModel.cs:61 
+  at Finegamedesign.WordSizzle.AnagramModel.Update (Single deltaTime) [0x00015] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramModel.cs:52 
+  at Finegamedesign.WordSizzle.AnagramController.Update (Single deltaTime) [0x00057] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:29 
+  at Finegamedesign.WordSizzle.AnagramView.Update () [0x0000c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:35 
+ 
+(Filename: Assets/Scripts/AnagramModel.cs Line: 61)
+
+
+Mon, Jul 24, 2017  8:44:20 AM
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[System.String].set_Item (Int32 index, System.String value) [0x00013] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:639 
+  at Finegamedesign.Utils.HintModel.Select (Boolean isButtonPressed) [0x00048] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\HintModel.cs:53 
+  at Finegamedesign.Utils.LetterInputModel.HintButton () [0x00008] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputModel.cs:129 
+  at Finegamedesign.Utils.LetterInputController.UpdateInput () [0x000ea] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:64 
+  at Finegamedesign.Utils.LetterInputController.Update () [0x00002] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:34 
+  at Finegamedesign.WordSizzle.AnagramController.Update (Single deltaTime) [0x00011] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:26 
+  at Finegamedesign.WordSizzle.AnagramView.Update () [0x0000c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:35 
+
+
+Mon, Jul 24, 2017  8:46:44 AM
+Assets/Scripts/HintModel.cs(35,23): error CS0103: The name `emptyState' does not exist in the current context
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 35)
+
+Assets/Scripts/HintModel.cs(36,24): error CS0103: The name `noneState' does not exist in the current context
+ 
+(Filename: Assets/Scripts/HintModel.cs Line: 36)
+
+
+Mon, Jul 24, 2017  8:48:17 AM
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) [0x0000c] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633 
+  at Finegamedesign.Utils.AnimationView.SetStates (System.Collections.Generic.List`1 animatorOwners, System.Collections.Generic.List`1 states) [0x00012] in C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\AnimationView.cs:68 
+  at Finegamedesign.Utils.LetterInputController.UpdateLetters () [0x000ba] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:77 
+  at Finegamedesign.Utils.LetterInputController.Update () [0x00008] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:35 
+  at Finegamedesign.WordSizzle.AnagramController.Update (Single deltaTime) [0x00011] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:26 
+  at Finegamedesign.WordSizzle.AnagramView.Update () [0x0000c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:35 
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 633)
+
+
+Mon, Jul 24, 2017  8:49:48 AM
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) [0x0000c] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633 
+  at Finegamedesign.Utils.AnimationView.SetStates (System.Collections.Generic.List`1 animatorOwners, System.Collections.Generic.List`1 states) [0x00012] in C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\AnimationView.cs:68 
+  at Finegamedesign.Utils.LetterInputController.UpdateLetters () [0x000ba] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:77 
+  at Finegamedesign.Utils.LetterInputController.Update () [0x00008] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:35 
+  at Finegamedesign.WordSizzle.AnagramController.Update (Single deltaTime) [0x00011] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:26 
+  at Finegamedesign.WordSizzle.AnagramView.Update () [0x0000c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:35 
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 633)
+
+
+Mon, Jul 24, 2017  8:52:37 AM
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) [0x0000c] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633 
+  at Finegamedesign.Utils.AnimationView.SetStates (System.Collections.Generic.List`1 animatorOwners, System.Collections.Generic.List`1 states) [0x00012] in C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\AnimationView.cs:68 
+  at Finegamedesign.Utils.LetterInputController.UpdateLetters () [0x000ba] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:77 
+  at Finegamedesign.Utils.LetterInputController.Update () [0x00008] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputController.cs:35 
+  at Finegamedesign.WordSizzle.AnagramController.Update (Single deltaTime) [0x00011] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:26 
+  at Finegamedesign.WordSizzle.AnagramView.Update () [0x0000c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:35 
+ 
+(Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 633)

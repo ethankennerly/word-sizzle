@@ -32,8 +32,8 @@
 	- [ ] Animates pan.
 	- [ ] Particles.
 - [ ] Jennifer plays on Android phone.
-- [ ] Delete button on mobile.
-- [ ] 2017-07-22 Jennifer Russ: Hint????
+- [x] Delete button on mobile.
+- [x] 2017-07-22 Jennifer Russ: Hint????
 - [ ] 2017-07-22 Jennifer Russ: Is the radial progress meter moving?
 - [ ] 2017-07-22 Jennifer Russ: Show which letter buttons were selected?
 - [ ] 2017-07-22 Jennifer Russ: Shuffle?
