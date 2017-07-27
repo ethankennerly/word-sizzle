@@ -753,3 +753,87 @@ Parameter name: index
   at Finegamedesign.WordSizzle.AnagramView.Update () [0x0000c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:35 
  
 (Filename: /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs Line: 633)
+
+
+
+Thu, Jul 27, 2017  7:52:05 AM
+Assets/Scripts/LetterInputModel.cs(91,9): error CS0411: The type arguments for method `Deck.ShuffleList<T>(System.Collections.Generic.List<T>)' cannot be inferred from the usage. Try specifying the type arguments explicitly
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 91)
+
+			Deck.ShuffleList(buttons);
+
+
+Thu, Jul 27, 2017  7:58:19 AM
+Assets/Scripts/LetterInputModel.cs(83,4): error CS0103: The name `ResetButtonStates' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 83)
+
+Assets/Scripts/LetterInputModel.cs(89,9): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 89)
+
+Assets/Scripts/LetterInputModel.cs(89,20): error CS0103: The name `end' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 89)
+
+Assets/Scripts/LetterInputModel.cs(89,58): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 89)
+
+Assets/Scripts/LetterInputModel.cs(89,66): error CS0103: The name `end' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 89)
+
+Assets/Scripts/LetterInputModel.cs(89,58): warning CS1718: A comparison made to same variable. Did you mean to compare something else?
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 89)
+
+Assets/Scripts/LetterInputModel.cs(89,73): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 89)
+
+Assets/Scripts/LetterInputModel.cs(93,11): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 93)
+
+Assets/Scripts/LetterInputModel.cs(93,32): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 93)
+
+Thu, Jul 27, 2017  7:59:46 AM
+Assets/Scripts/LetterInputModel.cs(83,4): error CS0103: The name `ResetButtonStates' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 83)
+
+Assets/Scripts/LetterInputModel.cs(93,11): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 93)
+
+Assets/Scripts/LetterInputModel.cs(93,32): error CS0103: The name `index' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 93)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.002119 seconds (Nothing changed)
+
+			for (int index = 0, end = DataUtil.Length(buttons.texts); index < end; ++index)
+			{
+				buttons.states.Add(beginState);
+			}
+			for (; index < letterMax; ++index)
+
+
+Thu, Jul 27, 2017  8:08:23 AM
+Assets/Scripts/LetterInputModel.cs(65,31): error CS1525: Unexpected symbol `='
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 65)
+		public void Shuffle(isButton = false)
+
+
+Thu, Jul 27, 2017  8:09:26 AM
+Assets/Scripts/LetterInputModel.cs(78,33): error CS0103: The name `word' does not exist in the current context
+ 
+(Filename: Assets/Scripts/LetterInputModel.cs Line: 78)
+		private void ClearSelection()
+		{
+			int length = DataUtil.Length(word);

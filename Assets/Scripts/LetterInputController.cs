@@ -27,6 +27,7 @@ namespace Finegamedesign.Utils
 			button.view.Listens(view.selects.buttons);
 			button.view.Listen(view.backspaceButton);
 			button.view.Listen(view.hintButton);
+			button.view.Listen(view.shuffleButton);
 		}
 
 		public void Update()
@@ -62,6 +63,11 @@ namespace Finegamedesign.Utils
 			if (target == view.hintButton)
 			{
 				model.HintButton();
+				return;
+			}
+			if (target == view.shuffleButton)
+			{
+				model.Shuffle(true);
 				return;
 			}
 		}

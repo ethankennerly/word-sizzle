@@ -12,6 +12,7 @@ namespace Finegamedesign.Utils
 		public GameObject hintButton;
 
 		public GameObject backspaceButton;
+		public GameObject shuffleButton;
 
 		public GameObject tutor;
 		public GameObject tutorText;
@@ -45,6 +46,7 @@ namespace Finegamedesign.Utils
 			tutor = SceneNodeView.GetChild(gameObject, "Tutor", tutor);
 			tutorText = SceneNodeView.GetChild(gameObject, "Tutor/TutorText", tutorText);
 			backspaceButton = SceneNodeView.GetChild(gameObject, "BackspaceButton", backspaceButton);
+			shuffleButton = SceneNodeView.GetChild(gameObject, "ShuffleButton", shuffleButton);
 
 			hints.MayFindObjects(gameObject, "Hints/", controller.model.letterMax);
 			hintButton = SceneNodeView.GetChild(gameObject, "HintButton", hintButton);

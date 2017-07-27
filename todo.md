@@ -38,10 +38,11 @@
 	- [x] Pan has no highlight on rim.
 - [x] 2017-07-22 Jennifer Russ: Show which letter buttons were selected?
 - [x] When press space during review screen, does not show hint.
-- [ ] 2017-07-22 Jennifer Russ: Shuffle?
+- [x] 2017-07-22 Jennifer Russ: Shuffle?
 - [ ] 2017-07-22 Jennifer Russ: Harder when letters in a circle than in a row.
 - [ ] 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.
 - [ ] 2017-07-22 Jennifer Russ: [When jumping each 50, there are only about 60 anagrams to solve.]
+- [ ] On keyboard device, read letters on buttons.
 - [ ] Displays letters darken over time.
 - [ ] Button unburns letters.
 - [ ] Displays smoke over time.
@@ -51,12 +52,12 @@
 - [ ] Spelling a word replaces letters with light letters.
 - [ ] Sounds sizzle, crackle, explosion.
 - [ ] Jennifer types to spell a word on the web.
-- [ ] Reads 10 words.
 - [ ] Jennifer drags to spell a word on a phone.
 - [ ] Earns 1 coin for each letter of a word spelled quickly.
 - [ ] Spends 100 coins to get a hint of a letter.
 - [ ] Spelling longest word unlocks next level.
 - [ ] Reads QUICK when spelling quickly.
+- [ ] Animates shuffle.
 - [ ] Upgrades pan to burn slower.
 - [ ] Coin particles lock on to coin count.
 - [ ] Coin count increments as each particle hits it.

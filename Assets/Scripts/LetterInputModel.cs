@@ -35,12 +35,14 @@ namespace Finegamedesign.Utils
 		public string selectEndState = "select_end";
 
 		public string backspaceCharacter = "\b";
+		public string shuffleCharacter = "\n";
 
 		public string tutorState = "none";
 		public string tutorText = "";
 		public string taskText = "Spell a word.";
 		public string addKeyText = "To spell, you can also press a key on the KEYBOARD.";
-		public string backspaceKeyText = "To delete a letter, you can also press backspace or delete on the KEYBOARD.";
+		public string shuffleKeyText = "To shuffle, you can also press the enter key on the KEYBOARD.";
+		public string backspaceKeyText = "To delete a letter, you can also press backspace or delete key on the KEYBOARD.";
 
 		public bool isTutorKey = false;
 		public bool isTutorTask = true;
@@ -54,13 +56,30 @@ namespace Finegamedesign.Utils
 		// Otherwise, the spelling order can be inferred.
 		public void Populate(string word)
 		{
-			int length = DataUtil.Length(word);
-			int index, end;
 			buttons.texts = DataUtil.Split(word, "");
 			hint.Populate(buttons.texts);
+			isEnabled = true;
+			Shuffle();
+			MayTutorTask();
+		}
+
+		public void Shuffle(bool isButton = false)
+		{
+			if (!isEnabled)
+			{
+				return;
+			}
 			Deck.ShuffleList(buttons.texts);
+			ClearSelection();
+			MayTutorKey(isButton, shuffleKeyText);
+		}
+
+		private void ClearSelection()
+		{
+			int length = DataUtil.Length(buttons.texts);
+			int index, end;
 			buttons.states.Clear();
-			for (index = 0, end = length; index < end; ++index)
+			for (index = 0, end = DataUtil.Length(buttons.texts); index < end; ++index)
 			{
 				buttons.states.Add(beginState);
 			}
@@ -83,7 +102,6 @@ namespace Finegamedesign.Utils
 			}
 			selection = "";
 			buttonIndexes.Clear();
-			MayTutorTask();
 		}
 
 		public void Input(List<string> inputs)
@@ -95,7 +113,11 @@ namespace Finegamedesign.Utils
 			for (int index = 0, end = DataUtil.Length(inputs); index < end; ++index)
 			{
 				string input = inputs[index];
-				if (input == backspaceCharacter)
+				if (input == shuffleCharacter)
+				{
+					Shuffle();
+				}
+				else if (input == backspaceCharacter)
 				{
 					Backspace();
 				}
