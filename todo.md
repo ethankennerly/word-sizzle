@@ -35,6 +35,7 @@
 - [x] Delete button on mobile.
 - [x] 2017-07-22 Jennifer Russ: Hint????
 - [ ] 2017-07-22 Jennifer Russ: Is the radial progress meter moving?
+	- [x] Pan has no highlight on rim.
 - [ ] 2017-07-22 Jennifer Russ: Show which letter buttons were selected?
 - [ ] 2017-07-22 Jennifer Russ: Shuffle?
 - [ ] 2017-07-22 Jennifer Russ: Harder when letters in a circle than in a row.
