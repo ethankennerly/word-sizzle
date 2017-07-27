@@ -34,9 +34,10 @@
 - [ ] Jennifer plays on Android phone.
 - [x] Delete button on mobile.
 - [x] 2017-07-22 Jennifer Russ: Hint????
-- [ ] 2017-07-22 Jennifer Russ: Is the radial progress meter moving?
+- [x] 2017-07-22 Jennifer Russ: Is the radial progress meter moving?
 	- [x] Pan has no highlight on rim.
 - [ ] 2017-07-22 Jennifer Russ: Show which letter buttons were selected?
+- [ ] When press space during review screen, does not show hint.  Instead advances.
 - [ ] 2017-07-22 Jennifer Russ: Shuffle?
 - [ ] 2017-07-22 Jennifer Russ: Harder when letters in a circle than in a row.
 - [ ] 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.
