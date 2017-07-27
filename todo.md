@@ -36,8 +36,8 @@
 - [x] 2017-07-22 Jennifer Russ: Hint????
 - [x] 2017-07-22 Jennifer Russ: Is the radial progress meter moving?
 	- [x] Pan has no highlight on rim.
-- [ ] 2017-07-22 Jennifer Russ: Show which letter buttons were selected?
-- [ ] When press space during review screen, does not show hint.  Instead advances.
+- [x] 2017-07-22 Jennifer Russ: Show which letter buttons were selected?
+- [x] When press space during review screen, does not show hint.
 - [ ] 2017-07-22 Jennifer Russ: Shuffle?
 - [ ] 2017-07-22 Jennifer Russ: Harder when letters in a circle than in a row.
 - [ ] 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.

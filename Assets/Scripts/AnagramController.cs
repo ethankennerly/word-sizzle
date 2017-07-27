@@ -21,8 +21,11 @@ namespace Finegamedesign.WordSizzle
 			view.input.controller.model.Populate(model.word);
 		}
 
+		// When word is complete, disables input.
+		// Otherwise, during review, pressing space shows next letter.
 		public void Update(float deltaTime)
 		{
+			view.input.controller.model.isEnabled = !model.isComplete;
 			view.input.controller.Update();
 			model.selection = view.input.controller.model.selection;
 			view.result.controller.Update();

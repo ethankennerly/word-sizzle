@@ -44,6 +44,7 @@ namespace Finegamedesign.Utils
 
 		public bool isTutorKey = false;
 		public bool isTutorTask = true;
+		public bool isEnabled = true;
 
 		// Hides extra letters.
 		// Otherwise, when going from a longer word to a shorter word,
@@ -87,6 +88,10 @@ namespace Finegamedesign.Utils
 
 		public void Input(List<string> inputs)
 		{
+			if (!isEnabled)
+			{
+				return;
+			}
 			for (int index = 0, end = DataUtil.Length(inputs); index < end; ++index)
 			{
 				string input = inputs[index];
@@ -106,6 +111,10 @@ namespace Finegamedesign.Utils
 
 		public void Add(string letter, bool isButton = false)
 		{
+			if (!isEnabled)
+			{
+				return;
+			}
 			letter = letter.ToUpper();
 			if (SetFirstButton(letter))
 			{
@@ -126,6 +135,10 @@ namespace Finegamedesign.Utils
 
 		public void HintButton()
 		{
+			if (!isEnabled)
+			{
+				return;
+			}
 			hint.Select(true);
 			MayTutorKey(true, hint.tutorKeyText);
 		}
@@ -147,6 +160,10 @@ namespace Finegamedesign.Utils
 
 		public void Backspace(bool isButton = false)
 		{
+			if (!isEnabled)
+			{
+				return;
+			}
 			int index = DataUtil.Length(selection) - 1;
 			if (index < 0)
 			{
