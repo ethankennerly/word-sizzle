@@ -35,14 +35,17 @@ namespace Finegamedesign.Utils
 		public string selectEndState = "select_end";
 
 		public string backspaceCharacter = "\b";
-		public string shuffleCharacter = "\n";
+		public string shuffleCharacter = " ";
 
 		public string tutorState = "none";
 		public string tutorText = "";
 		public string taskText = "Spell a word.";
+
 		public string addKeyText = "To spell, you can also press a key on the KEYBOARD.";
-		public string shuffleKeyText = "To shuffle, you can also press the enter key on the KEYBOARD.";
+		public string shuffleKeyText = "To shuffle, you can also press the SPACE bar on the KEYBOARD.";
+		public string shuffleButtonKeyText = "Shuffle\n[Space]";
 		public string backspaceKeyText = "To delete a letter, you can also press backspace or delete key on the KEYBOARD.";
+		public string backspaceButtonKeyText = "Delete\n[Backspace]";
 
 		public bool isTutorKey = false;
 		public bool isTutorTask = true;

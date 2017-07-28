@@ -837,3 +837,27 @@ Assets/Scripts/LetterInputModel.cs(78,33): error CS0103: The name `word' does no
 		private void ClearSelection()
 		{
 			int length = DataUtil.Length(word);
+
+
+Fri, Jul 28, 2017  8:08:15 AM
+Assets/Scripts/LetterInputController.cs(36,13): error CS0122: `Finegamedesign.Utils.LetterInputView.IsKeyboard()' is inaccessible due to its protection level
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 36)
+
+Assets/Scripts/LetterInputController.cs(38,50): error CS1061: Type `Finegamedesign.Utils.LetterInputModel' does not contain a definition for `backspaceButtonKeyText' and no extension method `backspaceButtonKeyText' of type `Finegamedesign.Utils.LetterInputModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/LetterInputController.cs Line: 38)
+
+Assets/UnityToykit/TextView.cs(26,27): error CS0103: The name `text' does not exist in the current context
+ 
+(Filename: Assets/UnityToykit/TextView.cs Line: 26)
+
+Assets/UnityToykit/TextView.cs(26,12): error CS1501: No overload for method `GetText' takes `3' arguments
+ 
+(Filename: Assets/UnityToykit/TextView.cs Line: 26)
+
+Assets/UnityToykit/TextView.cs(68,12): error CS0103: The name `child' does not exist in the current context
+ 
+(Filename: Assets/UnityToykit/TextView.cs Line: 68)
+
+		public string deleteButtonKeyText = "Delete [Backspace]";

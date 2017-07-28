@@ -28,6 +28,17 @@ namespace Finegamedesign.Utils
 			button.view.Listen(view.backspaceButton);
 			button.view.Listen(view.hintButton);
 			button.view.Listen(view.shuffleButton);
+			UpdateButtonKeyText();
+		}
+
+		public void UpdateButtonKeyText()
+		{
+			if (model.isTutorKey)
+			{
+				TextView.SetText(view.backspaceButton, model.backspaceButtonKeyText);
+				TextView.SetText(view.shuffleButton, model.shuffleButtonKeyText);
+				TextView.SetText(view.hintButton, model.hint.buttonKeyText);
+			}
 		}
 
 		public void Update()

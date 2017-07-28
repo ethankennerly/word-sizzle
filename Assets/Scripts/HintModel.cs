@@ -11,12 +11,13 @@ namespace Finegamedesign.Utils
 		public int revealCount = 0;
 
 		public int letterMax = 12;
-		public string hintCharacter = " ";
+		public string hintCharacter = "\n";
 		public string selectBeginState = "select_begin";
 		public string emptyState = "";
 		public string noneState = "none";
 
-		public string tutorKeyText = "To hint, you can also press the SPACE bar on the KEYBOARD.";
+		public string buttonKeyText = "Hint\n[Enter]";
+		public string tutorKeyText = "To hint, you can also press the ENTER key on the KEYBOARD.";
 
 		private static void Copy<T>(List<T> froms, List<T> tos)
 		{

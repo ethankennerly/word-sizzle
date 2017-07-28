@@ -1439,9 +1439,9 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 20
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2473,11 +2473,16 @@ MonoBehaviour:
         isButton: 0
         revealCount: 0
         letterMax: 12
-        hintCharacter: ' '
+        hintCharacter: '
+
+'
         selectBeginState: select_begin
         emptyState: 
         noneState: none
-        tutorKeyText: To hint, you can also press the SPACE bar on the KEYBOARD.
+        buttonKeyText: 'Hint
+
+          [Enter]'
+        tutorKeyText: To hint, you can also press the ENTER key on the KEYBOARD.
       buttonIndexes: 
       selection: 
       emptyState: 
@@ -2486,16 +2491,20 @@ MonoBehaviour:
       selectBeginState: select_begin
       selectEndState: select_end
       backspaceCharacter: "\b"
-      shuffleCharacter: '
-
-'
+      shuffleCharacter: ' '
       tutorState: none
       tutorText: 
       taskText: Spell a word.
       addKeyText: To spell, you can also press a key on the KEYBOARD.
-      shuffleKeyText: To shuffle, you can also press the enter key on the KEYBOARD.
+      shuffleKeyText: To shuffle, you can also press the SPACE bar on the KEYBOARD.
+      shuffleButtonKeyText: 'Shuffle
+
+        [Space]'
       backspaceKeyText: To delete a letter, you can also press backspace or delete
-        on the KEYBOARD.
+        key on the KEYBOARD.
+      backspaceButtonKeyText: 'Delete
+
+        [Backspace]'
       isTutorKey: 0
       isTutorTask: 1
       isEnabled: 1
@@ -2876,9 +2885,9 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 20
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -2942,7 +2951,7 @@ Prefab:
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 12.645833
       objectReference: {fileID: 0}
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
@@ -2967,7 +2976,7 @@ Prefab:
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
@@ -2977,7 +2986,7 @@ Prefab:
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
@@ -3416,11 +3425,16 @@ MonoBehaviour:
         isButton: 0
         revealCount: 0
         letterMax: 12
-        hintCharacter: ' '
+        hintCharacter: '
+
+'
         selectBeginState: select_begin
         emptyState: 
         noneState: none
-        tutorKeyText: To hint, you can also press the SPACE bar on the KEYBOARD.
+        buttonKeyText: 'Hint
+
+          [Enter]'
+        tutorKeyText: To hint, you can also press the ENTER key on the KEYBOARD.
       buttonIndexes: 
       selection: 
       emptyState: 
@@ -3429,16 +3443,20 @@ MonoBehaviour:
       selectBeginState: select_begin
       selectEndState: select_end
       backspaceCharacter: "\b"
-      shuffleCharacter: '
-
-'
+      shuffleCharacter: ' '
       tutorState: none
       tutorText: 
       taskText: Spell a word.
       addKeyText: To spell, you can also press a key on the KEYBOARD.
-      shuffleKeyText: To shuffle, you can also press the enter key on the KEYBOARD.
+      shuffleKeyText: To shuffle, you can also press the SPACE bar on the KEYBOARD.
+      shuffleButtonKeyText: 'Shuffle
+
+        [Space]'
       backspaceKeyText: To delete a letter, you can also press backspace or delete
-        on the KEYBOARD.
+        key on the KEYBOARD.
+      backspaceButtonKeyText: 'Delete
+
+        [Backspace]'
       isTutorKey: 0
       isTutorTask: 1
       isEnabled: 1
@@ -6168,9 +6186,9 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 40
+    m_MaxSize: 20
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1

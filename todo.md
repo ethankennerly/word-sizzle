@@ -39,11 +39,12 @@
 - [x] 2017-07-22 Jennifer Russ: Show which letter buttons were selected?
 - [x] When press space during review screen, does not show hint.
 - [x] 2017-07-22 Jennifer Russ: Shuffle?
-- [ ] On keyboard device, read letters on buttons.
+- [x] On keyboard device, read keys near buttons.
 - [ ] 2017-07-22 Jennifer Russ: Harder when letters in a circle than in a row.
 - [ ] 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.
+	- [x] Word level steps by 24 words.
 - [x] 2017-07-22 Jennifer Russ: [When jumping each 50, there are only about 60 anagrams to solve.]
-	- [ ] Word level steps by 24 words.
+	- [x] Word level steps by 24 words.
 - [ ] Displays letters darken over time.
 - [ ] Button unburns letters.
 - [ ] Displays smoke over time.
