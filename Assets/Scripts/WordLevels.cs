@@ -8,7 +8,10 @@ namespace Finegamedesign.Utils
 
 		public List<string> words;
 		public int index = 0;
-		public int step = 50;
+		// Step was 50.
+		// 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.
+		// 2017-07-22 Jennifer Russ: [When jumping each 50, there are only about 60 anagrams to solve.]
+		public int step = 24;
 
 		public void Setup()
 		{
