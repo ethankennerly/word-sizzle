@@ -41,12 +41,12 @@
 - [x] 2017-07-22 Jennifer Russ: Shuffle?
 - [x] On keyboard device, read keys near buttons.
 - [ ] 2017-07-22 Jennifer Russ: Harder when letters in a circle than in a row.
-- [ ] 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.
+- [x] 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.
 	- [x] Word level steps by 24 words.
 - [x] 2017-07-22 Jennifer Russ: [When jumping each 50, there are only about 60 anagrams to solve.]
 	- [x] Word level steps by 24 words.
-- [ ] Displays letters darken over time.
-- [ ] Button unburns letters.
+- [ ] Displays letters darken over time until solved.
+- [ ] Read: Spelling a word with fewer letters cools the letters.
 - [ ] Displays smoke over time.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.

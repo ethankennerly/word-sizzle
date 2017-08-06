@@ -1455,6 +1455,28 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 435947078}
+--- !u!1 &456726197 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1956291531171558, guid: f12e2218c0a20c44dba687be809a9d29,
+    type: 2}
+  m_PrefabInternal: {fileID: 2098734976}
+--- !u!95 &456726198
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 456726197}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2c7658cf0fc14fa4bb0ad663fb92622e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &462711787
 Prefab:
   m_ObjectHideFlags: 0
@@ -6376,12 +6398,12 @@ Prefab:
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 110.7
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
         type: 2}
@@ -6426,6 +6448,25 @@ Prefab:
     - target: {fileID: 1546121212339848, guid: f12e2218c0a20c44dba687be809a9d29, type: 2}
       propertyPath: m_Name
       value: LetterContainer_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198218864852310274, guid: f12e2218c0a20c44dba687be809a9d29,
+        type: 2}
+      propertyPath: InitialModule.maxNumParticles
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 198218864852310274, guid: f12e2218c0a20c44dba687be809a9d29,
+        type: 2}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1187959839972752, guid: f12e2218c0a20c44dba687be809a9d29, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198218864852310274, guid: f12e2218c0a20c44dba687be809a9d29,
+        type: 2}
+      propertyPath: randomSeed
+      value: -1534124457
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f12e2218c0a20c44dba687be809a9d29, type: 2}
