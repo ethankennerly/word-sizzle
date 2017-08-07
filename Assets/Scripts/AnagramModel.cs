@@ -21,6 +21,8 @@ namespace Finegamedesign.WordSizzle
 		public Words words = new Words();
 		public WordLevels levels = new WordLevels();
 
+		public Timer timer = new Timer();
+
 		public void Setup()
 		{
 			words.Setup();
@@ -42,6 +44,7 @@ namespace Finegamedesign.WordSizzle
 			isComplete = false;
 			wasComplete = false;
 			state = "play_begin";
+			timer.Reset();
 			isPopulateNext = true;
 		}
 
@@ -49,6 +52,7 @@ namespace Finegamedesign.WordSizzle
 		{
 			isPopulateNow = isPopulateNext;
 			isPopulateNext = false;
+			timer.Update(deltaTime);
 			UpdateComplete();
 		}
 

@@ -1,33 +1,36 @@
-public sealed class Timer
+namespace Finegamedesign.Utils
 {
-	public float normal = 0.0f;
-	public float time = 0.0f;
-	public float min = 0.0f;
-	public float max = 10.0f;
-
-	public void Reset()
+	public sealed class Timer
 	{
-		time = 0.0f;
-		normal = Normalize(time);
-	}
+		public float normal = 0.0f;
+		public float time = 0.0f;
+		public float min = 0.0f;
+		public float max = 20.0f;
 
-	public void Update(float deltaTime)
-	{
-		time += deltaTime;
-		normal = Normalize(time);
-	}
-
-	private float Normalize(float time)
-	{
-		float normal = (time - min) / (max - min);
-		if (normal < min)
+		public void Reset()
 		{
-			normal = min;
+			time = 0.0f;
+			normal = Normalize(time);
 		}
-		else if (normal > max)
+
+		public void Update(float deltaTime)
 		{
-			normal = max;
+			time += deltaTime;
+			normal = Normalize(time);
 		}
-		return normal;
+
+		private float Normalize(float time)
+		{
+			float normal = (time - min) / (max - min);
+			if (normal < min)
+			{
+				normal = min;
+			}
+			else if (normal > max)
+			{
+				normal = max;
+			}
+			return normal;
+		}
 	}
 }

@@ -861,3 +861,22 @@ Assets/UnityToykit/TextView.cs(68,12): error CS0103: The name `child' does not e
 (Filename: Assets/UnityToykit/TextView.cs Line: 68)
 
 		public string deleteButtonKeyText = "Delete [Backspace]";
+
+
+Mon, Aug  7, 2017  7:34:35 AM
+Assets/Scripts/AnagramView.cs(30,23): error CS0029: Cannot implicitly convert type `void' to `Finegamedesign.Utils.TimerView[]'
+ 
+(Filename: Assets/Scripts/AnagramView.cs Line: 30)
+
+Assets/Scripts/TimerView.cs(5,20): error CS0118: `UnityEngine.Animator' is a `type' but a `variable' was expected
+ 
+(Filename: Assets/Scripts/TimerView.cs Line: 5)
+
+Assets/Scripts/TimerView.cs(5,20): error CS0119: Expression denotes a `type', where a `variable', `value' or `method group' was expected
+ 
+(Filename: Assets/Scripts/TimerView.cs Line: 5)
+
+Assets/Scripts/TimerView.cs(23,4): error CS0127: `Finegamedesign.Utils.TimerView.Binds(Finegamedesign.Utils.Timer, Finegamedesign.Utils.TimerView[])': A return keyword must not be followed by any expression when method returns void
+ 
+(Filename: Assets/Scripts/TimerView.cs Line: 23)
+

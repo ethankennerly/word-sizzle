@@ -45,6 +45,7 @@
 	- [x] Word level steps by 24 words.
 - [x] 2017-07-22 Jennifer Russ: [When jumping each 50, there are only about 60 anagrams to solve.]
 	- [x] Word level steps by 24 words.
+- [x] Particles appear more rapidly until solved.
 - [ ] Displays letters darken over time until solved.
 - [ ] Read: Spelling a word with fewer letters cools the letters.
 - [ ] Displays smoke over time.

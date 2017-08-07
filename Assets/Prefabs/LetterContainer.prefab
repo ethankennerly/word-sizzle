@@ -61,7 +61,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1546121212339848
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,6 +89,7 @@ GameObject:
   - component: {fileID: 222708218191657454}
   - component: {fileID: 114324778624357126}
   - component: {fileID: 114684119217126174}
+  - component: {fileID: 114559981837692506}
   m_Layer: 5
   m_Name: LetterButton
   m_TagString: Untagged
@@ -105,6 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224807653065246972}
   - component: {fileID: 95047810035550794}
+  - component: {fileID: 114623374124623334}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -173,6 +175,29 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114559981837692506
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775795374886290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b4ca4bb1cbf4ea44b739d82caf32289, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114623374124623334
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1956291531171558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d271b89e0144d54aa98576d744340ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: begin
 --- !u!114 &114630135255099492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -273,7 +298,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: W
+  m_Text: I
 --- !u!198 &198218864852310274
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -329,7 +354,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1576134074
+  randomSeed: 578937336
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -863,7 +888,7 @@ ParticleSystem:
     serializedVersion: 4
     rateOverTime:
       minMaxState: 0
-      scalar: 10
+      scalar: 30
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1182,7 +1207,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -3292,7 +3317,7 @@ ParticleSystemRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 15302, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -3372,7 +3397,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1187959839972752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -50}
+  m_LocalPosition: {x: 0, y: 0, z: -0.25}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 224807653065246972}
