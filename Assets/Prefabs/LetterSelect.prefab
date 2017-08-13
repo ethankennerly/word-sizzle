@@ -38,6 +38,8 @@ GameObject:
   - component: {fileID: 222032945321302050}
   - component: {fileID: 114459819586177622}
   - component: {fileID: 114937674541653634}
+  - component: {fileID: 95405187677842762}
+  - component: {fileID: 114189026127498464}
   m_Layer: 5
   m_Name: LetterButton
   m_TagString: Untagged
@@ -79,6 +81,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &95405187677842762
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1308404308324188}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba043cb77534f19469f74b742ec11a7f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &95947526403979664
 Animator:
   serializedVersion: 3
@@ -96,6 +115,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114189026127498464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1308404308324188}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d271b89e0144d54aa98576d744340ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: begin
+  animators: []
 --- !u!114 &114394556074451878
 MonoBehaviour:
   m_ObjectHideFlags: 1
