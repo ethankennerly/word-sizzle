@@ -90,6 +90,7 @@ GameObject:
   - component: {fileID: 114324778624357126}
   - component: {fileID: 114684119217126174}
   - component: {fileID: 114559981837692506}
+  - component: {fileID: 95999644021660408}
   m_Layer: 5
   m_Name: LetterButton
   m_TagString: Untagged
@@ -148,6 +149,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95999644021660408
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775795374886290}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba043cb77534f19469f74b742ec11a7f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114324778624357126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -198,6 +216,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: begin
+  animators:
+  - {fileID: 95047810035550794}
+  - {fileID: 95999644021660408}
 --- !u!114 &114630135255099492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3416,7 +3437,7 @@ RectTransform:
   m_GameObject: {fileID: 1546121212339848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.0000024, y: 1.0000024, z: 1.0000024}
   m_Children:
   - {fileID: 224886671552836506}
   - {fileID: 224807653065246972}

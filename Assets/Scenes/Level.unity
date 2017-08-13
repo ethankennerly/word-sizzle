@@ -798,21 +798,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1.0000024
-      objectReference: {fileID: 0}
-    - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1.0000024
-      objectReference: {fileID: 0}
-    - target: {fileID: 224380426116388660, guid: f12e2218c0a20c44dba687be809a9d29,
-        type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.0000024
-      objectReference: {fileID: 0}
     - target: {fileID: 1546121212339848, guid: f12e2218c0a20c44dba687be809a9d29, type: 2}
       propertyPath: m_Name
       value: LetterContainer_1
@@ -6427,6 +6412,16 @@ Prefab:
     - target: {fileID: 1546121212339848, guid: f12e2218c0a20c44dba687be809a9d29, type: 2}
       propertyPath: m_Name
       value: LetterContainer_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114324778624357126, guid: f12e2218c0a20c44dba687be809a9d29,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114324778624357126, guid: f12e2218c0a20c44dba687be809a9d29,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f12e2218c0a20c44dba687be809a9d29, type: 2}
