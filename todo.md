@@ -50,6 +50,7 @@
 - [x] Letter select:  Smokes until spell word.
 - [x] Anagram Model:  Spelling word stops timer.
 - [x] Buttons:  Sizzle volume correlates to smoke.
+- [x] Animates and hears smoke before fire.
 - [ ] Read: Spelling a word with fewer letters cools the letters.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.
