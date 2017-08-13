@@ -52,6 +52,7 @@ namespace Finegamedesign.WordSizzle
 		{
 			isPopulateNow = isPopulateNext;
 			isPopulateNext = false;
+			timer.isEnabled = !isComplete;
 			timer.Update(deltaTime);
 			UpdateComplete();
 		}

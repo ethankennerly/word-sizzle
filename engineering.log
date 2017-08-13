@@ -880,3 +880,8 @@ Assets/Scripts/TimerView.cs(23,4): error CS0127: `Finegamedesign.Utils.TimerView
  
 (Filename: Assets/Scripts/TimerView.cs Line: 23)
 
+Sun, Aug 13, 2017  1:10:22 PM
+ssets/Scripts/Timer.cs(10,20): error CS1519: Unexpected symbol `=' in class, struct, or interface member declaration
+ 
+ (Filename: Assets/Scripts/Timer.cs Line: 10)
+

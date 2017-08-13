@@ -48,6 +48,7 @@
 - [x] Particles appear more rapidly until solved.
 - [x] Letter buttons darken over time until solved.
 - [x] Letter select:  Smokes until spell word.
+- [x] Anagram Model:  Spelling word stops timer.
 - [ ] Read: Spelling a word with fewer letters cools the letters.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.
