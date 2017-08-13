@@ -1,14 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Finegamedesign.Utils
 {
-	[RequireComponent(typeof(Animator))]
 	public sealed class TimerView : MonoBehaviour
 	{
 		public Timer model;
 		public string state = "begin";
 
-		private Animator animator;
+		public List<Animator> animators;
 
 		public static TimerView[] Binds(Timer model, TimerView[] timers)
 		{
@@ -25,12 +25,20 @@ namespace Finegamedesign.Utils
 
 		private void Start()
 		{
-			animator = GetComponent<Animator>();
+			if (animators == null || animators.Count == 0)
+			{
+				animators = new List<Animator>();
+				animators.Add(GetComponent<Animator>());
+			}
 		}
 
 		private void Update()
 		{
-			animator.Play(state, -1, model.normal);
+			for (int index = 0, end = animators.Count; index < end; ++index)
+			{
+				Animator animator = animators[index];
+				animator.Play(state, -1, model.normal);
+			}
 		}
 	}
 }
