@@ -29,3 +29,19 @@ These opportunities might motivate Jennifer to solve 57:
 - Harder when letters in a circle than in a row.
 - Looks up:  airshot, disinter, two more.
 - [When jumping each 50, there are only about 60 anagrams to solve.]
+
+
+### Sun, Aug 13, 2017  9:35:29 PM
+
+Jennifer solved several words, quitting at cosine.
+
+These opportunities might motivate Jennifer to solve one more:
+
+- Burn awful quick!!!!!
+- Cannot see hint or letter behind smoke!!
+- What happens if let letters go on burning???  Does the pan explode?  Anything?
+- Love eggs!!!
+- Frying.  Fun.  Burning?
+- Hint.  Accident?
+- Senors.  Not English.
+- How many words did I do?
