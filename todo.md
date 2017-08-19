@@ -51,7 +51,7 @@
 - [x] Anagram Model:  Spelling word stops timer.
 - [x] Buttons:  Sizzle volume correlates to smoke.
 - [x] Animates and hears smoke before fire.
-- [ ] 2017-08-13 Jennifer Russ: Burn awful quick!!!!!
+- [x] 2017-08-13 Jennifer Russ: Burn awful quick!!!!!
 - [ ] 2017-08-13 Jennifer Russ: Cannot see hint or letter behind smoke!!
 - [ ] 2017-08-13 Jennifer Russ: What happens if let letters go on burning???  Does the pan explode?  Anything?
 - [ ] 2017-08-13 Jennifer Russ: Love eggs!!!
@@ -60,6 +60,7 @@
 - [ ] 2017-08-13 Jennifer Russ: Hint.  Accident?
 - [ ] 2017-08-13 Jennifer Russ: Senors.  Not English.
 - [ ] If answer quickly, animatic of happy eater.
+- [ ] If answer quickly, happy eater compliments, like that airplane in that art deco word game.
 - [ ] Smoke and fire matches eating on plate.
 - [ ] Letters fly to eater's plate.
 - [ ] If answer quickly, animate 3 stars.

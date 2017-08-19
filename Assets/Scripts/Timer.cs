@@ -5,7 +5,9 @@ namespace Finegamedesign.Utils
 		public float normal = 0.0f;
 		public float time = 0.0f;
 		public float min = 0.0f;
-		public float max = 20.0f;
+		// Was 20.0f;
+		// 2017-08-13 Jennifer Russ: Burn awful quick!!!!!
+		public float max = 40.0f;
 
 		public bool isEnabled = true;
 
