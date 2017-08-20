@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1730d0b8751ac9e44b6303c6b7703fa7, type: 3}
+  m_Name: epilogue_win_begin
+  m_EditorClassIdentifier: 
+  rootClip: {fileID: 0}
+  m_EnableSequenceCaching: 0
+  m_AssetVersion: 4
+  m_AudioResourcesDirectory: 
+  m_AssetData: 434147000509a10b000078da95543d681441147e7b394dee4fa3d1f32e9a9898188dc698b81a8d265ebc8d518f2b2c82601550f68e857817346a637185a4101b2b316021010b2be1c04a24bc57091bb412042b0bb1b3102b0bdd79bbd13482dfc07cb33bf3e67df3bef7662c32ad51b0a231418960ecf67dff5723b6da92a13b295da19262592a4b4d21f29dca526a3af80fc6a663a5e966bdbe38ebdd70e7bd9adb468beb5e8d5b2b4bee82375fafde76e7ee7ab5b96b6ed5ab0d2fd4aac6221618aca57b1dd383cf29a259c7cc133d734c5707e109cac1c4fb626864ba31f283b9cb6a641c519272d1677c7d8a5afe7848d34a320c24f41aaeab0145070efbdf7fdb968029c79147eb1f660697f36f8ab10d0ee38a9b14372bb62ab62926283caf69a9e874a66514b7286e556c57dca6b85db1437187e24ec5ace22ec59c9ed3fabfd8969ff4731ed94034ca9d18c324ef4636d87689f7201bd6fc2bdc85315ce76e8ca1ce7b910d95ca3dee81646ddce75e2886e603de8725ee11f74141971f733f96e9a7bc1f937585072086fc0b3e80e5e1251fc4647dc58310c397d77c082b3ee1c35869bce5214cd6777c042b8d0f3c8c95c6273e8a95c6671ec164fdcaa358697ce3635869fc601b2b8d9f7c1c93d59213580c71198318a65ae5241674524e41997e98917188e179bb9cc6aab543ce4079f89e95094cd64e99c4ae68979c8518aef64801bbd37da63e105907e41cc4b03a2845ecc60d8903252e3d22d398acb69cc79e99319981186e8dcb05ec5d9a908b98ac05b904317c2c4a097b35668436b4df5cf36048
+  m_GUID: 57b1c8e754ad2e24f8d398f1cbea4dcf
+  m_Path: 
+  m_IsExternalDataCollected: 1
+  m_ExternalData:
+  - m_TimelineID: 0
+    m_ObjectTypeFlags: 0000000000000000
+  m_HasNesting: 0
+  m_KeyFrames: []
+  m_AudioResources: []

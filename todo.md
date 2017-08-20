@@ -52,16 +52,17 @@
 - [x] Buttons:  Sizzle volume correlates to smoke.
 - [x] Animates and hears smoke before fire.
 - [x] 2017-08-13 Jennifer Russ: Burn awful quick!!!!!
-- [ ] 2017-08-13 Jennifer Russ: Cannot see hint or letter behind smoke!!
+- [x] 2017-08-13 Jennifer Russ: Cannot see hint or letter behind smoke!!
+	- Particles emit 270 degrees of circle instead of 360.
+- [ ] If answer quickly, animatic of happy eater.
+- [ ] If answer quickly, happy eater compliments, like that airplane in that art deco word game.
+- [ ] Smoke and fire matches eating on plate.
 - [ ] 2017-08-13 Jennifer Russ: What happens if let letters go on burning???  Does the pan explode?  Anything?
 - [ ] 2017-08-13 Jennifer Russ: Love eggs!!!
 - [ ] 2017-08-13 Jennifer Russ: Frying.  Fun.  Burning?
 - [ ] 2017-08-13 Jennifer Russ: How many words did I do?
 - [ ] 2017-08-13 Jennifer Russ: Hint.  Accident?
 - [ ] 2017-08-13 Jennifer Russ: Senors.  Not English.
-- [ ] If answer quickly, animatic of happy eater.
-- [ ] If answer quickly, happy eater compliments, like that airplane in that art deco word game.
-- [ ] Smoke and fire matches eating on plate.
 - [ ] Letters fly to eater's plate.
 - [ ] If answer quickly, animate 3 stars.
 - [ ] Read: Spelling a word with fewer letters cools the letters.
