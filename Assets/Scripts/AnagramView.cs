@@ -9,7 +9,9 @@ namespace Finegamedesign.WordSizzle
 		public LetterInputView input;
 		public LevelResultView result;
 		public AnagramController controller = new AnagramController();
+
 		public TimerView[] timers;
+		public TimerTextDeckView[] timerTexts;
 
 		private void Start()
 		{
@@ -27,7 +29,10 @@ namespace Finegamedesign.WordSizzle
 				result = FindObjectOfType<LevelResultView>();
 			}
 			result.Setup();
+
 			timers = TimerView.Binds(controller.model.timer, timers);
+			timerTexts = TimerTextDeckView.Binds(controller.model.textDeck, timerTexts);
+
 			controller.view = this;
 			controller.Setup();
 		}

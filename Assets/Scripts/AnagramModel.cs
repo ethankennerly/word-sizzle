@@ -22,9 +22,12 @@ namespace Finegamedesign.WordSizzle
 		public WordLevels levels = new WordLevels();
 
 		public Timer timer = new Timer();
+		public TimerTextDeck textDeck = new TimerTextDeck();
 
 		public void Setup()
 		{
+			textDeck.timer = timer;
+			textDeck.Setup();
 			words.Setup();
 			levels.Setup();
 			isPopulateNext = false;
@@ -67,6 +70,7 @@ namespace Finegamedesign.WordSizzle
 				if (isComplete && !wasComplete)
 				{
 					state = winBeginState;
+					textDeck.Select();
 				}
 			}
 		}

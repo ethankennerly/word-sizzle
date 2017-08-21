@@ -3,6 +3,7 @@ namespace Finegamedesign.Utils
 	public sealed class Timer
 	{
 		public float normal = 0.0f;
+		public float NormalInState { get; private set; }
 		public float time = 0.0f;
 		public float min = 0.0f;
 		// Was 20.0f;
@@ -11,36 +12,66 @@ namespace Finegamedesign.Utils
 
 		public bool isEnabled = true;
 
-		public string state;
+		public string State { get; private set; }
+		public int StateIndex { get; private set; }
 
 		private class StateNormal
 		{
-			public float normal;
 			public string state;
+			private float normalMin;
+			private float normalMax;
 
-			public StateNormal(float theNormal, string theState)
+			public StateNormal(float theNormalMin, string theState)
 			{
-				normal = theNormal;
 				state = theState;
+				normalMin = theNormalMin;
+				normalMax = 1.0f;
+			}
+
+			public static int GetIndex(StateNormal[] stateNormals, float normal)
+			{
+				if (stateNormals.Length == 0)
+				{
+					return -1;
+				}
+				int previousIndex = 0;
+				int returnIndex = 0;
+				for (int index = 1, end = stateNormals.Length; index < end; ++index)
+				{
+					StateNormal stateNormal = stateNormals[index];
+					if (stateNormal.normalMin > normal)
+					{
+						returnIndex = previousIndex;
+					}
+					stateNormals[previousIndex].normalMax = stateNormal.normalMin;
+					previousIndex = index;
+				}
+				returnIndex = previousIndex;
+				return returnIndex;
 			}
 
 			public static StateNormal Get(StateNormal[] stateNormals, float normal)
 			{
-				if (stateNormals.Length == 0)
+				int index = GetIndex(stateNormals, normal);
+				if (index < 0)
 				{
 					return null;
 				}
-				StateNormal previousState = stateNormals[0];
-				for (int index = 0, end = stateNormals.Length; index < end; ++index)
+				return stateNormals[index];
+			}
+
+			public float GetNormalInState(float normal)
+			{
+				float inState = (normal - normalMin) / (normalMax - normalMin);
+				if (inState < 0)
 				{
-					StateNormal stateNormal = stateNormals[index];
-					if (stateNormal.normal > normal)
-					{
-						return previousState;
-					}
-					previousState = stateNormal;
+					inState = 0.0f;
 				}
-				return previousState;
+				else if (inState > 1.0f)
+				{
+					inState = 1.0f;
+				}
+				return inState;
 			}
 		}
 
@@ -76,7 +107,10 @@ namespace Finegamedesign.Utils
 			{
 				normal = max;
 			}
-			state = StateNormal.Get(stateNormals, normal).state;
+			StateIndex = StateNormal.GetIndex(stateNormals, normal);
+			StateNormal stateNormal = stateNormals[StateIndex];
+			State = stateNormal.state;
+			NormalInState = stateNormal.GetNormalInState(normal);
 			return normal;
 		}
 	}

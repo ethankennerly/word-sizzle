@@ -898,3 +898,132 @@ Assets/UnityToykit/StringUtil.cs(114,11): error CS0029: Cannot implicitly conver
 		public static string[][] ParseLines(string text)
 
 
+Sun, Aug 20, 2017  6:41:05 PM
+Assets/Scripts/TimerTextDeckView.cs(12,10): error CS0246: The type or namespace name `List' could not be found. Are you missing `System.Collections.Generic' or `Boo.Lang' using directive?
+ 
+(Filename: Assets/Scripts/TimerTextDeckView.cs Line: 12)
+		public List<Animator> animators;
+
+
+Sun, Aug 20, 2017  6:42:34 PM
+Assets/Scripts/AnagramView.cs(34,27): error CS1502: The best overloaded method match for `Finegamedesign.Utils.TimerView.Binds(Finegamedesign.Utils.Timer, Finegamedesign.Utils.TimerView[])' has some invalid arguments
+ 
+(Filename: Assets/Scripts/AnagramView.cs Line: 34)
+			timerTexts = TimerView.Binds(controller.model.timer, timerTexts);
+
+Assets/Scripts/AnagramView.cs(34,57): error CS1503: Argument `#2' cannot convert `Finegamedesign.Utils.TimerTextDeckView[]' expression to type `Finegamedesign.Utils.TimerView[]'
+ 
+(Filename: Assets/Scripts/AnagramView.cs Line: 34)
+
+Assets/Scripts/Timer.cs(35,14): error CS0029: Cannot implicitly convert type `int' to `Finegamedesign.Utils.Timer.StateNormal'
+			public static StateNormal GetIndex(StateNormal[] stateNormals, float normal)
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 35)
+
+Assets/Scripts/Timer.cs(49,12): error CS0029: Cannot implicitly convert type `int' to `Finegamedesign.Utils.Timer.StateNormal'
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 49)
+
+Assets/Scripts/Timer.cs(54,17): error CS0029: Cannot implicitly convert type `Finegamedesign.Utils.Timer.StateNormal' to `int'
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 54)
+
+Assets/Scripts/Timer.cs(109,29): error CS0029: Cannot implicitly convert type `Finegamedesign.Utils.Timer.StateNormal' to `int'
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 109)
+
+Assets/Scripts/Timer.cs(111,20): error CS0103: The name `state' does not exist in the current context
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 111)
+			NormalInState = state.GetNormalInState(normal);
+
+Assets/Scripts/TimerTextDeck.cs(15,12): error CS0119: Expression denotes a `value', where a `method group' was expected
+ 
+(Filename: Assets/Scripts/TimerTextDeck.cs Line: 15)
+			decks = new TextDeck[resourcePaths.Length]();
+
+Assets/Scripts/TimerTextDeckView.cs(20,18): error CS1061: Type `Finegamedesign.Utils.TimerTextDeckView' does not contain a definition for `model' and no extension method `model' of type `Finegamedesign.Utils.TimerTextDeckView' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/TimerTextDeckView.cs Line: 20)
+				views[index].model = model;
+
+Assets/Scripts/TimerTextDeckView.cs(33,21): error CS1061: Type `Finegamedesign.Utils.TimerTextDeck' does not contain a definition for `selected' and no extension method `selected' of type `Finegamedesign.Utils.TimerTextDeck' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/TimerTextDeckView.cs Line: 33)
+			text.text = model.selected;
+
+
+
+Sun, Aug 20, 2017  6:49:44 PM
+Assets/Scripts/AnagramView.cs(34,35): error CS1502: The best overloaded method match for `Finegamedesign.Utils.TimerTextDeckView.Binds(Finegamedesign.Utils.TimerTextDeck, Finegamedesign.Utils.TimerTextDeckView[])' has some invalid arguments
+ 
+(Filename: Assets/Scripts/AnagramView.cs Line: 34)
+			timerTexts = TimerTextDeckView.Binds(controller.model.timer, timerTexts);
+
+Assets/Scripts/AnagramView.cs(34,58): error CS1503: Argument `#1' cannot convert `Finegamedesign.Utils.Timer' expression to type `Finegamedesign.Utils.TimerTextDeck'
+ 
+(Filename: Assets/Scripts/AnagramView.cs Line: 34)
+			timerTexts = TimerTextDeckView.Binds(controller.model.timer, timerTexts);
+
+Assets/Scripts/Timer.cs(111,26): error CS1061: Type `string' does not contain a definition for `GetNormalInState' and no extension method `GetNormalInState' of type `string' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 111)
+
+
+Sun, Aug 20, 2017  6:53:45 PM
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.TimerTextDeckView.Update () [0x0000d] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\TimerTextDeckView.cs:33 
+  at Finegamedesign.Utils.TimerTextDeckView.Start () [0x0000e] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\TimerTextDeckView.cs:28 
+ 
+(Filename: Assets/Scripts/TimerTextDeckView.cs Line: 33)
+		private void Start()
+		{
+			text = GetComponent<Text>();
+			Update();
+		}
+
+
+Sun, Aug 20, 2017  6:57:46 PM
+Cinematic plays slow.
+			public static int GetIndex(StateNormal[] stateNormals, float normal)
+			{
+				if (stateNormals.Length == 0)
+				{
+					return -1;
+				}
+				int previousIndex = 0;
+				int returnIndex = 0;
+				for (int index = 1, end = stateNormals.Length; index < end; ++index)
+				{
+					StateNormal stateNormal = stateNormals[index];
+					if (stateNormal.normalMin > normal)
+					{
+						returnIndex = index;
+					}
+					stateNormals[previousIndex].normalMax = stateNormal.normalMin;
+					previousIndex = index;
+				}
+				return returnIndex;
+			}
+
+Cinematic plays fast.
+			public static int GetIndex(StateNormal[] stateNormals, float normal)
+			{
+				if (stateNormals.Length == 0)
+				{
+					return -1;
+				}
+				int previousIndex = 0;
+				int returnIndex = 0;
+				for (int index = 1, end = stateNormals.Length; index < end; ++index)
+				{
+					StateNormal stateNormal = stateNormals[index];
+					if (stateNormal.normalMin > normal)
+					{
+						returnIndex = previousIndex;
+					}
+					stateNormals[previousIndex].normalMax = stateNormal.normalMin;
+					previousIndex = index;
+				}
+				return returnIndex;
+			}

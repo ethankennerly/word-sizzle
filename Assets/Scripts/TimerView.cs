@@ -39,7 +39,7 @@ namespace Finegamedesign.Utils
 			normal = model.normal;
 			if (isChangeState)
 			{
-				state = model.state;
+				state = model.State;
 			}
 			for (int index = 0, end = animators.Count; index < end; ++index)
 			{
