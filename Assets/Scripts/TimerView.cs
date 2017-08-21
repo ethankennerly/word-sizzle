@@ -7,6 +7,8 @@ namespace Finegamedesign.Utils
 	{
 		public Timer model;
 		public string state = "begin";
+		public bool isChangeState = false;
+		public float normal;
 
 		public List<Animator> animators;
 
@@ -34,6 +36,11 @@ namespace Finegamedesign.Utils
 
 		private void Update()
 		{
+			normal = model.normal;
+			if (isChangeState)
+			{
+				state = model.state;
+			}
 			for (int index = 0, end = animators.Count; index < end; ++index)
 			{
 				Animator animator = animators[index];

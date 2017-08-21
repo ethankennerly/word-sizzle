@@ -11,6 +11,44 @@ namespace Finegamedesign.Utils
 
 		public bool isEnabled = true;
 
+		public string state;
+
+		private class StateNormal
+		{
+			public float normal;
+			public string state;
+
+			public StateNormal(float theNormal, string theState)
+			{
+				normal = theNormal;
+				state = theState;
+			}
+
+			public static StateNormal Get(StateNormal[] stateNormals, float normal)
+			{
+				if (stateNormals.Length == 0)
+				{
+					return null;
+				}
+				StateNormal previousState = stateNormals[0];
+				for (int index = 0, end = stateNormals.Length; index < end; ++index)
+				{
+					StateNormal stateNormal = stateNormals[index];
+					if (stateNormal.normal > normal)
+					{
+						return previousState;
+					}
+					previousState = stateNormal;
+				}
+				return previousState;
+			}
+		}
+
+		private StateNormal[] stateNormals = {
+			new StateNormal(0.0f, "fast"),
+			new StateNormal(0.75f, "slow")
+		};
+
 		public void Reset()
 		{
 			time = 0.0f;
@@ -38,6 +76,7 @@ namespace Finegamedesign.Utils
 			{
 				normal = max;
 			}
+			state = StateNormal.Get(stateNormals, normal).state;
 			return normal;
 		}
 	}

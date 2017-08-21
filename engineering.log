@@ -885,3 +885,16 @@ ssets/Scripts/Timer.cs(10,20): error CS1519: Unexpected symbol `=' in class, str
  
  (Filename: Assets/Scripts/Timer.cs Line: 10)
 
+
+
+Sun, Aug 20, 2017  5:49:49 PM
+Assets/Scripts/TextDeck.cs(13,36): error CS0029: Cannot implicitly convert type `string[][]' to `string[]'
+ 
+(Filename: Assets/Scripts/TextDeck.cs Line: 13)
+
+Assets/UnityToykit/StringUtil.cs(114,11): error CS0029: Cannot implicitly convert type `string[]' to `string[][]'
+ 
+(Filename: Assets/UnityToykit/StringUtil.cs Line: 114)
+		public static string[][] ParseLines(string text)
+
+
