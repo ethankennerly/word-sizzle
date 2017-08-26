@@ -1057,3 +1057,15 @@ Cinematic always plays slow.
 
 Sat, Aug 26, 2017  8:02:02 AM
 Always listing word at top of list.
+
+
+Sat, Aug 26, 2017  4:47:12 PM
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.TimerTextDeckView.Update () [0x0000d] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\TimerTextDeckView.cs:32 
+ 
+(Filename: Assets/Scripts/TimerTextDeckView.cs Line: 32)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.TimerView.Update () [0x00001] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\TimerView.cs:39 
+ 
+(Filename: Assets/Scripts/TimerView.cs Line: 39)

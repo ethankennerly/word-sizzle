@@ -58,8 +58,8 @@
 - [x] If answer slowly, animatic of eating burnt food.
 - [x] If answer quickly, happy eater compliments, like that airplane in that art deco word game.
 - [x] Compliments sorted by speed.
-- [ ] 2017-08-13 Jennifer Russ: What happens if let letters go on burning???  Does the pan explode?  Anything?
-- [ ] 2017-08-13 Jennifer Russ: Love eggs!!!
+- [x] 2017-08-13 Jennifer Russ: What happens if let letters go on burning???  Does the pan explode?  Anything?
+- [x] 2017-08-13 Jennifer Russ: Love eggs!!!
 - [ ] 2017-08-13 Jennifer Russ: Frying.  Fun.  Burning?
 - [ ] 2017-08-13 Jennifer Russ: How many words did I do?
 - [ ] 2017-08-13 Jennifer Russ: Hint.  Accident?
