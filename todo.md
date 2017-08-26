@@ -58,22 +58,23 @@
 - [x] If answer slowly, animatic of eating burnt food.
 - [ ] If answer quickly, happy eater compliments, like that airplane in that art deco word game.
 - [ ] Compliments sorted by speed.
-- [ ] Random sliding range.
+- [ ] Compliments in random sliding range.
 - [ ] 2017-08-13 Jennifer Russ: What happens if let letters go on burning???  Does the pan explode?  Anything?
 - [ ] 2017-08-13 Jennifer Russ: Love eggs!!!
 - [ ] 2017-08-13 Jennifer Russ: Frying.  Fun.  Burning?
 - [ ] 2017-08-13 Jennifer Russ: How many words did I do?
 - [ ] 2017-08-13 Jennifer Russ: Hint.  Accident?
 - [ ] 2017-08-13 Jennifer Russ: Senors.  Not English.
-- [ ] MadLib of entered word matches part of speech.
-- [ ] If answer slowly, animate belching smoke.
-- [ ] Smoke and fire matches eating on plate.
-- [ ] Letters fly to eater's plate.
-- [ ] If answer quickly, animate 3 stars.
 - [ ] Read: Spelling a word with fewer letters cools the letters.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.
 - [ ] If not a word, shake letters then clear selection.
+- [ ] Animates shuffle.
+- [ ] If answer slowly, animate belching smoke.
+- [ ] MadLib of entered word matches part of speech.
+- [ ] Smoke and fire matches eating on plate.
+- [ ] Letters fly to eater's plate.
+- [ ] If answer quickly, animate 3 stars.
 - [ ] Spelling a word replaces letters with light letters.
 - [ ] Sounds sizzle, crackle, explosion.
 - [ ] Jennifer types to spell a word on the web.
@@ -82,7 +83,6 @@
 - [ ] Spends 100 coins to get a hint of a letter.
 - [ ] Spelling longest word unlocks next level.
 - [ ] Reads QUICK when spelling quickly.
-- [ ] Animates shuffle.
 - [ ] Upgrades pan to burn slower.
 - [ ] Coin particles lock on to coin count.
 - [ ] Spend coins to replace performance on a word.

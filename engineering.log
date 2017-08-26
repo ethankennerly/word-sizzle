@@ -1027,3 +1027,33 @@ Cinematic plays fast.
 				}
 				return returnIndex;
 			}
+
+
+Sat, Aug 26, 2017  7:39:49 AM
+
+Cinematic always plays slow.
+			public static int GetIndex(StateNormal[] stateNormals, float normal)
+			{
+				if (stateNormals.Length == 0)
+				{
+					return -1;
+				}
+				int previousIndex = 0;
+				int returnIndex = 0;
+				for (int index = 1, end = stateNormals.Length; index < end; ++index)
+				{
+					StateNormal stateNormal = stateNormals[index];
+					if (stateNormal.normalMin > normal)
+					{
+						returnIndex = previousIndex;
+					}
+					stateNormals[previousIndex].normalMax = stateNormal.normalMin;
+					previousIndex = index;
+				}
+				returnIndex = previousIndex;
+				return returnIndex;
+			}
+
+
+Sat, Aug 26, 2017  8:02:02 AM
+Always listing word at top of list.

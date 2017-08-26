@@ -28,26 +28,36 @@ namespace Finegamedesign.Utils
 				normalMax = 1.0f;
 			}
 
+			// Side-effect: Sets each normal max.
+			// Expects state normals were already sorted by normal min.
 			public static int GetIndex(StateNormal[] stateNormals, float normal)
 			{
 				if (stateNormals.Length == 0)
 				{
 					return -1;
 				}
-				int previousIndex = 0;
-				int returnIndex = 0;
-				for (int index = 1, end = stateNormals.Length; index < end; ++index)
+				if (normal <= stateNormals[0].normalMin)
 				{
-					StateNormal stateNormal = stateNormals[index];
-					if (stateNormal.normalMin > normal)
-					{
-						returnIndex = previousIndex;
-					}
-					stateNormals[previousIndex].normalMax = stateNormal.normalMin;
+					return 0;
+				}
+				int index;
+				int last = stateNormals.Length - 1;
+				int previousIndex = 0;
+				for (index = 1; index <= last; ++index)
+				{
+					stateNormals[previousIndex].normalMax = stateNormals[index].normalMin;
 					previousIndex = index;
 				}
-				returnIndex = previousIndex;
-				return returnIndex;
+				for (index = 0; index <= last; ++index)
+				{
+					StateNormal stateNormal = stateNormals[index];
+					if (normal >= stateNormal.normalMin
+						&& normal < stateNormal.normalMax)
+					{
+						return index;
+					}
+				}
+				return last;
 			}
 
 			public static StateNormal Get(StateNormal[] stateNormals, float normal)
@@ -63,7 +73,7 @@ namespace Finegamedesign.Utils
 			public float GetNormalInState(float normal)
 			{
 				float inState = (normal - normalMin) / (normalMax - normalMin);
-				if (inState < 0)
+				if (inState < 0.0f)
 				{
 					inState = 0.0f;
 				}

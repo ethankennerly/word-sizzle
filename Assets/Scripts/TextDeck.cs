@@ -5,10 +5,15 @@ namespace Finegamedesign.Utils
 	public sealed class TextDeck
 	{
 		public string resourcePath = "";
+		public int resetCount = 0;
+		// Ratio scales with number of lines.
+		// Resetting limits how many strings are used when repeatedly removing a string.
+		public float resetRatio = 0.5f;
 
 		private List<string> originalLines;
 		private List<string> lines;
 
+		// Expects resource path was already set.
 		public void Setup()
 		{
 			string[] lineArray = StringUtil.ParseLines(StringUtil.Read(resourcePath));
@@ -16,17 +21,9 @@ namespace Finegamedesign.Utils
 			Reset();
 		}
 
-		private void Reset()
-		{
-			lines = new List<string>(originalLines);
-		}
-
 		public string RemoveAt(float normal)
 		{
-			if (lines.Count == 0)
-			{
-				Reset();
-			}
+			MayReset();
 			int end = lines.Count;
 			int index = (int)(normal * end);
 			if (index >= end)
@@ -40,6 +37,25 @@ namespace Finegamedesign.Utils
 			string selected = lines[index];
 			DataUtil.RemoveAt(lines, index);
 			return selected;
+		}
+
+		private void Reset()
+		{
+			lines = new List<string>(originalLines);
+		}
+
+		private void MayReset()
+		{
+			int count = lines.Count;
+			if (count <= resetCount)
+			{
+				Reset();
+			}
+			float lineRatio = (float)count / originalLines.Count;
+			if (lineRatio <= resetRatio)
+			{
+				Reset();
+			}
 		}
 	}
 }
