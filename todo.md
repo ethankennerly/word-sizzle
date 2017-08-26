@@ -56,15 +56,15 @@
 	- Particles emit 270 degrees of circle instead of 360.
 - [x] If answer quickly, animatic of happy eater.
 - [x] If answer slowly, animatic of eating burnt food.
-- [ ] If answer quickly, happy eater compliments, like that airplane in that art deco word game.
-- [ ] Compliments sorted by speed.
-- [ ] Compliments in random sliding range.
+- [x] If answer quickly, happy eater compliments, like that airplane in that art deco word game.
+- [x] Compliments sorted by speed.
 - [ ] 2017-08-13 Jennifer Russ: What happens if let letters go on burning???  Does the pan explode?  Anything?
 - [ ] 2017-08-13 Jennifer Russ: Love eggs!!!
 - [ ] 2017-08-13 Jennifer Russ: Frying.  Fun.  Burning?
 - [ ] 2017-08-13 Jennifer Russ: How many words did I do?
 - [ ] 2017-08-13 Jennifer Russ: Hint.  Accident?
 - [ ] 2017-08-13 Jennifer Russ: Senors.  Not English.
+- [ ] 2017-08-26 Jennifer Russ: In review, pressed enter too quickly.
 - [ ] Read: Spelling a word with fewer letters cools the letters.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.
@@ -82,7 +82,7 @@
 - [ ] Earns 1 coin for each letter of a word spelled quickly.
 - [ ] Spends 100 coins to get a hint of a letter.
 - [ ] Spelling longest word unlocks next level.
-- [ ] Reads QUICK when spelling quickly.
+- [ ] Compliments in random sliding range.
 - [ ] Upgrades pan to burn slower.
 - [ ] Coin particles lock on to coin count.
 - [ ] Spend coins to replace performance on a word.
