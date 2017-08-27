@@ -13,6 +13,9 @@ namespace Finegamedesign.Utils
 		// 2017-07-22 Jennifer Russ: [When jumping each 50, there are only about 60 anagrams to solve.]
 		public int step = 24;
 
+		public int Number { get; private set; }
+		public int Total { get; private set; }
+
 		public void Setup()
 		{
 			if (words != null)
@@ -27,6 +30,8 @@ namespace Finegamedesign.Utils
 				string word = lines[i];
 				words.Add(word);
 			}
+			Number = 1;
+			Total = (int)UnityEngine.Mathf.Ceil((float)lines.Length / step);
 		}
 
 		public string Current()
@@ -45,6 +50,7 @@ namespace Finegamedesign.Utils
 			{
 				index = nextIndex;
 			}
+			Number = index / step;
 		}
 	}
 }

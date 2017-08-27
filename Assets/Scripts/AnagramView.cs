@@ -13,6 +13,8 @@ namespace Finegamedesign.WordSizzle
 		public TimerView[] timers;
 		public TimerTextDeckView[] timerTexts;
 
+		public WordLevelsView[] wordLevels;
+
 		private void Start()
 		{
 			Setup();
@@ -30,6 +32,7 @@ namespace Finegamedesign.WordSizzle
 			}
 			result.Setup();
 
+			wordLevels = WordLevelsView.Binds(controller.model.levels, wordLevels);
 			timers = TimerView.Binds(controller.model.timer, timers);
 			timerTexts = TimerTextDeckView.Binds(controller.model.textDeck, timerTexts);
 

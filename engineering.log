@@ -1069,3 +1069,54 @@ NullReferenceException: Object reference not set to an instance of an object
   at Finegamedesign.Utils.TimerView.Update () [0x00001] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\TimerView.cs:39 
  
 (Filename: Assets/Scripts/TimerView.cs Line: 39)
+
+
+Sat, Aug 26, 2017  5:21:28 PM
+Assets/Scripts/WordLevels.cs(34,12): error CS0103: The name `length' does not exist in the current context
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 34)
+
+
+Sat, Aug 26, 2017  5:23:49 PM
+Assets/Scripts/WordLevels.cs(34,19): error CS0234: The type or namespace name `Ceiling' does not exist in the namespace `System'. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 34)
+
+
+Sat, Aug 26, 2017  5:25:03 PM
+Assets/Scripts/WordLevels.cs(34,24): error CS0266: Cannot implicitly convert type `double' to `int'. An explicit conversion exists (are you missing a cast?)
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 34)
+
+
+Sat, Aug 26, 2017  5:37:27 PM
+Assets/Scripts/AnagramView.cs(35,27): error CS1502: The best overloaded method match for `Finegamedesign.Utils.TimerView.Binds(Finegamedesign.Utils.Timer, Finegamedesign.Utils.TimerView[])' has some invalid arguments
+ 
+(Filename: Assets/Scripts/AnagramView.cs Line: 35)
+
+Assets/Scripts/AnagramView.cs(35,50): error CS1503: Argument `#1' cannot convert `Finegamedesign.Utils.WordLevels' expression to type `Finegamedesign.Utils.Timer'
+ 
+(Filename: Assets/Scripts/AnagramView.cs Line: 35)
+
+			wordLevels = TimerView.Binds(controller.model.levels, wordLevels);
+
+
+Sat, Aug 26, 2017  5:45:36 PM
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.WordSizzle.AnagramView.Setup () [0x00043] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:33 
+  at Finegamedesign.WordSizzle.AnagramView.Start () [0x00002] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:20 
+ 
+(Filename: Assets/Scripts/AnagramView.cs Line: 33)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.WordLevelsView.Update () [0x0000d] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\WordLevelsView.cs:29 
+ 
+(Filename: Assets/Scripts/WordLevelsView.cs Line: 29)
+
+			result.Setup();
+
+
+
+Sat, Aug 26, 2017  5:47:14 PM
+
+Word 2 of 123.
