@@ -63,7 +63,7 @@
 - [x] 2017-08-13 Jennifer Russ: Love eggs!!!
 - [x] 2017-08-13 Jennifer Russ: Frying.  Fun.  Burning?
 - [x] 2017-08-13 Jennifer Russ: How many words did I do?
-- [ ] 2017-08-26 Smoke obscured hint letters.
+- [x] 2017-08-26 Smoke obscured hint letters.
 - [ ] 2017-08-26 Jennifer Russ: Word 122 of 123 repeated.  There were only 122 words.
 - [ ] 2017-08-26 Jennifer Russ: Said words are always in same order.
 - [ ] 2017-08-26 Jennifer Russ: Words smoking.  Still eater smiles!!!!
@@ -81,6 +81,7 @@
 - [ ] 2017-08-26 Jennifer Russ: Wants to read all comments.
 - [ ] 2017-08-26 Jennifer Russ: Word 52 of 122:  hard.
 - [ ] 2017-08-26 Jennifer Russ: Word 91 of 122:  long.
+- [ ] During epilogue, hear sounds.
 - [ ] Save progress.
 - [ ] Pause button.
 - [ ] Earns 1 coin for each letter of a word spelled quickly.
