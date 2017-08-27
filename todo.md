@@ -69,33 +69,33 @@
 	- [x] Random offset.
 - [x] 2017-08-26 Jennifer Russ: What is "eggsarch"?
 - [x] 2017-08-26 Jennifer Russ: What is "eggsimious"?
-- [ ] 2017-08-26 Jennifer Russ: Words smoking.  Still eater smiles!!!!
-- [ ] 2017-08-26 Jennifer Russ: What is "carolus"(?)?
-- [ ] 2017-08-26 Jennifer Russ: What is "rabbitts"(?)?
-- [ ] 2017-08-26 Jennifer Russ: Repeats some compliments.
-- [ ] 2017-08-26 Jennifer Russ: likes: eggsplicit notes of ash
-- [ ] 2017-08-26 Jennifer Russ: likes: these eggs have legs
-- [ ] 2017-08-26 Jennifer Russ: likes: eggsecutive chef
-- [ ] 2017-08-26 Jennifer Russ: likes: you poached my heart
-- [ ] 2017-08-26 Jennifer Russ: likes: eureka paprika
-- [ ] 2017-08-26 Jennifer Russ: liked solving the word "ashless" since the theme is frying eggs.
-- [ ] 2017-08-26 Jennifer Russ: Wants to read all comments.
-- [ ] 2017-08-26 Jennifer Russ: Word 52 of 122:  hard.
-- [ ] 2017-08-26 Jennifer Russ: Word 91 of 122:  long.
+- [x] 2017-08-26 Jennifer Russ: Words smoking.  Still eater smiles!!!!
+- [x] 2017-08-26 Jennifer Russ: Repeats some compliments.
+- [x] 2017-08-26 Jennifer Russ: likes: eggsplicit notes of ash
+- [x] 2017-08-26 Jennifer Russ: likes: these eggs have legs
+- [x] 2017-08-26 Jennifer Russ: likes: eggsecutive chef
+- [x] 2017-08-26 Jennifer Russ: likes: you poached my heart
+- [x] 2017-08-26 Jennifer Russ: likes: eureka paprika
 - [ ] During epilogue, hear sounds.
-- [ ] Save progress.
+- [ ] Hear letter selection.
 - [ ] Pause button.
+- [ ] Save progress.
 - [ ] Earns 1 coin for each letter of a word spelled quickly.
 - [ ] Spends 100 coins to get a hint of a letter.
+- [ ] 2017-08-26 Jennifer Russ: Word 52 of 122:  hard.
+- [ ] 2017-08-26 Jennifer Russ: Word 91 of 122:  long.
+- [ ] 2017-08-26 Jennifer Russ: liked solving the word "ashless" since the theme is frying eggs.
 - [ ] Jennifer types to spell a word on the web.
 - [ ] Jennifer drags to spell a word on a phone.
 - [ ] Read: Spelling a word with fewer letters cools the letters.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.
 - [ ] If not a word, shake letters then clear selection.
-- [ ] Hear letter selection.
+- [ ] 2017-08-26 Jennifer Russ: Wants to read all comments.
 - [ ] 2017-08-13 Jennifer Russ: Hint.  Accident?
 - [ ] 2017-08-13 Jennifer Russ: Senors.  Not English.
+- [ ] 2017-08-26 Jennifer Russ: What is "carolus"(?)?
+- [ ] 2017-08-26 Jennifer Russ: What is "rabbitts"(?)?
 - [ ] 2017-08-26 Jennifer Russ: In review, pressed enter too quickly.
 - [ ] Animates shuffle.
 - [ ] If answer slowly, animate belching smoke.

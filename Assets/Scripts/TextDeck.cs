@@ -8,7 +8,7 @@ namespace Finegamedesign.Utils
 		public int resetCount = 0;
 		// Ratio scales with number of lines.
 		// Resetting limits how many strings are used when repeatedly removing a string.
-		public float resetRatio = 0.5f;
+		public float resetRatio = 0.25f;
 
 		private List<string> originalLines;
 		private List<string> lines;
