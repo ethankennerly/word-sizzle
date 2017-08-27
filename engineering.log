@@ -1218,3 +1218,21 @@ Sometimes number skips:
 			int nextIndex = GetNumber() * step + step;
 			int offset = UnityEngine.Random.Range(0, step);
 			int nextIndexOffset = index + step + offset;
+
+
+Sun, Aug 27, 2017  1:25:02 PM
+Animator.GotoState: State could not be found
+UnityEngine.Animator:Play(Int32, Int32, Single)
+UnityEngine.Animator:Play(String, Int32, Single) (at C:\buildslave\unity\build\artifacts\generated\common\modules\Animation\AnimatorBindings.gen.cs:1026)
+Finegamedesign.Utils.TimerView:Update() (at Assets\Scripts\TimerView.cs:47)
+
+[C:/buildslave/unity/build/Runtime/Animation/Director/AnimatorControllerPlayable.cpp line 1241] 
+(Filename: Assets/Scripts/TimerView.cs Line: 47)
+
+Invalid Layer Index '-1'
+UnityEngine.Animator:Play(Int32, Int32, Single)
+UnityEngine.Animator:Play(String, Int32, Single) (at C:\buildslave\unity\build\artifacts\generated\common\modules\Animation\AnimatorBindings.gen.cs:1026)
+Finegamedesign.Utils.TimerView:Update() (at Assets\Scripts\TimerView.cs:47)
+
+[C:/buildslave/unity/build/Runtime/Animation/Director/AnimatorControllerPlayable.cpp line 810] 
+(Filename: Assets/Scripts/TimerView.cs Line: 47)

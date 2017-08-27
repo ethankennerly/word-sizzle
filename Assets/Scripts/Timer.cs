@@ -86,7 +86,9 @@ namespace Finegamedesign.Utils
 		}
 
 		private StateNormal[] stateNormals = {
-			new StateNormal(0.0f, "fast"),
+			new StateNormal(0.0f, "fast2"),
+			new StateNormal(0.25f, "fast1"),
+			new StateNormal(0.50f, "fast"),
 			new StateNormal(0.75f, "slow")
 		};
 

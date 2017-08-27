@@ -3,6 +3,8 @@ namespace Finegamedesign.Utils
 	public sealed class TimerTextDeck
 	{
 		public string[] resourcePaths = {
+			"fast2.txt",
+			"fast1.txt",
 			"fast.txt",
 			"slow.txt"
 		};

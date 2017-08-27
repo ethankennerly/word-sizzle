@@ -1,3 +1,9 @@
+# Some pun inspirations
+
+Besides riffing with Jennifer...
+
+<https://twitter.com/evanrachelwood/status/602970760542441472?lang=en>
+
 # Playtest Journal
 
 
