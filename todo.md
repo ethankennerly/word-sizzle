@@ -67,9 +67,9 @@
 - [x] 2017-08-26 Jennifer Russ: Word 122 of 123 repeated.  There were only 122 words.
 - [x] 2017-08-26 Jennifer Russ: Said words are always in same order.
 	- [x] Random offset.
+- [x] 2017-08-26 Jennifer Russ: What is "eggsarch"?
+- [x] 2017-08-26 Jennifer Russ: What is "eggsimious"?
 - [ ] 2017-08-26 Jennifer Russ: Words smoking.  Still eater smiles!!!!
-- [ ] 2017-08-26 Jennifer Russ: What is "eggsarch"?
-- [ ] 2017-08-26 Jennifer Russ: What is "eggsimious"?
 - [ ] 2017-08-26 Jennifer Russ: What is "carolus"(?)?
 - [ ] 2017-08-26 Jennifer Russ: What is "rabbitts"(?)?
 - [ ] 2017-08-26 Jennifer Russ: Repeats some compliments.
