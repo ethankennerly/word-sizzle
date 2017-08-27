@@ -60,7 +60,7 @@
 - [x] Compliments sorted by speed.
 - [x] 2017-08-13 Jennifer Russ: What happens if let letters go on burning???  Does the pan explode?  Anything?
 - [x] 2017-08-13 Jennifer Russ: Love eggs!!!
-- [ ] 2017-08-13 Jennifer Russ: Frying.  Fun.  Burning?
+- [x] 2017-08-13 Jennifer Russ: Frying.  Fun.  Burning?
 - [ ] 2017-08-13 Jennifer Russ: How many words did I do?
 - [ ] 2017-08-13 Jennifer Russ: Hint.  Accident?
 - [ ] 2017-08-13 Jennifer Russ: Senors.  Not English.
