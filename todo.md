@@ -76,7 +76,7 @@
 - [x] 2017-08-26 Jennifer Russ: likes: eggsecutive chef
 - [x] 2017-08-26 Jennifer Russ: likes: you poached my heart
 - [x] 2017-08-26 Jennifer Russ: likes: eureka paprika
-- [ ] During epilogue, hear sounds.
+- [ ] During epilogue, hear swallow and 4 reaction sounds.
 - [ ] Hear letter selection.
 - [ ] Pause button.
 - [ ] Save progress.
