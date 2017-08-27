@@ -7,14 +7,17 @@ namespace Finegamedesign.Utils
 		public string path = "anagram_words.txt";
 
 		public List<string> words;
-		public int index = 0;
+
+		private Staircase staircase = new Staircase();
+		public int Number { get { return staircase.GetNumber(); } }
+		public int Total { get { return staircase.GetTotal(); } }
+
 		// Step was 50.
 		// 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.
 		// 2017-07-22 Jennifer Russ: [When jumping each 50, there are only about 60 anagrams to solve.]
-		public int step = 24;
-
-		public int Number { get; private set; }
-		public int Total { get; private set; }
+		// Step 20.  Step was 24.
+		// 2017-08-26 Jennifer Russ: Said words are always in same order.
+		private int step = 20;
 
 		public void Setup()
 		{
@@ -30,27 +33,18 @@ namespace Finegamedesign.Utils
 				string word = lines[i];
 				words.Add(word);
 			}
-			Number = 1;
-			Total = lines.Length / step;
+			staircase.Setup(step, words.Count);
 		}
 
 		public string Current()
 		{
-			return words[index];
+			return words[staircase.GetIndex()];
 		}
 
-		public void Next(int nextStep = -999)
+		// Random offset.  Number increases by one.
+		public void Next()
 		{
-			if (nextStep == -999)
-			{
-				nextStep = step;
-			}
-			int nextIndex = index + nextStep;
-			if (nextIndex < DataUtil.Length(words))
-			{
-				index = nextIndex;
-			}
-			Number = index / step;
+			staircase.Next();
 		}
 	}
 }

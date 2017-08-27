@@ -1124,3 +1124,97 @@ Word 2 of 123.
 
 Sun, Aug 27, 2017  8:59:41 AM
 - [ ] 2017-08-26 Jennifer Russ: Word 122 of 123 repeated.  There were only 122 words.
+
+
+Sun, Aug 27, 2017 10:19:07 AM
+Assets/Scripts/WordLevels.cs(56,26): error CS1026: Unexpected symbol `;', expecting `)'
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 56)
+
+Assets/Scripts/WordLevels.cs(60,32): error CS1026: Unexpected symbol `;', expecting `)'
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 60)
+
+			if (nextIndex >= length;
+			{
+				nextIndex = length - 1;
+			}
+			if (nextIndexOffset >= length;
+			{
+				nextIndexOffset = length - 1;
+			}
+
+
+Sun, Aug 27, 2017 10:20:05 AM
+Assets/UnityToykit/Deck.cs(28,11): error CS0165: Use of unassigned local variable `value'
+ 
+(Filename: Assets/UnityToykit/Deck.cs Line: 28)
+
+
+Sun, Aug 27, 2017 11:00:40 AM
+		// Random offset.
+		public void Next(int nextStep = -999)
+		{
+			if (nextStep == -999)
+			{
+				nextStep = step;
+			}
+			int offset = Deck.RandomRadius(randomRadius);
+			int nextIndex = index + nextStep;
+			int nextIndexOffset = index + nextStep + offset;
+			int length = DataUtil.Length(words);
+			if (nextIndex >= length)
+			{
+				nextIndex = length - 1;
+			}
+			if (nextIndexOffset >= length)
+			{
+				nextIndexOffset = length - 1;
+			}
+			index = nextIndexOffset;
+			Number = nextIndex / step;
+		}
+
+
+		// Random offset.  Number increases by one.
+		public void Next(int nextStep = -999)
+		{
+			if (nextStep == -999)
+			{
+				nextStep = step;
+			}
+			int nextIndex = index + nextStep;
+			int offset = UnityEngine.Random.Range(0, nextStep);
+			int nextIndexOffset = index + nextStep + offset;
+			int length = DataUtil.Length(words);
+			if (nextIndex >= length)
+			{
+				nextIndex = length - 1;
+			}
+			if (nextIndexOffset >= length)
+			{
+				nextIndexOffset = length - 1;
+			}
+			index = nextIndexOffset;
+			Number = nextIndex / step;
+		}
+
+
+Sun, Aug 27, 2017 11:33:22 AM
+Assets/Scripts/WordLevels.cs(12,23): error CS0161: `Finegamedesign.Utils.WordLevels.Number.get': not all code paths return a value
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 12)
+
+Assets/Scripts/WordLevels.cs(13,22): error CS0161: `Finegamedesign.Utils.WordLevels.Total.get': not all code paths return a value
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 13)
+
+Assets/Scripts/WordLevels.cs(38,14): error CS1501: No overload for method `Setup' takes `0' arguments
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 38)
+
+Sun, Aug 27, 2017 11:36:14 AM
+Sometimes number skips:
+			int nextIndex = GetNumber() * step + step;
+			int offset = UnityEngine.Random.Range(0, step);
+			int nextIndexOffset = index + step + offset;

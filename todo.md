@@ -65,7 +65,8 @@
 - [x] 2017-08-13 Jennifer Russ: How many words did I do?
 - [x] 2017-08-26 Smoke obscured hint letters.
 - [x] 2017-08-26 Jennifer Russ: Word 122 of 123 repeated.  There were only 122 words.
-- [ ] 2017-08-26 Jennifer Russ: Said words are always in same order.
+- [x] 2017-08-26 Jennifer Russ: Said words are always in same order.
+	- [x] Random offset.
 - [ ] 2017-08-26 Jennifer Russ: Words smoking.  Still eater smiles!!!!
 - [ ] 2017-08-26 Jennifer Russ: What is "eggsarch"?
 - [ ] 2017-08-26 Jennifer Russ: What is "eggsimious"?
