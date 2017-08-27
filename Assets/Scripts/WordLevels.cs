@@ -31,7 +31,7 @@ namespace Finegamedesign.Utils
 				words.Add(word);
 			}
 			Number = 1;
-			Total = (int)UnityEngine.Mathf.Ceil((float)lines.Length / step);
+			Total = lines.Length / step;
 		}
 
 		public string Current()
