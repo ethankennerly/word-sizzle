@@ -45,3 +45,30 @@ These opportunities might motivate Jennifer to solve one more:
 - Hint.  Accident?
 - Senors.  Not English.
 - How many words did I do?
+
+### Sat, Aug 26, 2017  6 PM
+
+Jennifer solved 122 of 122 words and then quit.
+
+These opportunitities might motivate Jennifer to solve one more:
+
+- Words smoking.  Still eater smiles!!!!
+- What is "eggsarch"?
+- What is "carolus"(?)?
+- What is "rabbitts"(?)?
+- What is "eggsimious"?
+- I noticed smoke obscured hint letters.
+- Word 122 of 123 repeated.  There were only 122 words.
+- Said words are always in same order.
+- Repeats some compliments.
+- Laughed and quoted:
+	- eggsplicit notes of ash
+	- These eggs have legs
+	- eggsecutive chef
+	- you poached my heart
+	- eureka paprika
+- Wants to read all comments.
+- liked solving the word "ashless" since the theme is frying eggs.
+- Word 52 of 122:  hard.
+- Word 91 of 122:  long.
+

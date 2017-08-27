@@ -58,17 +58,43 @@
 - [x] If answer slowly, animatic of eating burnt food.
 - [x] If answer quickly, happy eater compliments, like that airplane in that art deco word game.
 - [x] Compliments sorted by speed.
+- [x] Sounds sizzle, crackle, explosion.
 - [x] 2017-08-13 Jennifer Russ: What happens if let letters go on burning???  Does the pan explode?  Anything?
 - [x] 2017-08-13 Jennifer Russ: Love eggs!!!
 - [x] 2017-08-13 Jennifer Russ: Frying.  Fun.  Burning?
-- [ ] 2017-08-13 Jennifer Russ: How many words did I do?
-- [ ] 2017-08-13 Jennifer Russ: Hint.  Accident?
-- [ ] 2017-08-13 Jennifer Russ: Senors.  Not English.
-- [ ] 2017-08-26 Jennifer Russ: In review, pressed enter too quickly.
+- [x] 2017-08-13 Jennifer Russ: How many words did I do?
+- [ ] 2017-08-26 Smoke obscured hint letters.
+- [ ] 2017-08-26 Jennifer Russ: Word 122 of 123 repeated.  There were only 122 words.
+- [ ] 2017-08-26 Jennifer Russ: Said words are always in same order.
+- [ ] 2017-08-26 Jennifer Russ: Words smoking.  Still eater smiles!!!!
+- [ ] 2017-08-26 Jennifer Russ: What is "eggsarch"?
+- [ ] 2017-08-26 Jennifer Russ: What is "eggsimious"?
+- [ ] 2017-08-26 Jennifer Russ: What is "carolus"(?)?
+- [ ] 2017-08-26 Jennifer Russ: What is "rabbitts"(?)?
+- [ ] 2017-08-26 Jennifer Russ: Repeats some compliments.
+- [ ] 2017-08-26 Jennifer Russ: likes: eggsplicit notes of ash
+- [ ] 2017-08-26 Jennifer Russ: likes: these eggs have legs
+- [ ] 2017-08-26 Jennifer Russ: likes: eggsecutive chef
+- [ ] 2017-08-26 Jennifer Russ: likes: you poached my heart
+- [ ] 2017-08-26 Jennifer Russ: likes: eureka paprika
+- [ ] 2017-08-26 Jennifer Russ: liked solving the word "ashless" since the theme is frying eggs.
+- [ ] 2017-08-26 Jennifer Russ: Wants to read all comments.
+- [ ] 2017-08-26 Jennifer Russ: Word 52 of 122:  hard.
+- [ ] 2017-08-26 Jennifer Russ: Word 91 of 122:  long.
+- [ ] Save progress.
+- [ ] Pause button.
+- [ ] Earns 1 coin for each letter of a word spelled quickly.
+- [ ] Spends 100 coins to get a hint of a letter.
+- [ ] Jennifer types to spell a word on the web.
+- [ ] Jennifer drags to spell a word on a phone.
 - [ ] Read: Spelling a word with fewer letters cools the letters.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.
 - [ ] If not a word, shake letters then clear selection.
+- [ ] Hear letter selection.
+- [ ] 2017-08-13 Jennifer Russ: Hint.  Accident?
+- [ ] 2017-08-13 Jennifer Russ: Senors.  Not English.
+- [ ] 2017-08-26 Jennifer Russ: In review, pressed enter too quickly.
 - [ ] Animates shuffle.
 - [ ] If answer slowly, animate belching smoke.
 - [ ] MadLib of entered word matches part of speech.
@@ -76,11 +102,8 @@
 - [ ] Letters fly to eater's plate.
 - [ ] If answer quickly, animate 3 stars.
 - [ ] Spelling a word replaces letters with light letters.
-- [ ] Sounds sizzle, crackle, explosion.
-- [ ] Jennifer types to spell a word on the web.
-- [ ] Jennifer drags to spell a word on a phone.
-- [ ] Earns 1 coin for each letter of a word spelled quickly.
-- [ ] Spends 100 coins to get a hint of a letter.
+- [ ] Select levels from a list.
+- [ ] Unlock levels from a list.
 - [ ] Spelling longest word unlocks next level.
 - [ ] Compliments in random sliding range.
 - [ ] Upgrades pan to burn slower.
