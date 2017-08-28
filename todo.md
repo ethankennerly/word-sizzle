@@ -79,16 +79,31 @@
 - [x] During epilogue, hear swallow and 4 reaction sounds.
 - [x] Hear letter selection.
 - [ ] Pastel color palette.
-- [ ] Hear delete and shuffle sound.
-- [ ] Pause button.
+- [ ] Jennifer types to spell a word on the web.
+- [ ] Jennifer drags to spell a word on a phone.
 - [ ] Save progress.
+- [ ] Erase progress.
+- [ ] Pause button.
+- [ ] Earns 1 coin for word number.
+- [ ] Earns coins for quickness.
 - [ ] Earns 1 coin for each letter of a word spelled quickly.
-- [ ] Spends 100 coins to get a hint of a letter.
+- [ ] Spends 500 coins to get a hint of a letter.
+- [ ] 2017-08-27 Jennifer Russ: "with s-panache" ?
+- [ ] 2017-08-27 Jennifer Russ: "tickled pickled" ?
+- [ ] 2017-08-27 Jennifer Russ: "smoky aroma" and "crunchy" dissonant with smile.
+- [ ] 2017-08-27 Jennifer Russ: not words:  ser, wat.
+- [ ] 2017-08-27 Jennifer Russ: Save word in progress and auto-load.
+- [ ] 2017-08-27 Jennifer Russ: Says swallow sounds too loud.
+- [ ] 2017-08-27 I see button text is small.
+- [ ] 2017-08-27 I see HUD is behind speech.
+- [ ] 2017-08-27 Jennifer Russ: likes gulp and twinkle sounds.
+- [ ] 2017-08-27 Jennifer Russ: likes heart in eye.
+- [ ] 2017-08-27 Jennifer Russ: likes "olive your cooking".
+- [ ] 2017-08-27 Jennifer Russ: likes "you're my butter half".
+- [ ] Hear delete and shuffle sound.
 - [ ] 2017-08-26 Jennifer Russ: Word 52 of 122:  hard.
 - [ ] 2017-08-26 Jennifer Russ: Word 91 of 122:  long.
 - [ ] 2017-08-26 Jennifer Russ: liked solving the word "ashless" since the theme is frying eggs.
-- [ ] Jennifer types to spell a word on the web.
-- [ ] Jennifer drags to spell a word on a phone.
 - [ ] Read: Spelling a word with fewer letters cools the letters.
 - [ ] Displays rows of blank squares.
 - [ ] Displays words filled in at their color.

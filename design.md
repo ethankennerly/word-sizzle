@@ -78,3 +78,23 @@ These opportunitities might motivate Jennifer to solve one more:
 - Word 52 of 122:  hard.
 - Word 91 of 122:  long.
 
+### Sun, Aug 27, 2017  7 PM
+
+Jennifer solved 76 of 146 words then accidentally pressed play.
+
+These opportunities might motivate Jennifer to solve one more:
+
+- Save word in progress and auto-load.
+- Says swallow sounds too loud.
+- I see button text is small.
+- I see HUD is behind speech.
+- "smoky aroma" and "crunchy" dissonant with smile.
+- "with s-panache" ?
+- "tickled pickled" ?
+- not words:  ser, wat.
+- likes gulp and twinkle sounds.
+- likes heart in eye.
+- likes "olive your cooking".
+- likes "you're my butter half".
+
+
