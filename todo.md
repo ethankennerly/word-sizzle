@@ -78,6 +78,7 @@
 - [x] 2017-08-26 Jennifer Russ: likes: eureka paprika
 - [ ] During epilogue, hear swallow and 4 reaction sounds.
 - [ ] Hear letter selection.
+- [ ] Pastel color palette.
 - [ ] Pause button.
 - [ ] Save progress.
 - [ ] Earns 1 coin for each letter of a word spelled quickly.
