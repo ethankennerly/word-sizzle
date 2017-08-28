@@ -76,9 +76,10 @@
 - [x] 2017-08-26 Jennifer Russ: likes: eggsecutive chef
 - [x] 2017-08-26 Jennifer Russ: likes: you poached my heart
 - [x] 2017-08-26 Jennifer Russ: likes: eureka paprika
-- [ ] During epilogue, hear swallow and 4 reaction sounds.
-- [ ] Hear letter selection.
+- [x] During epilogue, hear swallow and 4 reaction sounds.
+- [x] Hear letter selection.
 - [ ] Pastel color palette.
+- [ ] Hear delete and shuffle sound.
 - [ ] Pause button.
 - [ ] Save progress.
 - [ ] Earns 1 coin for each letter of a word spelled quickly.
