@@ -1236,3 +1236,92 @@ Finegamedesign.Utils.TimerView:Update() (at Assets\Scripts\TimerView.cs:47)
 
 [C:/buildslave/unity/build/Runtime/Animation/Director/AnimatorControllerPlayable.cpp line 810] 
 (Filename: Assets/Scripts/TimerView.cs Line: 47)
+
+
+Sun, Aug 27, 2017  4:43:40 PM
+Assets/Scripts/TimerView.cs(46,6): error CS0103: The name `animator' does not exist in the current context
+ 
+(Filename: Assets/Scripts/TimerView.cs Line: 46)
+		private void Update()
+		{
+			normal = model.normal;
+			if (isChangeState && state != model.State)
+			{
+				state = model.State;
+				if (!isSyncNormal)
+				{
+					animator.Play(state, -1, 0.0f);
+				}
+			}
+			if (isSyncNormal)
+			{
+				SyncNormal();
+			}
+		}
+
+		private void SyncNormal()
+		{
+			for (int index = 0, end = animators.Count; index < end; ++index)
+			{
+				Animator animator = animators[index];
+				animator.Play(state, -1, model.normal);
+			}
+		}
+
+
+Sun, Aug 27, 2017  4:55:46 PM
+		private void Update()
+		{
+			normal = model.normal;
+			if (isChangeState && state != model.State)
+			{
+				state = model.State;
+				if (!isSyncNormal)
+				{
+					PlayNormal(0.0f);
+				}
+			}
+			if (isSyncNormal)
+			{
+				PlayNormal(model.normal);
+			}
+		}
+
+
+Sun, Aug 27, 2017  4:57:33 PM
+Assets/Scripts/TimerView.cs(46,6): error CS0103: The name `animator' does not exist in the current context
+ 
+(Filename: Assets/Scripts/TimerView.cs Line: 46)
+
+		private void Start()
+		{
+			if (animators == null || animators.Count == 0)
+			{
+				animators = new List<Animator>();
+				animators.Add(GetComponent<Animator>());
+			}
+		}
+
+		private void OnEnable()
+		{
+			state = model.State;
+			if (!isSyncNormal)
+			{
+				PlayNormal(0.0f);
+			}
+		}
+
+
+Sun, Aug 27, 2017  4:59:29 PM
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.TimerView.OnEnable () [0x0000e] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\TimerView.cs:46 
+ 
+(Filename: Assets/Scripts/TimerView.cs Line: 46)
+		private void OnEnable()
+		{
+			Setup();
+			state = model.State;
+
+
+Sun, Aug 27, 2017  5:01:23 PM
+Particles appear immediately.
