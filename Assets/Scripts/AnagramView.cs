@@ -7,6 +7,7 @@ namespace Finegamedesign.WordSizzle
 	public sealed class AnagramView : MonoBehaviour
 	{
 		public LetterInputView input;
+		public PauseView pause;
 		public LevelResultView result;
 		public AnagramController controller = new AnagramController();
 
@@ -22,6 +23,10 @@ namespace Finegamedesign.WordSizzle
 
 		private void Setup()
 		{
+			if (pause == null)
+			{
+				pause = FindObjectOfType<PauseView>();
+			}
 			if (input == null)
 			{
 				input = FindObjectOfType<LetterInputView>();

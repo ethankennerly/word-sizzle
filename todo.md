@@ -78,21 +78,17 @@
 - [x] 2017-08-26 Jennifer Russ: likes: eureka paprika
 - [x] During epilogue, hear swallow and 4 reaction sounds.
 - [x] Hear letter selection.
-- [ ] Pastel color palette.
+- [x] Pastel color palette.
 - [ ] Jennifer types to spell a word on the web.
-- [ ] Jennifer drags to spell a word on a phone.
-- [ ] Save progress.
+- [x] Jennifer taps to spell a word on a phone.
+- [ ] 2017-08-27 Jennifer Russ: Save word in progress and auto-load.
 - [ ] Erase progress.
 - [ ] Pause button.
-- [ ] Earns 1 coin for word number.
-- [ ] Earns coins for quickness.
-- [ ] Earns 1 coin for each letter of a word spelled quickly.
-- [ ] Spends 500 coins to get a hint of a letter.
-- [ ] 2017-08-27 Jennifer Russ: "with s-panache" ?
-- [ ] 2017-08-27 Jennifer Russ: "tickled pickled" ?
-- [ ] 2017-08-27 Jennifer Russ: "smoky aroma" and "crunchy" dissonant with smile.
+- [ ] Quit button from pause menu.
+- [x] 2017-08-27 Jennifer Russ: "with s-panache" ?
+- [x] 2017-08-27 Jennifer Russ: "tickled pickled" ?
+- [x] 2017-08-27 Jennifer Russ: "smoky aroma" and "crunchy" dissonant with smile.
 - [ ] 2017-08-27 Jennifer Russ: not words:  ser, wat.
-- [ ] 2017-08-27 Jennifer Russ: Save word in progress and auto-load.
 - [ ] 2017-08-27 Jennifer Russ: Says swallow sounds too loud.
 - [ ] 2017-08-27 I see button text is small.
 - [ ] 2017-08-27 I see HUD is behind speech.
@@ -100,7 +96,9 @@
 - [ ] 2017-08-27 Jennifer Russ: likes heart in eye.
 - [ ] 2017-08-27 Jennifer Russ: likes "olive your cooking".
 - [ ] 2017-08-27 Jennifer Russ: likes "you're my butter half".
-- [ ] Hear delete and shuffle sound.
+- [ ] 2017-09-03 Ben Russ: Burnt. Is it locked?
+- [ ] Button contrast hard to read on top of egg.
+- [ ] Swipe to spell.
 - [ ] 2017-08-26 Jennifer Russ: Word 52 of 122:  hard.
 - [ ] 2017-08-26 Jennifer Russ: Word 91 of 122:  long.
 - [ ] 2017-08-26 Jennifer Russ: liked solving the word "ashless" since the theme is frying eggs.
@@ -114,7 +112,9 @@
 - [ ] 2017-08-26 Jennifer Russ: What is "carolus"(?)?
 - [ ] 2017-08-26 Jennifer Russ: What is "rabbitts"(?)?
 - [ ] 2017-08-26 Jennifer Russ: In review, pressed enter too quickly.
+- [ ] Hear delete and shuffle sound.
 - [ ] Animates shuffle.
+- [ ] Linear model of word difficulty.
 - [ ] If answer slowly, animate belching smoke.
 - [ ] MadLib of entered word matches part of speech.
 - [ ] Smoke and fire matches eating on plate.
@@ -133,6 +133,7 @@
 - [ ] Spend 1 coin to spin a dial that adds one letter to collect.
 - [ ] 2017-07-15 Jennifer Russ: The letters "THIS" can spell "SHIT".  She chuckled, but asked if I wanted that.
 	- [ ] Omit words that anagram to excluded words.
+- [ ] Jennifer drags to spell a word on a phone.
 - [ ] Buffer news.  Example:
 	news.Post(populateNews);
 	...

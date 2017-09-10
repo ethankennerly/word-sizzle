@@ -25,6 +25,10 @@ namespace Finegamedesign.WordSizzle
 		// Otherwise, during review, pressing space shows next letter.
 		public void Update(float deltaTime)
 		{
+			if (view.pause.model.GetIsPaused())
+			{
+				deltaTime = 0.0f;
+			}
 			view.input.controller.model.isEnabled = !model.isComplete;
 			view.input.controller.Update();
 			model.selection = view.input.controller.model.selection;

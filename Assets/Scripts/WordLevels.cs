@@ -1,10 +1,13 @@
 using System.Collections.Generic;
+using PlayerPrefs = UnityEngine.PlayerPrefs;
 
 namespace Finegamedesign.Utils
 {
 	public sealed class WordLevels
 	{
 		public string path = "anagram_words.txt";
+		private string levelKey = "WordLevel";
+		private bool isFirst = true;
 
 		public List<string> words;
 
@@ -34,6 +37,8 @@ namespace Finegamedesign.Utils
 				words.Add(word);
 			}
 			staircase.Setup(step, words.Count);
+			LoadLevel();
+			isFirst = true;
 		}
 
 		public string Current()
@@ -41,10 +46,35 @@ namespace Finegamedesign.Utils
 			return words[staircase.GetIndex()];
 		}
 
-		// Random offset.  Number increases by one.
+		// First time called loads starting level.
+		// Each time after: Random offset.  Number increases by one.
 		public void Next()
 		{
+			if (isFirst)
+			{
+				isFirst = false;
+				return;
+			}
 			staircase.Next();
+			SaveLevel(staircase.GetIndex());
+		}
+
+		public void ResetLevel()
+		{
+			SaveLevel(staircase.defaultIndex);
+			LoadLevel();
+		}
+
+		private void LoadLevel()
+		{
+			int index = PlayerPrefs.GetInt(levelKey, staircase.defaultIndex);
+			staircase.SetIndex(index);
+		}
+
+		private void SaveLevel(int index)
+		{
+			PlayerPrefs.SetInt(levelKey, index);
+			PlayerPrefs.Save();
 		}
 	}
 }

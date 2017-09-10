@@ -1325,3 +1325,39 @@ NullReferenceException: Object reference not set to an instance of an object
 
 Sun, Aug 27, 2017  5:01:23 PM
 Particles appear immediately.
+
+
+Sun, Sep 10, 2017  3:21:50 PM
+Assets/Scripts/WordLevels.cs(62,14): error CS1501: No overload for method `SetIndex' takes `2' arguments
+ 
+(Filename: Assets/Scripts/WordLevels.cs Line: 62)
+			staircase.SetIndex(PlayerPrefs.GetInt(levelKey), staircase.defaultIndex);
+
+
+Sun, Sep 10, 2017  4:28:16 PM
+Assets/UnityToykit/AnimationView.cs(48,41): error CS0103: The name `animatorOwner' does not exist in the current context
+ 
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 48)
+
+Assets/UnityToykit/AnimationView.cs(53,31): error CS0103: The name `animatorOwner' does not exist in the current context
+ 
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 53)
+
+Assets/UnityToykit/AnimationView.cs(56,12): error CS0103: The name `animatorOwner' does not exist in the current context
+ 
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 56)
+
+Assets/UnityToykit/AnimationView.cs(63,31): error CS0103: The name `animatorOwner' does not exist in the current context
+ 
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 63)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.PauseView.Start () [0x00028] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\PauseView.cs:16 
+ 
+(Filename: Assets/Scripts/PauseView.cs Line: 16)
+
+
+Sun, Sep 10, 2017  4:36:38 PM
+		private string beginState = "begin";
+		private string endState = "begin";
+			state = "begin";
