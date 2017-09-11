@@ -9,7 +9,12 @@ namespace Finegamedesign.Utils
 
 		public int GetNumber()
 		{
-			return index / step;
+			return index / step + 1;
+		}
+
+		private int GetRound()
+		{
+			return index / step * step;
 		}
 
 		public int GetTotal()
@@ -37,7 +42,7 @@ namespace Finegamedesign.Utils
 		// Random offset.  Number increases by one.
 		public void Next()
 		{
-			int nextIndex = GetNumber() * step + step;
+			int nextIndex = GetRound() + step;
 			int offset = UnityEngine.Random.Range(0, step);
 			int nextIndexOffset = nextIndex + offset;
 			if (nextIndexOffset >= length)

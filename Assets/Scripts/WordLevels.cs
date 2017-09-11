@@ -6,7 +6,7 @@ namespace Finegamedesign.Utils
 	public sealed class WordLevels
 	{
 		public string path = "anagram_words.txt";
-		private string levelKey = "WordLevel";
+		private string levelKey = "level";
 		private bool isFirst = true;
 
 		public List<string> words;

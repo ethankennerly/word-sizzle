@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace Finegamedesign.Utils
@@ -9,25 +10,42 @@ namespace Finegamedesign.Utils
 		public Text numberText;
 		public Text totalText;
 
+		public Button newGameButton;
+
 		private WordLevels model;
 
-		public static WordLevelsView[] Binds(WordLevels model, WordLevelsView[] timers)
+		public static WordLevelsView[] Binds(WordLevels model, WordLevelsView[] views)
 		{
-			if (timers == null || timers.Length == 0)
+			if (views == null || views.Length == 0)
 			{
-				timers = FindObjectsOfType<WordLevelsView>();
+				views = FindObjectsOfType<WordLevelsView>();
 			}
-			for (int index = 0, end = timers.Length; index < end; ++index)
+			for (int index = 0, end = views.Length; index < end; ++index)
 			{
-				timers[index].model = model;
+				views[index].model = model;
 			}
-			return timers;
+			return views;
+		}
+
+		private void Start()
+		{
+			if (newGameButton == null)
+			{
+				return;
+			}
+			newGameButton.onClick.AddListener(NewGame);
 		}
 
 		private void Update()
 		{
 			numberText.text = model.Number.ToString();
 			totalText.text = model.Total.ToString();
+		}
+
+		private void NewGame()
+		{
+			model.ResetLevel();
+			SceneManager.LoadScene(0);
 		}
 	}
 }

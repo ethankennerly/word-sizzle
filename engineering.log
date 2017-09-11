@@ -1361,3 +1361,39 @@ Sun, Sep 10, 2017  4:36:38 PM
 		private string beginState = "begin";
 		private string endState = "begin";
 			state = "begin";
+
+
+Sun, Sep 10, 2017  5:07:18 PM
+Assets/Scripts/WordLevelsView.cs(47,16): warning CS0618: `UnityEngine.Application.LoadLevel(int)' is obsolete: `Use SceneManager.LoadScene'
+ 
+(Filename: Assets/Scripts/WordLevelsView.cs Line: 47)
+
+
+Sun, Sep 10, 2017  5:14:46 PM
+		public int GetNumber()
+		{
+			return index / step + 1;
+		}
+
+		public void Next()
+		{
+			int nextIndex = GetNumber() * step + step;
+
+
+		public int GetIndex()
+		{
+			return index;
+		}
+			int nextIndex = GetRound() * step + step;
+
+
+Sun, Sep 10, 2017  5:19:55 PM
+		public int GetNumber()
+		{
+			return GetRound() + 1;
+		}
+
+		private int GetRound()
+		{
+			return index / step * step;
+		}
