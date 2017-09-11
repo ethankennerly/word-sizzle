@@ -1397,3 +1397,16 @@ Sun, Sep 10, 2017  5:19:55 PM
 		{
 			return index / step * step;
 		}
+
+
+Sun, Sep 10, 2017  5:30:31 PM
+Assets/UnityToykit/PauseView.cs(34,0): error CS1024: Wrong preprocessor directive
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 34)
+
+Assets/UnityToykit/PauseView.cs(36,0): error CS1028: Unexpected processor directive (no #if for this #endif)
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 36)
+#ifdef UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false;
+#endif

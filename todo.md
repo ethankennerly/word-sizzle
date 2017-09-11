@@ -82,7 +82,7 @@
 - [ ] Jennifer types to spell a word on the web.
 - [x] Jennifer taps to spell a word on a phone.
 - [x] 2017-08-27 Jennifer Russ: Save word in progress and auto-load.
-- [ ] New game erases progress.
+- [x] New game erases progress.
 - [x] Pause button.
 - [ ] Quit button from pause menu.
 - [x] 2017-08-27 Jennifer Russ: "with s-panache" ?

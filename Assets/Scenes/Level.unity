@@ -6225,7 +6225,7 @@ MonoBehaviour:
       isEnabled: 1
 --- !u!114 &584230140 stripped
 MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114151924923194246, guid: 23059e67dca4e9442b6dabef571ad2bd,
+  m_PrefabParentObject: {fileID: 114731912416117854, guid: 23059e67dca4e9442b6dabef571ad2bd,
     type: 2}
   m_PrefabInternal: {fileID: 1235379697}
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -8458,7 +8458,7 @@ Prefab:
     - target: {fileID: 224421092877862602, guid: 23059e67dca4e9442b6dabef571ad2bd,
         type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.99999994
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 224421092877862602, guid: 23059e67dca4e9442b6dabef571ad2bd,
         type: 2}
