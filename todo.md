@@ -84,14 +84,14 @@
 - [x] 2017-08-27 Jennifer Russ: Save word in progress and auto-load.
 - [x] New game erases progress.
 - [x] Pause button.
-- [ ] Quit button from pause menu.
+- [x] Quit button from pause menu.
 - [x] 2017-08-27 Jennifer Russ: "with s-panache" ?
 - [x] 2017-08-27 Jennifer Russ: "tickled pickled" ?
 - [x] 2017-08-27 Jennifer Russ: "smoky aroma" and "crunchy" dissonant with smile.
 - [ ] 2017-08-27 Jennifer Russ: not words:  ser, wat.
 - [ ] 2017-08-27 Jennifer Russ: Says swallow sounds too loud.
 - [ ] 2017-08-27 I see button text is small.
-- [ ] 2017-08-27 I see HUD is behind speech.
+- [x] 2017-08-27 I see HUD is behind speech.
 - [ ] 2017-08-27 Jennifer Russ: likes gulp and twinkle sounds.
 - [ ] 2017-08-27 Jennifer Russ: likes heart in eye.
 - [ ] 2017-08-27 Jennifer Russ: likes "olive your cooking".
@@ -130,6 +130,7 @@
 - [ ] Spend coins to replace performance on a word.
 - [ ] Coin count increments as each particle hits it.
 - [ ] All letters in alphabet make a set worth 100 coins.
+- [ ] Extract words from a text on frying food.
 - [ ] Spend 1 coin to spin a dial that adds one letter to collect.
 - [ ] 2017-07-15 Jennifer Russ: The letters "THIS" can spell "SHIT".  She chuckled, but asked if I wanted that.
 	- [ ] Omit words that anagram to excluded words.

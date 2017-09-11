@@ -5,10 +5,6 @@ namespace Finegamedesign.Utils
 {
 	public sealed class WordLevels
 	{
-		public string path = "anagram_words.txt";
-		private string levelKey = "level";
-		private bool isFirst = true;
-
 		public List<string> words;
 
 		private Staircase staircase = new Staircase();
@@ -20,7 +16,14 @@ namespace Finegamedesign.Utils
 		// 2017-07-22 Jennifer Russ: [When jumping each 50, there are only about 60 anagrams to solve.]
 		// Step 20.  Step was 24.
 		// 2017-08-26 Jennifer Russ: Said words are always in same order.
-		private int step = 20;
+		private int step =
+				1;
+				// 20;
+		private string path =
+				// "anagram_words.txt";
+				"science_of_frying_words.txt";
+		private string levelKey = "level";
+		private bool isFirst = true;
 
 		public void Setup()
 		{
