@@ -1410,3 +1410,154 @@ Assets/UnityToykit/PauseView.cs(36,0): error CS1028: Unexpected processor direct
 #ifdef UNITY_EDITOR
 			UnityEditor.EditorApplication.isPlaying = false;
 #endif
+
+
+
+Sat, Oct 28, 2017  4:46:01 PM
+
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+Assets/UnityToykit/PauseModel.cs(15,6): error CS1043: Invalid accessor body `:', expecting `;' or `{'
+ 
+(Filename: Assets/UnityToykit/PauseModel.cs Line: 15)
+
+Assets/UnityToykit/PauseModel.cs(19,7): error CS1519: Unexpected symbol `:' in class, struct, or interface member declaration
+ 
+(Filename: Assets/UnityToykit/PauseModel.cs Line: 19)
+
+Assets/UnityToykit/PauseModel.cs(20,4): error CS9010: Primary constructor body is not allowed
+ 
+(Filename: Assets/UnityToykit/PauseModel.cs Line: 20)
+
+Assets/UnityToykit/PauseModel.cs(33,9): error CS1525: Unexpected symbol `string', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseModel.cs Line: 33)
+
+Assets/UnityToykit/PauseModel.cs(35,3): error CS1525: Unexpected symbol `get', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseModel.cs Line: 35)
+
+Assets/UnityToykit/PauseModel.cs(37,4): error CS1525: Unexpected symbol `return', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseModel.cs Line: 37)
+
+Assets/UnityToykit/PauseModel.cs(38,4): error CS1514: Unexpected symbol `}', expecting `.' or `{'
+ 
+(Filename: Assets/UnityToykit/PauseModel.cs Line: 38)
+
+Assets/UnityToykit/PauseModel.cs(54,9): error CS1525: Unexpected symbol `event', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseModel.cs Line: 54)
+
+Assets/UnityToykit/PauseView.cs(18,6): error CS1043: Invalid accessor body `:', expecting `;' or `{'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 18)
+
+Assets/UnityToykit/PauseView.cs(24,10): error CS1525: Unexpected symbol `void', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 24)
+
+Assets/UnityToykit/PauseView.cs(26,3): error CS1525: Unexpected symbol `UpdateAnimation', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 26)
+
+Assets/UnityToykit/PauseView.cs(26,30): error CS1525: Unexpected symbol `)', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 26)
+
+Assets/UnityToykit/PauseView.cs(27,24): error CS1525: Unexpected symbol `+=', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 27)
+
+Assets/UnityToykit/PauseView.cs(28,34): error CS1525: Unexpected symbol `('
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 28)
+
+Assets/UnityToykit/PauseView.cs(28,46): error CS1525: Unexpected symbol `)'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 28)
+
+Assets/UnityToykit/PauseView.cs(29,35): error CS1525: Unexpected symbol `('
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 29)
+
+Assets/UnityToykit/PauseView.cs(29,48): error CS1525: Unexpected symbol `)'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 29)
+
+Assets/UnityToykit/PauseView.cs(32,4): error CS1525: Unexpected symbol `return'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 32)
+
+Assets/UnityToykit/PauseView.cs(33,4): error CS1514: Unexpected symbol `}', expecting `.' or `{'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 33)
+
+Assets/UnityToykit/PauseView.cs(37,10): error CS1525: Unexpected symbol `void'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 37)
+
+		public bool isPaused
+		{
+			get:
+
+
+Sat, Oct 28, 2017  4:50:22 PM
+- Finished compile Library/ScriptAssemblies/Assembly-CSharp.dll
+Assets/UnityToykit/PauseView.cs(18,6): error CS1043: Invalid accessor body `:', expecting `;' or `{'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 18)
+
+Assets/UnityToykit/PauseView.cs(24,10): error CS1525: Unexpected symbol `void', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 24)
+
+Assets/UnityToykit/PauseView.cs(26,3): error CS1525: Unexpected symbol `UpdateAnimation', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 26)
+
+Assets/UnityToykit/PauseView.cs(26,30): error CS1525: Unexpected symbol `)', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 26)
+
+Assets/UnityToykit/PauseView.cs(27,24): error CS1525: Unexpected symbol `+=', expecting `class', `delegate', `enum', `interface', `partial', or `struct'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 27)
+
+Assets/UnityToykit/PauseView.cs(28,34): error CS1525: Unexpected symbol `('
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 28)
+
+Assets/UnityToykit/PauseView.cs(28,46): error CS1525: Unexpected symbol `)'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 28)
+
+Assets/UnityToykit/PauseView.cs(29,35): error CS1525: Unexpected symbol `('
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 29)
+
+Assets/UnityToykit/PauseView.cs(29,48): error CS1525: Unexpected symbol `)'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 29)
+
+Assets/UnityToykit/PauseView.cs(32,4): error CS1525: Unexpected symbol `return'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 32)
+
+Assets/UnityToykit/PauseView.cs(33,4): error CS1514: Unexpected symbol `}', expecting `.' or `{'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 33)
+
+Assets/UnityToykit/PauseView.cs(37,10): error CS1525: Unexpected symbol `void'
+ 
+(Filename: Assets/UnityToykit/PauseView.cs Line: 37)
+
+		public PauseModel model
+		{
+			get:
+
+Sat, Oct 28, 2017  4:51:06 PM
+Assets/Scripts/AnagramController.cs(28,25): error CS1061: Type `Finegamedesign.Utils.PauseModel' does not contain a definition for `GetIsPaused' and no extension method `GetIsPaused' of type `Finegamedesign.Utils.PauseModel' could be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/Scripts/AnagramController.cs Line: 28)
+
+			if (view.pause.model.GetIsPaused())

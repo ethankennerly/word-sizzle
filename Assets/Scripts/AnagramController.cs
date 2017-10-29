@@ -25,7 +25,7 @@ namespace Finegamedesign.WordSizzle
 		// Otherwise, during review, pressing space shows next letter.
 		public void Update(float deltaTime)
 		{
-			if (view.pause.model.GetIsPaused())
+			if (view.pause.model.isPaused)
 			{
 				deltaTime = 0.0f;
 			}

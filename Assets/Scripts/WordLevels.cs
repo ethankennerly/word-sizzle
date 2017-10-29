@@ -46,7 +46,8 @@ namespace Finegamedesign.Utils
 
 		public string Current()
 		{
-			return words[staircase.GetIndex()];
+			int index = staircase.GetIndex();
+			return words[index];
 		}
 
 		// First time called loads starting level.
@@ -71,6 +72,12 @@ namespace Finegamedesign.Utils
 		private void LoadLevel()
 		{
 			int index = PlayerPrefs.GetInt(levelKey, staircase.defaultIndex);
+			if (index >= words.Count)
+			{
+				DebugUtil.Log("Staircase index " + index
+					+ " is out of words range (0 " + words.Count + ").");
+				index = words.Count - 1;
+			}
 			staircase.SetIndex(index);
 		}
 
