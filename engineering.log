@@ -1561,3 +1561,153 @@ Assets/Scripts/AnagramController.cs(28,25): error CS1061: Type `Finegamedesign.U
 (Filename: Assets/Scripts/AnagramController.cs Line: 28)
 
 			if (view.pause.model.GetIsPaused())
+
+
+Sun, Nov  5, 2017 11:26:07 AM
+
+
+Assets/Editor/Tests/TestLetterInputModel.cs(12,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 12)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(12,60): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 12)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(16,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 16)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(16,61): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 16)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(30,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 30)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(30,61): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 30)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(53,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 53)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(53,61): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 53)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(63,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 63)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(63,61): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 63)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(67,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 67)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(67,60): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 67)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(79,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 79)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(79,61): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 79)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(93,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 93)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(93,61): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 93)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(102,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 102)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(102,60): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 102)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(106,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 106)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(106,61): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 106)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(118,35): error CS1525: Unexpected symbol `input'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 118)
+
+Assets/Editor/Tests/TestLetterInputModel.cs(118,61): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+(Filename: Assets/Editor/Tests/TestLetterInputModel.cs Line: 118)
+
+			Assert.AreEqual(input.letterMax input.selects.texts.Count);
+
+
+Sun, Nov  5, 2017 11:27:42 AM
+
+PopulateTextsAndStates (0.006s)
+---
+Expected: 12
+  But was:  3
+---
+at Finegamedesign.Utils.TestLetterInputModel.PopulateTextsAndStates () [0x00032] in C:\Users\Ethan\workspace\word-sizzle\Assets\Editor\Tests\TestLetterInputModel.cs:12
+
+
+Sun, Nov  5, 2017 11:37:33 AM
+ddFirstThenRepeat (0.004s)
+---
+System.ArgumentOutOfRangeException : Argument is out of range.
+Parameter name: index
+---
+at System.Collections.Generic.List`1[System.String].get_Item (Int32 index) [0x0000c] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Collections.Generic/List.cs:633 
+  at Finegamedesign.Utils.LetterInputModel.SetFirstButton (System.String letter) [0x0004c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputModel.cs:220 
+    at Finegamedesign.Utils.LetterInputModel.Add (System.String letter, Boolean isButton) [0x0001c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\LetterInputModel.cs:148 
+      at Finegamedesign.Utils.TestLetterInputModel.AddFirstThenRepeat () [0x00020] in C:\Users\Ethan\workspace\word-sizzle\Assets\Editor\Tests\TestLetterInputModel.cs:30 
+        at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (object,object[],System.Exception&)
+	  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x000d0] in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:222a
+
+
+			if (isShuffleOnPopulate)
+			{
+				Shuffle();
+			}
+
+Sun, Nov  5, 2017 11:38:35 AM
+
+PopulateTextsAndStates (0.004s)
+---
+Expected: 12
+  But was:  3
+  ---
+  at Finegamedesign.Utils.TestLetterInputModel.PopulateTextsAndStates () [0x00032] in C:\Users\Ethan\workspace\word-sizzle\Assets\Editor\Tests\TestLetterInputModel.cs:12
+			input.Populate("WIN");
+			Assert.AreEqual(input.letterMax, input.buttons.texts.Count);
+
+
+ddWithRepetition (0.004s)
+---
+Expected string length 12 but was 5. Strings differ at index 0.
+  Expected: "select_begin"
+    But was:  "begin"
+      -----------^
+      ---
+      at Finegamedesign.Utils.TestLetterInputModel.AddWithRepetition () [0x0005a] in C:\Users\Ethan\workspace\word-sizzle\Assets\Editor\Tests\TestLetterInputModel.cs:95
+			var input = new LetterInputModel();
+			input.Populate("EEL");
+			input.Add("E");
+			Assert.AreEqual(input.letterMax, input.buttons.states.Count);
+			Assert.AreEqual(input.selectBeginState, input.buttons.states[0]);

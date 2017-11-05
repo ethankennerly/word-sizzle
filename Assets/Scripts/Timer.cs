@@ -15,7 +15,7 @@ namespace Finegamedesign.Utils
 		public string State { get; private set; }
 		public int StateIndex { get; private set; }
 
-		private class StateNormal
+		private sealed class StateNormal
 		{
 			public string state;
 			private float normalMin;

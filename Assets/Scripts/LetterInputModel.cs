@@ -50,6 +50,7 @@ namespace Finegamedesign.Utils
 		public bool isTutorKey = false;
 		public bool isTutorTask = true;
 		public bool isEnabled = true;
+		public bool isShuffleOnPopulate = true;
 
 		// Hides extra letters.
 		// Otherwise, when going from a longer word to a shorter word,
@@ -62,7 +63,14 @@ namespace Finegamedesign.Utils
 			buttons.texts = DataUtil.Split(word, "");
 			hint.Populate(buttons.texts);
 			isEnabled = true;
-			Shuffle();
+			if (isShuffleOnPopulate)
+			{
+				Shuffle();
+			}
+			else
+			{
+				ClearSelection();
+			}
 			MayTutorTask();
 		}
 
