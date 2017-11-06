@@ -1711,3 +1711,205 @@ Expected string length 12 but was 5. Strings differ at index 0.
 			input.Add("E");
 			Assert.AreEqual(input.letterMax, input.buttons.states.Count);
 			Assert.AreEqual(input.selectBeginState, input.buttons.states[0]);
+
+
+Sun, Nov  5, 2017  4:33:30 PM
+Assets/UnityToykit/Observable.cs(31,24): error CS1525: Unexpected symbol `Observable', expecting `operator'
+ 
+(Filename: Assets/UnityToykit/Observable.cs Line: 31)
+
+Assets/UnityToykit/Observable.cs(38,24): error CS1525: Unexpected symbol `T', expecting `operator'
+ 
+(Filename: Assets/UnityToykit/Observable.cs Line: 38)
+
+	public static implicit Observable<T>(T value)
+
+
+Sun, Nov  5, 2017  4:34:24 PM
+Assets/UnityToykit/Observable.cs(38,33): error CS1525: Unexpected symbol `<', expecting `type'
+	public static implicit operator <T>(Observable<T> observable)
+
+
+Sun, Nov  5, 2017  4:36:05 PM
+Assets/UnityToykit/Observable.cs(17,8): error CS0019: Operator `==' cannot be applied to operands of type `T' and `T'
+ 
+(Filename: Assets/UnityToykit/Observable.cs Line: 17)
+https://stackoverflow.com/questions/8982645/how-to-solve-operator-cannot-be-applied-to-operands-of-type-t-and-t
+public sealed class Observable<T>
+
+
+Sun, Nov  5, 2017  4:39:28 PM
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 24)
+
+Assets/UnityToykit/Editor/Tests/TestObservable.cs(26,3): error CS1014: A get or set accessor expected
+ 
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 26)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.005013 seconds (Nothing changed)
+	public void Set
+ 
+Sun, Nov  5, 2017  4:41:47 PM
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 24)
+
+Assets/UnityToykit/Editor/Tests/TestObservable.cs(26,3): error CS1014: A get or set accessor expected
+ 
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 26)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.003592 seconds (Nothing changed)
+	public void SetAndAdd
+
+
+Sun, Nov  5, 2017  4:42:53 PM
+Assets/UnityToykit/Editor/Tests/TestObservable.cs(17,25): warning CS0693: Type parameter `T' has the same name as the type parameter from outer type `TestObservable.Observer<T>'
+ 
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 17)
+
+Assets/UnityToykit/Editor/Tests/TestObservable.cs(19,14): error CS0029: Cannot implicitly convert type `T [Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null -- C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\Editor\Tests\TestObservable.cs]' to `T [Assembly-CSharp-Editor, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null -- C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\Editor\Tests\TestObservable.cs]'
+ 
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 19)
+
+		public void OnChanged<T>(T previousValue, T value)
+
+
+Sun, Nov  5, 2017  4:44:19 PM
+SetAndAdd (0.026s)
+---
+Expected: null
+  But was:  <Observable`1[System.String]>
+  ---
+  at TestObservable.SetAndAdd () [0x00021] in C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\Editor\Tests\TestObservable.cs:29
+		Assert.AreEqual(null, state);
+		Assert.AreEqual(null, animationPlayer.value);
+
+
+
+Sun, Nov  5, 2017  4:47:42 PM
+
+SetAndAdd (0.014s)
+---
+Expected: "none"
+  But was:  <Observable`1[System.String]>
+  ---
+  at TestObservable.SetAndAdd () [0x00030] in C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\Editor\Tests\TestObservable.cs:32
+		state = "none";
+		Assert.AreEqual("none", state);
+		Assert.AreEqual("none", animationPlayer.value);
+
+
+Sun, Nov  5, 2017  4:51:14 PM
+SetAndAdd (0.015s)
+---
+Expected: "none"
+  But was:  <none>
+  ---
+  at TestObservable.SetAndAdd () [0x00048] in C:\Users\Ethan\workspace\word-sizzle\Assets\UnityToykit\Editor\Tests\TestObservable.cs:32
+		Assert.AreEqual("none", state);
+
+
+Sun, Nov  5, 2017  4:59:17 PM
+
+Assets/UnityToykit/Editor/Tests/TestObservable.cs(46,3): error CS0452: The type `int' must be a reference type in order to use it as type parameter `T' in the generic type or method `Observable<T>'
+ 
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 46)
+
+Assets/UnityToykit/Editor/Tests/TestObservable.cs(46,31): error CS0452: The type `int' must be a reference type in order to use it as type parameter `T' in the generic type or method `Observable<T>'
+ 
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 46)
+
+Assets/UnityToykit/Editor/Tests/TestObservable.cs(47,3): error CS0452: The type `int' must be a reference type in order to use it as type parameter `T' in the generic type or method `TestObservable.Observer<T>'
+ 
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 47)
+
+Assets/UnityToykit/Editor/Tests/TestObservable.cs(47,32): error CS0452: The type `int' must be a reference type in order to use it as type parameter `T' in the generic type or method `TestObservable.Observer<T>'
+ 
+(Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 47)
+
+Sun, Nov  5, 2017  5:04:53 PM
+Assets/UnityToykit/Observable.cs(17,15): error CS1501: No overload for method `ReferenceEquals' takes `1' arguments
+ 
+(Filename: Assets/UnityToykit/Observable.cs Line: 17)
+
+			if (object.ReferenceEquals(m_ObservedField))
+
+
+Sun, Nov  5, 2017  5:05:53 PM
+Assets/UnityToykit/Editor/Tests/TestObservable.cs(47,3): error CS0452: The type `int' must be a reference type in order to use it as type parameter `T' in the generic type or method `TestObservable.Observer<T>'
+ 
+ (Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 47)
+
+ Assets/UnityToykit/Editor/Tests/TestObservable.cs(47,32): error CS0452: The type `int' must be a reference type in order to use it as type parameter `T' in the generic type or method `TestObservable.Observer<T>'
+  
+  (Filename: Assets/UnityToykit/Editor/Tests/TestObservable.cs Line: 47)
+
+	private sealed class Observer<T> where T : class
+
+Sun, Nov  5, 2017  8:48:57 PM
+Assets/UnityToykit/Observable.cs(26,4): error CS1593: Delegate `System.Action<T,T>' does not take `1' arguments
+ 
+(Filename: Assets/UnityToykit/Observable.cs Line: 26)
+	public event Action<T, T> onChanged;
+
+
+Sun, Nov  5, 2017  9:22:52 PM
+Assets/Scripts/Timer.cs(108,4): error CS0103: The name `norma' does not exist in the current context
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 108)
+			norma.value = Normalize(time);
+
+
+Assets/Scripts/Timer.cs(5,37): error CS0029: Cannot implicitly convert type `float' to `Observable<float>'
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 5)
+		public Observable<float> normal = 0.0f;
+
+Sun, Nov  5, 2017  9:25:46 PM
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.Timer.Normalize (Single theTime) [0x00073] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\Timer.cs:124 
+  at Finegamedesign.Utils.Timer.Reset () [0x00019] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\Timer.cs:98 
+  at Finegamedesign.WordSizzle.AnagramModel.Populate (System.String nextWord) [0x00073] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramModel.cs:51 
+  at Finegamedesign.WordSizzle.AnagramModel.Setup () [0x00043] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramModel.cs:36 
+  at Finegamedesign.WordSizzle.AnagramController.Setup () [0x0005c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:16 
+  at Finegamedesign.WordSizzle.AnagramView.Setup () [0x000db] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:45 
+  at Finegamedesign.WordSizzle.AnagramView.Start () [0x00002] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:21 
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 124)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.Timer.Normalize (Single theTime) [0x00073] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\Timer.cs:124 
+  at Finegamedesign.Utils.Timer.Update (Single deltaTime) [0x0002d] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\Timer.cs:108 
+  at Finegamedesign.WordSizzle.AnagramModel.Update (Single deltaTime) [0x0002f] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramModel.cs:60 
+  at Finegamedesign.WordSizzle.AnagramController.Update (Single deltaTime) [0x000a2] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramController.cs:36 
+  at Finegamedesign.WordSizzle.AnagramView.Update () [0x0000c] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\AnagramView.cs:50 
+ 
+(Filename: Assets/Scripts/Timer.cs Line: 124)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at Finegamedesign.Utils.TimerView.OnDisable () [0x00035] in C:\Users\Ethan\workspace\word-sizzle\Assets\Scripts\TimerView.cs:56 
+ 
+(Filename: Assets/Scripts/TimerView.cs Line: 56)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.005685 seconds (Nothing changed)
+		public Observable<string> State { get; private set; }
+
+
+Mon, Nov  6, 2017  7:02:06 AM
+Assets/UnityToykit/Observable.cs(37,10): error CS0103: The name `EqualityComparer' does not exist in the current context
+ 
+(Filename: Assets/UnityToykit/Observable.cs Line: 37)
+
+		return EqualityComparer<T>.Default.Equals(x, y);
+
+
+Mon, Nov  6, 2017  7:30:30 AM
+Assets/Scripts/TimerView.cs(15,12): error CS0273: The accessibility modifier of the `Finegamedesign.Utils.TimerView.model.set' accessor must be more restrictive than the modifier of the property or indexer `Finegamedesign.Utils.TimerView.model'
+ 
+(Filename: Assets/Scripts/TimerView.cs Line: 15)
+
+		private Timer model
+		{
+			get
+			{
+				return m_Model;
+			}
+			private set

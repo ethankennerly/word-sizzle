@@ -5,11 +5,29 @@ namespace Finegamedesign.Utils
 {
 	public sealed class TimerView : MonoBehaviour
 	{
-		public Timer model;
+		private Timer m_Model;
+		private Timer model
+		{
+			get
+			{
+				return m_Model;
+			}
+			set
+			{
+				if (m_Model == value)
+				{
+					return;
+				}
+				RemoveListeners(m_Model);
+				m_Model = value;
+				AddListeners(value);
+			}
+		}
 		public string state = "begin";
 		public bool isChangeState = false;
 		public bool isSyncNormal = true;
-		public float normal;
+		// Helpful for debugging.
+		private float m_Normal = -1.0f;
 
 		public List<Animator> animators;
 
@@ -21,62 +39,97 @@ namespace Finegamedesign.Utils
 			}
 			for (int index = 0, end = timers.Length; index < end; ++index)
 			{
-				timers[index].model = model;
+				TimerView view = timers[index];
+				view.model = model;
 			}
 			return timers;
 		}
 
-		private void Start()
+		private void OnEnable()
 		{
-			Setup();
+			SetupAnimators();
+			AddListeners(model);
 		}
 
-		private void Setup()
+		private void AddListeners(Timer model)
 		{
-			if (animators == null || animators.Count == 0)
+			if (model == null)
+			{
+				return;
+			}
+			if (isChangeState)
+			{
+				OnStateChanged(model.State.value);
+				model.State.onChanged += OnStateChanged;
+			}
+			else
+			{
+				OnStateChanged(state);
+			}
+			if (isSyncNormal)
+			{
+				OnNormalChanged(model.normal.value);
+				model.normal.onChanged += OnNormalChanged;
+			}
+		}
+
+		private void OnDisable()
+		{
+			RemoveListeners(model);
+		}
+
+		private void RemoveListeners(Timer model)
+		{
+			if (model == null)
+			{
+				return;
+			}
+			if (isChangeState)
+			{
+				model.State.onChanged -= OnStateChanged;
+			}
+			if (isSyncNormal)
+			{
+				model.normal.onChanged -= OnNormalChanged;
+			}
+		}
+
+		private void SetupAnimators()
+		{
+			if (animators == null)
 			{
 				animators = new List<Animator>();
+			}
+			if (animators.Count == 0)
+			{
 				animators.Add(GetComponent<Animator>());
 			}
 		}
 
-		private void OnEnable()
+		private void OnStateChanged(string nextState)
 		{
+			state = nextState;
+			float nextNormal = isSyncNormal ? m_Normal : 0.0f;
+			GotoNormal(nextNormal);
+		}
+
+		private void OnNormalChanged(float nextNormal)
+		{
+			m_Normal = nextNormal;
 			if (!isSyncNormal)
 			{
-				Setup();
-				if (model == null)
-				{
-					return;
-				}
-				state = model.State;
-				PlayNormal(0.0f);
+				return;
 			}
+			GotoNormal(nextNormal);
 		}
 
-		private void Update()
-		{
-			normal = model.normal;
-			if (isChangeState && state != model.State)
-			{
-				state = model.State;
-				if (!isSyncNormal)
-				{
-					PlayNormal(0.0f);
-				}
-			}
-			if (isSyncNormal)
-			{
-				PlayNormal(model.normal);
-			}
-		}
-
-		private void PlayNormal(float normal)
+		private void GotoNormal(float normal)
 		{
 			for (int index = 0, end = animators.Count; index < end; ++index)
 			{
 				Animator animator = animators[index];
 				animator.Play(state, -1, normal);
+				animator.speed = 0.0f;
 			}
 		}
 	}

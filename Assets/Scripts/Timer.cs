@@ -2,7 +2,7 @@ namespace Finegamedesign.Utils
 {
 	public sealed class Timer
 	{
-		public float normal = 0.0f;
+		public Observable<float> normal = new Observable<float>();
 		public float NormalInState { get; private set; }
 		public float time = 0.0f;
 		public float min = 0.0f;
@@ -12,7 +12,7 @@ namespace Finegamedesign.Utils
 
 		public bool isEnabled = true;
 
-		public string State { get; private set; }
+		public Observable<string> State = new Observable<string>();
 		public int StateIndex { get; private set; }
 
 		private sealed class StateNormal
@@ -95,7 +95,7 @@ namespace Finegamedesign.Utils
 		public void Reset()
 		{
 			time = 0.0f;
-			normal = Normalize(time);
+			normal.value = Normalize(time);
 		}
 
 		public void Update(float deltaTime)
@@ -105,12 +105,12 @@ namespace Finegamedesign.Utils
 				return;
 			}
 			time += deltaTime;
-			normal = Normalize(time);
+			normal.value = Normalize(time);
 		}
 
-		private float Normalize(float time)
+		private float Normalize(float theTime)
 		{
-			float normal = (time - min) / (max - min);
+			float normal = (theTime - min) / (max - min);
 			if (normal < min)
 			{
 				normal = min;
@@ -121,7 +121,7 @@ namespace Finegamedesign.Utils
 			}
 			StateIndex = StateNormal.GetIndex(stateNormals, normal);
 			StateNormal stateNormal = stateNormals[StateIndex];
-			State = stateNormal.state;
+			State.value = stateNormal.state;
 			NormalInState = stateNormal.GetNormalInState(normal);
 			return normal;
 		}
