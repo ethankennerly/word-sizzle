@@ -1913,3 +1913,437 @@ Assets/Scripts/TimerView.cs(15,12): error CS0273: The accessibility modifier of 
 				return m_Model;
 			}
 			private set
+
+
+Tue, Nov  7, 2017  7:57:23 PM
+
+'LetterContainer_9' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_8' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_9' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_7' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_4' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_5' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_9' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_6' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_10' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_5' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_3' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_7' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_8' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_3' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_4' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_0' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_10' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_4' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_1' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_6' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_0' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_11' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_1' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_6' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_3' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_7' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_2' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_11' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_2' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_5' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_2' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_1' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_8' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_10' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_11' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+Platform assembly: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\System.Transactions.dll (this message is harmless)
+Platform assembly: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\2.0\Mono.Data.Tds.dll (this message is harmless)
+
+
+Tue, Nov  7, 2017  8:02:42 PM
+
+'LetterContainer_9' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_8' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_9' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_7' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_4' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_5' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_9' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_6' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_10' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_5' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_3' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_7' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_8' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_3' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_4' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_0' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_10' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_4' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_1' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_6' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_0' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_11' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_1' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_6' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_3' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_7' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_2' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_11' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_2' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_5' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_2' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_1' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_8' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_10' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_11' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+
+
+Wed, Nov  8, 2017  8:06:20 AM
+Assets/UnityToykit/AnimationView.cs(154,18): error CS1520: Class, struct, or interface method must have a return type
+ 
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 154)
+
+Assets/UnityToykit/AnimationView.cs(182,67): error CS1525: Unexpected symbol `)', expecting `;' or `}'
+ 
+		private static LogInfo(Animator animator, string completedNow, AnimationStateInfo info, int layer, string prefix)
+
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 182)
+
+Refresh: detecting if any assets need to be imported or removed ... Refresh: elapses 0.012465 seconds (Nothing changed)
+				message += "\n    clip " + clip.name + " length " + clip.length);
+
+
+Wed, Nov  8, 2017  8:08:02 AM
+Assets/UnityToykit/AnimationView.cs(154,71): error CS0246: The type or namespace name `AnimationStateInfo' could not be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 154)
+		private static void LogInfo(Animator animator, string completedNow, AnimationStateInfo info, int layer, string prefix)
+
+
+Wed, Nov  8, 2017  8:09:19 AM
+Assets/UnityToykit/AnimationView.cs(182,5): error CS0246: The type or namespace name `AnimatorClip' could not be found. Are you missing an assembly reference?
+ 
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 182)
+
+Assets/UnityToykit/AnimationView.cs(183,32): error CS0841: A local variable `clip' cannot be used before it is declared
+ 
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 183)
+
+				AnimatorClip clip = clipInfos[index].clip;
+
+
+Wed, Nov  8, 2017  8:39:42 AM
+Assets/UnityToykit/AnimationView.cs(152,71): error CS0103: The name `layer' does not exist in the current context
+ 
+(Filename: Assets/UnityToykit/AnimationView.cs Line: 152)
+
+
+Wed, Nov  8, 2017  8:46:45 AM
+
+'LetterContainer_9' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_7' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_5' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_9' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_10' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_3' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_8' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_4' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_0' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_10' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_4' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_1' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_6' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_0' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_11' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_1' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_6' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_3' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_7' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_2' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_11' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_5' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_0' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_2' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+
+'LetterContainer_8' AnimationEvent 'DisableAnimator' has no receiver! Are you missing a component?
+ 
+(Filename: C:/buildslave/unity/build/Runtime/Animation/AnimationEvent.cpp Line: 191)
+

@@ -47,6 +47,7 @@ namespace Finegamedesign.WordSizzle
 
 		private void Update()
 		{
+			AnimationView.UpdateDisableOnEnd();
 			controller.Update(Time.deltaTime);
 		}
 	}
