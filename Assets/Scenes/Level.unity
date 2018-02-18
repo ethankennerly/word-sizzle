@@ -4503,11 +4503,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d271b89e0144d54aa98576d744340ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Model:
+    resetTime: 0
+    time: 0
+    min: 0
+    max: 40
+    isEnabled: 1
+    stateNormals:
+    - state: fast2
+      normalMin: 0
+    - state: fast1
+      normalMin: 0.25
+    - state: fast
+      normalMin: 0.5
+    - state: slow
+      normalMin: 0.75
   state: begin
   isChangeState: 1
   isSyncNormal: 0
   animators:
   - {fileID: 219430722}
+  stateNormalAnimator: {fileID: 0}
 --- !u!1001 &243953254
 Prefab:
   m_ObjectHideFlags: 0
@@ -4609,9 +4625,7 @@ Prefab:
       propertyPath: m_Name
       value: LetterContainer_0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114739815967391710, guid: f12e2218c0a20c44dba687be809a9d29, type: 2}
-    - {fileID: 0}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f12e2218c0a20c44dba687be809a9d29, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &245824241
@@ -5044,14 +5058,14 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 3
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -5273,7 +5287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.12941177, g: 0.16078432, b: 0.19215687, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5283,12 +5297,12 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 20
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -5568,14 +5582,14 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 5
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -6019,7 +6033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.90588236, g: 0.9411765, b: 0.92941177, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6029,12 +6043,12 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -6411,6 +6425,8 @@ GameObject:
   m_Component:
   - component: {fileID: 576915778}
   - component: {fileID: 576915779}
+  - component: {fileID: 576915780}
+  - component: {fileID: 576915781}
   m_Layer: 5
   m_Name: LetterInputView
   m_TagString: Untagged
@@ -6536,6 +6552,42 @@ MonoBehaviour:
       isTutorTask: 1
       isEnabled: 1
       isShuffleOnPopulate: 1
+--- !u!223 &576915780
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576915777}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &576915781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 576915777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &584230140 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114731912416117854, guid: 23059e67dca4e9442b6dabef571ad2bd,
@@ -7018,7 +7070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.12941177, g: 0.16078432, b: 0.19215687, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7028,12 +7080,12 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 20
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -7094,7 +7146,7 @@ Prefab:
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 12.645833
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
@@ -7119,7 +7171,7 @@ Prefab:
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
@@ -7129,7 +7181,7 @@ Prefab:
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
         type: 2}
@@ -7144,36 +7196,6 @@ Prefab:
     - target: {fileID: 1079615012036124, guid: 1eefc7dbc3b294c4f86867ad00e96bc8, type: 2}
       propertyPath: m_Name
       value: LetterContainer_0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114705107676778270, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
-        type: 2}
-      propertyPath: m_Color.r
-      value: 0.12941177
-      objectReference: {fileID: 0}
-    - target: {fileID: 114705107676778270, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
-        type: 2}
-      propertyPath: m_Color.g
-      value: 0.16078432
-      objectReference: {fileID: 0}
-    - target: {fileID: 114705107676778270, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
-        type: 2}
-      propertyPath: m_Color.b
-      value: 0.19215687
-      objectReference: {fileID: 0}
-    - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
-        type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.4999981
-      objectReference: {fileID: 0}
-    - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
-        type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.4999981
-      objectReference: {fileID: 0}
-    - target: {fileID: 224404424309734222, guid: 1eefc7dbc3b294c4f86867ad00e96bc8,
-        type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1.0000038
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1eefc7dbc3b294c4f86867ad00e96bc8, type: 2}
@@ -7226,7 +7248,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7241,7 +7263,7 @@ MonoBehaviour:
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -7510,6 +7532,8 @@ GameObject:
   - component: {fileID: 824642438}
   - component: {fileID: 824642439}
   - component: {fileID: 824642440}
+  - component: {fileID: 824642441}
+  - component: {fileID: 824642442}
   m_Layer: 5
   m_Name: LevelResult
   m_TagString: Untagged
@@ -7580,6 +7604,21 @@ MonoBehaviour:
       state: none
       winBeginState: win_begin
       winEndState: win_end
+      timer:
+        resetTime: 0
+        time: 0
+        min: 0
+        max: 40
+        isEnabled: 1
+        stateNormals:
+        - state: fast2
+          normalMin: 0
+        - state: fast1
+          normalMin: 0.25
+        - state: fast
+          normalMin: 0.5
+        - state: slow
+          normalMin: 0.75
     letterInput:
       letterMax: 12
       buttons:
@@ -7635,6 +7674,42 @@ MonoBehaviour:
       isTutorTask: 1
       isEnabled: 1
       isShuffleOnPopulate: 1
+--- !u!223 &824642441
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 824642437}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!114 &824642442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 824642437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!1001 &840695418
 Prefab:
   m_ObjectHideFlags: 0
@@ -8591,10 +8666,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d271b89e0144d54aa98576d744340ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Model:
+    resetTime: 0
+    time: 0
+    min: 0
+    max: 40
+    isEnabled: 1
+    stateNormals:
+    - state: fast2
+      normalMin: 0
+    - state: fast1
+      normalMin: 0.25
+    - state: fast
+      normalMin: 0.5
+    - state: slow
+      normalMin: 0.75
   state: begin
   isChangeState: 0
   isSyncNormal: 1
   animators: []
+  stateNormalAnimator: {fileID: 0}
 --- !u!1 &1120601723
 GameObject:
   m_ObjectHideFlags: 0
@@ -9248,6 +9339,21 @@ MonoBehaviour:
       state: none
       winBeginState: win_begin
       winEndState: win_end
+      timer:
+        resetTime: 0
+        time: 0
+        min: 0
+        max: 40
+        isEnabled: 1
+        stateNormals:
+        - state: fast2
+          normalMin: 0
+        - state: fast1
+          normalMin: 0.25
+        - state: fast
+          normalMin: 0.5
+        - state: slow
+          normalMin: 0.75
   timers: []
   timerTexts: []
   wordLevels: []
@@ -9569,14 +9675,14 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -10036,6 +10142,186 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!43 &1503790284
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: -0.05000305, y: 0.05000305, z: 0}
+      m_Extent: {x: 161, y: 161, z: 0}
+  - serializedVersion: 2
+    firstByte: 12
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 4
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: -51.050003, y: 18.95, z: 0}
+      m_Extent: {x: 30.000002, y: 40, z: 0}
+  - serializedVersion: 2
+    firstByte: 24
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 8
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 54.949997, y: 18.95, z: 0}
+      m_Extent: {x: 29.999998, y: 40, z: 0}
+  - serializedVersion: 2
+    firstByte: 36
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 12
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 3.9999995, y: -96.1, z: 0}
+      m_Extent: {x: 15.000008, y: 15.000008, z: 0}
+  - serializedVersion: 2
+    firstByte: 48
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 16
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: -95.05, z: 0}
+      m_Extent: {x: 204, y: 104, z: 0}
+  - serializedVersion: 2
+    firstByte: 60
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 20
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 12.199997, y: -76.55, z: 0}
+      m_Extent: {x: 95.5, y: 90.5, z: 0}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 0200000001000300000002000600040005000700040006000a00080009000b0008000a000e000c000d000f000c000e00120010001100130010001200160014001500170014001600
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 61
+    m_VertexCount: 44
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 2
+      dimension: 4
+    - stream: 0
+      offset: 16
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 32
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 1760
+    _typelessdata: cd0c21c333f320c300000000ffffffff4e6dea3ec8a30c3f00000000000000000000000000000000cd0c21c3cd0c214300000000ffffffff4e6dea3eb4497f3f0000000000000000000000000000000033f32043cd0c214300000000ffffffff20fd683fb4497f3f0000000000000000000000000000000033f3204333f320c300000000ffffffff20fd683fc8a30c3f000000000000000000000000000000009a19a2c26666a8c100000000ffffffff37b5693fcccd623f000000000000000000000000000000009a19a2c2cdcc6b4200000000ffffffff37b5693fb4497f3f000000000000000000000000000000006666a8c1cdcc6b4200000000ffffffffe9477f3fb4497f3f000000000000000000000000000000006666a8c16666a8c100000000ffffffffe9477f3fcccd623f000000000000000000000000000000009a99c7416666a8c100000000ffffffff37b5693fcccd623f000000000000000000000000000000009a99c741cdcc6b4200000000ffffffff37b5693fb4497f3f0000000000000000000000000000000066e6a942cdcc6b4200000000ffffffffe9477f3fb4497f3f0000000000000000000000000000000066e6a9426666a8c100000000ffffffffe9477f3fcccd623f00000000000000000000000000000000090030c13433dec200000000ffffffff8422143f2c3c793e00000000000000000000000000000000090030c13233a2c200000000ffffffff8422143f7ced0b3f00000000000000000000000000000000040098413233a2c200000000ffffffff5184623f7ced0b3f00000000000000000000000000000000040098413433dec200000000ffffffff5184623f2c3c793e0000000000000000000000000000000000004cc3cd0c47c300000000ffffffff0317383b10bd833e0000000000000000000000000000000000004cc330330f4100000000ffffffff0317383b7ced0b3f0000000000000000000000000000000000004c4330330f4100000000ffffffff6d6a133f7ced0b3f0000000000000000000000000000000000004c43cd0c47c300000000ffffffff6d6a133f10bd833e000000000000000000000000000000009a99a6c2cd0c27c300000000ffffffff0317383b324c363b000000000000000000000000000000009a99a6c230335f4100000000ffffffff0317383b7850823e000000000000000000000000000000006666d74230335f4100000000ffffffff59c98a3e7850823e000000000000000000000000000000006666d742cd0c27c300000000ffffffff59c98a3e324c363b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: -19, z: 0}
+    m_Extent: {x: 204, y: 180.05, z: 0}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
 --- !u!4 &1532412369 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4371003789207446, guid: 6d112ab53ab40964888b2a212ded72fa,
@@ -10824,7 +11110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.90588236, g: 0.9411765, b: 0.92941177, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -10839,7 +11125,7 @@ MonoBehaviour:
     m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -11477,11 +11763,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d271b89e0144d54aa98576d744340ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Model:
+    resetTime: 0
+    time: 0
+    min: 0
+    max: 40
+    isEnabled: 1
+    stateNormals:
+    - state: fast2
+      normalMin: 0
+    - state: fast1
+      normalMin: 0.25
+    - state: fast
+      normalMin: 0.5
+    - state: slow
+      normalMin: 0.75
   state: begin
   isChangeState: 0
   isSyncNormal: 1
   animators:
   - {fileID: 1818054419}
+  stateNormalAnimator: {fileID: 0}
 --- !u!1 &1856434292
 GameObject:
   m_ObjectHideFlags: 0
@@ -11872,14 +12174,14 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 10
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 5
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -12476,7 +12778,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.12941177, g: 0.16078432, b: 0.19215687, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12486,12 +12788,12 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 1
+    m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 20
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
@@ -12511,6 +12813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2044649998}
   - component: {fileID: 2044649999}
+  - component: {fileID: 2044650000}
   m_Layer: 5
   m_Name: WordLevelsView
   m_TagString: Untagged
@@ -12554,6 +12857,26 @@ MonoBehaviour:
   numberText: {fileID: 476478270}
   totalText: {fileID: 411879239}
   newGameButton: {fileID: 584230140}
+--- !u!223 &2044650000
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2044649997}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &2078345418
 GameObject:
   m_ObjectHideFlags: 0

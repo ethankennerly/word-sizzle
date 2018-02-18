@@ -312,12 +312,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d271b89e0144d54aa98576d744340ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Model:
+    resetTime: 0
+    time: 0
+    min: 0
+    max: 40
+    isEnabled: 1
+    stateNormals:
+    - state: fast2
+      normalMin: 0
+    - state: fast1
+      normalMin: 0.25
+    - state: fast
+      normalMin: 0.5
+    - state: slow
+      normalMin: 0.75
   state: begin
   isChangeState: 0
   isSyncNormal: 1
   animators:
   - {fileID: 95047810035550794}
   - {fileID: 95999644021660408}
+  stateNormalAnimator: {fileID: 0}
 --- !u!114 &114630135255099492
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -331,7 +347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -399,7 +415,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.12941177, g: 0.16078432, b: 0.19215687, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -414,7 +430,7 @@ MonoBehaviour:
     m_MaxSize: 48
     m_Alignment: 4
     m_AlignByGeometry: 0
-    m_RichText: 1
+    m_RichText: 0
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
@@ -479,7 +495,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1124372357
+  randomSeed: -1944044502
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3895,7 +3911,7 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1546121212339848}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.9999998, y: 0.9999998, z: 0.9999999}
   m_Children:
@@ -3906,7 +3922,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95.2, y: 61.6}
+  m_AnchoredPosition: {x: 0, y: 110}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224587011778736982

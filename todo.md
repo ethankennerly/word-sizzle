@@ -1,5 +1,11 @@
 # To-do
 
+- [ ] Profile hotspots on low-end Android phone.
+- [ ] Replace text with Text Mesh Pro.
+- [ ] Replace GAF animations with Mecanim animations.
+- [ ] Separate animated canvases.
+- [ ] Profile IL2CPP on low-end Android phone.
+- [ ] Build Android 25 or 26.
 - [x] Displays 3 letters in a circle.
 - [x] Types to select letter.
 - [x] When spell word, animates "You win".
