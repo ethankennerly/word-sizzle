@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,8 +8,8 @@ namespace Finegamedesign.Utils
 {
 	public sealed class WordLevelsView : MonoBehaviour
 	{
-		public Text numberText;
-		public Text totalText;
+		public TextMeshProUGUI numberText;
+		public TextMeshProUGUI totalText;
 
 		public Button newGameButton;
 
