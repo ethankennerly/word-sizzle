@@ -143,7 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 224421092877862602}
   - component: {fileID: 95597638736061020}
-  - component: {fileID: 114640402821339372}
+  - component: {fileID: 114749567379976228}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -463,21 +463,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114640402821339372
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1603592683073486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 907fefea67b9e044c9b95ff6c58001f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pauseButton: {fileID: 114698920552531996}
-  resumeButton: {fileID: 114164434769407342}
-  quitButton: {fileID: 114151924923194246}
-  pauseAnimator: {fileID: 95597638736061020}
 --- !u!114 &114661108624239876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -653,6 +638,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114749567379976228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1603592683073486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c65aa2be5958f0468ec51f3d7f624bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseButton: {fileID: 114698920552531996}
+  resumeButton: {fileID: 114164434769407342}
+  quitButton: {fileID: 114151924923194246}
+  pauseAnimator: {fileID: 95597638736061020}
 --- !u!114 &114877195405433224
 MonoBehaviour:
   m_ObjectHideFlags: 1
