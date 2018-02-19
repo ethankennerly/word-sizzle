@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1244485715001888}
+  m_IsPrefabParent: 1
+--- !u!1 &1244485715001888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4440997807254838}
+  - component: {fileID: 114690077199942676}
+  - component: {fileID: 114901954396398074}
+  m_Layer: 0
+  m_Name: AnagramView
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &4440997807254838
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244485715001888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114690077199942676
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244485715001888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15841facc98c8884691ae58bb961c1d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: {fileID: 0}
+  pause: {fileID: 0}
+  result: {fileID: 0}
+  controller:
+    model:
+      selection: 
+      word: 
+      isPopulateNext: 0
+      isPopulateNow: 0
+      isComplete: 0
+      state: none
+      winBeginState: win_begin
+      winEndState: win_end
+      timer:
+        resetTime: 0
+        time: 0
+        min: 0
+        max: 40
+        isEnabled: 1
+        stateNormals:
+        - state: fast2
+          normalMin: 0
+        - state: fast1
+          normalMin: 0.25
+        - state: fast
+          normalMin: 0.5
+        - state: slow
+          normalMin: 0.75
+  timers: []
+  timerTexts: []
+  wordLevels: []
+--- !u!114 &114901954396398074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1244485715001888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79b9daeaca1c5ea44bbad93ec4566371, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
