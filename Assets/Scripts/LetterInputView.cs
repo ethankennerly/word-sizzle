@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 namespace Finegamedesign.Utils
@@ -9,20 +10,21 @@ namespace Finegamedesign.Utils
 		public WordView selects = new WordView();
 
 		public WordView hints = new WordView();
-		public GameObject hintButton;
+		public Collider2D hintButton;
+		public TextMeshPro hintButtonText;
 
-		public GameObject backspaceButton;
-		public GameObject shuffleButton;
+		public Collider2D backspaceButton;
+		public TextMeshPro backspaceButtonText;
+		public Collider2D shuffleButton;
+		public TextMeshPro shuffleButtonText;
 
-		public GameObject tutor;
-		public GameObject tutorText;
+		public Animator tutor;
+		public TextMeshPro tutorText;
 
 		public LetterInputController controller = new LetterInputController();
 
-
 		public void Setup()
 		{
-			MayFindObjects();
 			controller.model.isTutorKey = IsKeyboard();
 			controller.view = this;
 			controller.Setup();
@@ -37,19 +39,6 @@ namespace Finegamedesign.Utils
 #else
 			return false;
 #endif
-		}
-
-		private void MayFindObjects()
-		{
-			buttons.MayFindObjects(gameObject, "Buttons/", controller.model.letterMax);
-			selects.MayFindObjects(gameObject, "Selects/", controller.model.letterMax);
-			tutor = SceneNodeView.GetChild(gameObject, "Tutor", tutor);
-			tutorText = SceneNodeView.GetChild(gameObject, "Tutor/TutorText", tutorText);
-			backspaceButton = SceneNodeView.GetChild(gameObject, "BackspaceButton", backspaceButton);
-			shuffleButton = SceneNodeView.GetChild(gameObject, "ShuffleButton", shuffleButton);
-
-			hints.MayFindObjects(gameObject, "Hints/", controller.model.letterMax);
-			hintButton = SceneNodeView.GetChild(gameObject, "HintButton", hintButton);
 		}
 	}
 }

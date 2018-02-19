@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace Finegamedesign.Utils
 {
@@ -17,47 +18,37 @@ namespace Finegamedesign.Utils
 	public sealed class LetterInputController
 	{
 		public LetterInputModel model = new LetterInputModel();
+        // Not public to avoid recursive serialization.
 		internal LetterInputView view;
-		private ButtonController button = new ButtonController();
 
 		public void Setup()
 		{
 			model.backspaceCharacter = KeyView.backspaceCharacter;
-			button.view.Listens(view.buttons.buttons);
-			button.view.Listens(view.selects.buttons);
-			button.view.Listen(view.backspaceButton);
-			button.view.Listen(view.hintButton);
-			button.view.Listen(view.shuffleButton);
 			UpdateButtonKeyText();
+
+            ClickSystem.Instance.onCollisionEnter2D += OnCollisionEnter2D_UpdateInput;
 		}
 
 		public void UpdateButtonKeyText()
 		{
 			if (model.isTutorKey)
 			{
-				TextView.SetText(view.backspaceButton, model.backspaceButtonKeyText);
-				TextView.SetText(view.shuffleButton, model.shuffleButtonKeyText);
-				TextView.SetText(view.hintButton, model.hint.buttonKeyText);
+				TextView.SetText(view.backspaceButtonText, model.backspaceButtonKeyText);
+				TextView.SetText(view.shuffleButtonText, model.shuffleButtonKeyText);
+				TextView.SetText(view.hintButtonText, model.hint.buttonKeyText);
 			}
 		}
 
 		public void Update()
 		{
-			UpdateInput();
+			UpdateKeyboardInput();
 			UpdateLetters();
 			AnimationView.SetState(view.tutor, model.tutorState);
 			TextView.SetText(view.tutorText, model.tutorText);
 		}
 
-		private void UpdateInput()
-		{
-			model.Input(KeyView.InputList());
-			button.Update();
-			var target = button.view.target;
-			if (target == null)
-			{
-				return;
-			}
+		private void OnCollisionEnter2D_UpdateInput(Collider2D target)
+        {
 			int addIndex = view.buttons.buttons.IndexOf(target);
 			if (addIndex >= 0)
 			{
@@ -81,6 +72,11 @@ namespace Finegamedesign.Utils
 				model.Shuffle(true);
 				return;
 			}
+        }
+
+		private void UpdateKeyboardInput()
+		{
+			model.Input(KeyView.InputList());
 		}
 
 		private void UpdateLetters()
