@@ -4,11 +4,11 @@ using UnityEngine;
 
 namespace Finegamedesign.Utils
 {
-	[System.Serializable]
-	public sealed class WordView
-	{
-		public List<Collider2D> buttons;
-		public List<Animator> states;
-		public List<TextMeshPro> texts;
-	}
+    [System.Serializable]
+    public sealed class WordView
+    {
+        public List<Collider2D> buttons;
+        public List<Animator> states;
+        public List<TextMeshPro> texts;
+    }
 }

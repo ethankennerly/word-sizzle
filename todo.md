@@ -5,12 +5,14 @@
 - [x] Replace text with Text Mesh Pro.
 - [x] Event updates text.
 - [ ] Convert indent from 1-tab to 4-spaces.
-- [ ] Custom sample animators.
-- [ ] Custom sample Anagram view garbage.
-- [ ] Replace GAF animations with Mecanim animations.
+- [ ] Reduce calls to GetCurrentAnimatorClipInfo, by fewer set states.
+    - [ ] Event updates button, select, text state.
+    - [ ] Event updates text.
+- [ ] Cache state string to int.
 - [x] Separate animated canvases.
 - [ ] Profile IL2CPP on low-end Android phone.
 - [ ] Build Android 25 or 26.
+- [ ] Replace GAF animations with Mecanim animations.
 - [x] Displays 3 letters in a circle.
 - [x] Types to select letter.
 - [x] When spell word, animates "You win".

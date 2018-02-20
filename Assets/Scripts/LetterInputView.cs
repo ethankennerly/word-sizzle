@@ -4,41 +4,41 @@ using UnityEngine;
 
 namespace Finegamedesign.Utils
 {
-	public sealed class LetterInputView : MonoBehaviour
-	{
-		public WordView buttons = new WordView();
-		public WordView selects = new WordView();
+    public sealed class LetterInputView : MonoBehaviour
+    {
+        public WordView buttons = new WordView();
+        public WordView selects = new WordView();
 
-		public WordView hints = new WordView();
-		public Collider2D hintButton;
-		public TextMeshPro hintButtonText;
+        public WordView hints = new WordView();
+        public Collider2D hintButton;
+        public TextMeshPro hintButtonText;
 
-		public Collider2D backspaceButton;
-		public TextMeshPro backspaceButtonText;
-		public Collider2D shuffleButton;
-		public TextMeshPro shuffleButtonText;
+        public Collider2D backspaceButton;
+        public TextMeshPro backspaceButtonText;
+        public Collider2D shuffleButton;
+        public TextMeshPro shuffleButtonText;
 
-		public Animator tutor;
-		public TextMeshPro tutorText;
+        public Animator tutor;
+        public TextMeshPro tutorText;
 
-		public LetterInputController controller = new LetterInputController();
+        public LetterInputController controller = new LetterInputController();
 
-		public void Setup()
-		{
-			controller.model.isTutorKey = IsKeyboard();
-			controller.view = this;
-			controller.Setup();
-		}
+        public void Setup()
+        {
+            controller.model.isTutorKey = IsKeyboard();
+            controller.view = this;
+            controller.Setup();
+        }
 
-		private bool IsKeyboard()
-		{
+        private bool IsKeyboard()
+        {
 #if UNITY_WEBGL
-			return true;
+            return true;
 #elif UNITY_STANDALONE
-			return true;
+            return true;
 #else
-			return false;
+            return false;
 #endif
-		}
-	}
+        }
+    }
 }
