@@ -1,7 +1,12 @@
+using System;
+
 namespace Finegamedesign.Utils
 {
 	public sealed class Staircase
 	{
+        public event Action<int> onNumberChanged;
+        public event Action<int> onTotalChanged;
+
 		public int defaultIndex = 0;
 		private int step = 1;
 		private int index = 0;
@@ -30,6 +35,11 @@ namespace Finegamedesign.Utils
 		public void SetIndex(int nextIndex)
 		{
 			index = nextIndex;
+            if (onNumberChanged == null)
+            {
+                return;
+            }
+            onNumberChanged(GetNumber());
 		}
 
 		public void Setup(int nextStep, int nextLength)
@@ -37,6 +47,11 @@ namespace Finegamedesign.Utils
 			length = nextLength;
 			step = nextStep;
 			index = defaultIndex;
+            if (onTotalChanged == null)
+            {
+                return;
+            }
+            onTotalChanged(GetTotal());
 		}
 
 		// Random offset.  Number increases by one.
@@ -49,7 +64,7 @@ namespace Finegamedesign.Utils
 			{
 				nextIndexOffset = length - 1;
 			}
-			index = nextIndexOffset;
+			SetIndex(nextIndexOffset);
 		}
 	}
 }

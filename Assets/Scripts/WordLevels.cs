@@ -7,9 +7,8 @@ namespace Finegamedesign.Utils
 	{
 		public List<string> words;
 
-		private Staircase staircase = new Staircase();
-		public int Number { get { return staircase.GetNumber(); } }
-		public int Total { get { return staircase.GetTotal(); } }
+		private readonly Staircase staircase = new Staircase();
+        public Staircase Level { get { return staircase; } }
 
 		// Step was 50.
 		// 2017-07-22 Jennifer Russ: Looks up:  airshot, disinter, two more.

@@ -23,9 +23,33 @@ namespace Finegamedesign.Utils
 			}
 			for (int index = 0, end = views.Length; index < end; ++index)
 			{
-				views[index].model = model;
+				views[index].SetModel(model);
 			}
 			return views;
+		}
+
+        private void SetModel(WordLevels nextModel)
+        {
+            model = nextModel;
+            if (nextModel == null)
+            {
+                return;
+            }
+            UpdateNumber(model.Level.GetNumber());
+            UpdateTotal(model.Level.GetTotal());
+
+            model.Level.onNumberChanged += UpdateNumber;
+            model.Level.onTotalChanged += UpdateTotal;
+        }
+
+		private void UpdateNumber(int number)
+		{
+			numberText.text = number.ToString();
+		}
+
+		private void UpdateTotal(int total)
+		{
+			totalText.text = total.ToString();
 		}
 
 		private void Start()
@@ -35,12 +59,6 @@ namespace Finegamedesign.Utils
 				return;
 			}
 			newGameButton.onClick.AddListener(NewGame);
-		}
-
-		private void Update()
-		{
-			numberText.text = model.Number.ToString();
-			totalText.text = model.Total.ToString();
 		}
 
 		private void NewGame()

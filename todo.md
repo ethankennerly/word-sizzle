@@ -1,8 +1,12 @@
 # To-do
 
 - [x] Profile hotspots on low-end Android phone.
-- [ ] Replace world space UI with world space transforms.
-- [ ] Replace text with Text Mesh Pro.
+- [x] Replace world space UI with world space transforms.
+- [x] Replace text with Text Mesh Pro.
+- [x] Event updates text.
+- [ ] Convert indent from 1-tab to 4-spaces.
+- [ ] Custom sample animators.
+- [ ] Custom sample Anagram view garbage.
 - [ ] Replace GAF animations with Mecanim animations.
 - [x] Separate animated canvases.
 - [ ] Profile IL2CPP on low-end Android phone.
