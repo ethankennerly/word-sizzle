@@ -26,7 +26,12 @@ namespace Finegamedesign.Utils
             model.backspaceCharacter = KeyView.backspaceCharacter;
             UpdateButtonKeyText();
 
-            ClickSystem.Instance.onCollisionEnter2D += OnCollisionEnter2D_UpdateInput;
+            ClickSystem.instance.onCollisionEnter2D += OnCollisionEnter2D_UpdateInput;
+        }
+
+        ~LetterInputController()
+        {
+            ClickSystem.instance.onCollisionEnter2D -= OnCollisionEnter2D_UpdateInput;
         }
 
         public void UpdateButtonKeyText()
