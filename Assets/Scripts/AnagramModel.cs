@@ -1,6 +1,6 @@
-using Finegamedesign.Utils;
+using FineGameDesign.Utils;
 
-namespace Finegamedesign.WordSizzle
+namespace FineGameDesign.WordSizzle
 {
     [System.Serializable]
     public sealed class AnagramModel

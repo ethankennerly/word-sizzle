@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Finegamedesign.Utils
+namespace FineGameDesign.Utils
 {
     [RequireComponent(typeof(Text))]
     public sealed class TimerTextDeckView : MonoBehaviour

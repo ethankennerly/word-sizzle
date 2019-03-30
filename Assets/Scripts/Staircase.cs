@@ -1,6 +1,6 @@
 using System;
 
-namespace Finegamedesign.Utils
+namespace FineGameDesign.Utils
 {
     public sealed class Staircase
     {

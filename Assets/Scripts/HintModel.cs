@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Finegamedesign.Utils
+namespace FineGameDesign.Utils
 {
     [System.Serializable]
     public sealed class HintModel

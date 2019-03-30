@@ -1,6 +1,6 @@
-using Finegamedesign.Utils;
+using FineGameDesign.Utils;
 
-namespace Finegamedesign.WordSizzle
+namespace FineGameDesign.WordSizzle
 {
     [System.Serializable]
     public sealed class AnagramController
@@ -25,7 +25,7 @@ namespace Finegamedesign.WordSizzle
         // Otherwise, during review, pressing space shows next letter.
         public void Update(float deltaTime)
         {
-            if (view.pause.model.isPaused)
+            if (view.pause.controller.isPaused)
             {
                 deltaTime = 0.0f;
             }

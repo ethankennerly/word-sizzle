@@ -1,13 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
-using Finegamedesign.Utils;
+using FineGameDesign.Utils;
 
-namespace Finegamedesign.WordSizzle
+namespace FineGameDesign.WordSizzle
 {
     public sealed class AnagramView : MonoBehaviour
     {
         public LetterInputView input;
-        public PauseView pause;
+        public PauseSystemView pause;
         public LevelResultView result;
         public AnagramController controller = new AnagramController();
 
@@ -25,7 +25,7 @@ namespace Finegamedesign.WordSizzle
         {
             if (pause == null)
             {
-                pause = FindObjectOfType<PauseView>();
+                pause = FindObjectOfType<PauseSystemView>();
             }
             if (input == null)
             {

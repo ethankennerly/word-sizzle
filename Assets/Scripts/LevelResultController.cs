@@ -1,6 +1,6 @@
-using Finegamedesign.Utils;
+using FineGameDesign.Utils;
 
-namespace Finegamedesign.WordSizzle
+namespace FineGameDesign.WordSizzle
 {
     [System.Serializable]
     public sealed class LevelResultController
@@ -29,7 +29,7 @@ namespace Finegamedesign.WordSizzle
         {
             isNextNow = model.state == model.winBeginState
                 && (view.nextButton == input.view.target
-                    || KeyView.InputString() == KeyView.newlineCharacter);
+                    || KeyInputSystem.InputString() == KeyInputSystem.newlineCharacter);
             if (isNextNow)
             {
                 model.Populate();

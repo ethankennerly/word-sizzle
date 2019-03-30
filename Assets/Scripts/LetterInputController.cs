@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Finegamedesign.Utils
+namespace FineGameDesign.Utils
 {
     // View displays letter texts and animations in model:
     //    Buttons
@@ -23,15 +23,15 @@ namespace Finegamedesign.Utils
 
         public void Setup()
         {
-            model.backspaceCharacter = KeyView.backspaceCharacter;
+            model.backspaceCharacter = KeyInputSystem.backspaceCharacter;
             UpdateButtonKeyText();
 
-            ClickSystem.instance.onCollisionEnter2D += OnCollisionEnter2D_UpdateInput;
+            ClickInputSystem.instance.onCollisionEnter2D += OnCollisionEnter2D_UpdateInput;
         }
 
         ~LetterInputController()
         {
-            ClickSystem.instance.onCollisionEnter2D -= OnCollisionEnter2D_UpdateInput;
+            ClickInputSystem.instance.onCollisionEnter2D -= OnCollisionEnter2D_UpdateInput;
         }
 
         public void UpdateButtonKeyText()
@@ -81,7 +81,7 @@ namespace Finegamedesign.Utils
 
         private void UpdateKeyboardInput()
         {
-            model.Input(KeyView.InputList());
+            model.Input(KeyInputSystem.InputList());
         }
 
         private void UpdateLetters()

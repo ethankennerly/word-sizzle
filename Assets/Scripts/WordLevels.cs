@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using PlayerPrefs = UnityEngine.PlayerPrefs;
 
-namespace Finegamedesign.Utils
+namespace FineGameDesign.Utils
 {
     public sealed class WordLevels
     {

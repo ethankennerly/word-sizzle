@@ -1,7 +1,7 @@
 using UnityEngine;
-using Finegamedesign.Utils;
+using FineGameDesign.Utils;
 
-namespace Finegamedesign.WordSizzle
+namespace FineGameDesign.WordSizzle
 {
     public sealed class LevelResultView : MonoBehaviour
     {

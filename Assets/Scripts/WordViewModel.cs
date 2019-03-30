@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Finegamedesign.Utils
+namespace FineGameDesign.Utils
 {
     // View displays letter texts and animations in model:
     //    Buttons
