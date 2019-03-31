@@ -156,6 +156,20 @@ namespace FineGameDesign.Utils
             MayTutorKey(isButton, addKeyText);
         }
 
+        public void AddIndex(int index, bool isButton = false)
+        {
+            if (!isEnabled)
+            {
+                return;
+            }
+            if (SelectButton(index))
+            {
+                string letter = buttons.texts[index];
+                SetFirstSelect(letter);
+            }
+            MayTutorKey(isButton, addKeyText);
+        }
+
         private void MayTutorTask()
         {
             if (isTutorTask)
@@ -221,17 +235,21 @@ namespace FineGameDesign.Utils
                 {
                     continue;
                 }
-                if (buttons.states[index] == selectBeginState)
-                {
-                    continue;
-                }
-                buttons.states[index] = selectBeginState;
-                buttons.texts[index] = letter;
-                buttonIndexes.Add(index);
-                isSelected = true;
+                isSelected = SelectButton(index);
                 break;
             }
             return isSelected;
+        }
+
+        private bool SelectButton(int index)
+        {
+            if (buttons.states[index] == selectBeginState)
+            {
+                return false;
+            }
+            buttons.states[index] = selectBeginState;
+            buttonIndexes.Add(index);
+            return true;
         }
 
         private void SetFirstSelect(string letter)

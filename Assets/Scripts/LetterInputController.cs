@@ -57,8 +57,7 @@ namespace FineGameDesign.Utils
             int addIndex = view.buttons.buttons.IndexOf(target);
             if (addIndex >= 0)
             {
-                string letter = model.buttons.texts[addIndex];
-                model.Add(letter, true);
+                model.AddIndex(addIndex, true);
                 return;
             }
             int backspaceIndex = view.selects.buttons.IndexOf(target);

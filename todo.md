@@ -4,6 +4,8 @@
 - [x] Replace world space UI with world space transforms.
 - [x] Replace text with Text Mesh Pro.
 - [x] Event updates text.
+- [x] Word: Chicken. Tap "C". Expect one C selected. Got both Cs selected.
+- [ ] Press Pause button. Pauses.
 - [ ] Convert indent from 1-tab to 4-spaces.
 - [ ] Reduce calls to GetCurrentAnimatorClipInfo, by fewer set states.
     - [ ] Event updates button, select, text state.
