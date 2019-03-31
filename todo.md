@@ -5,7 +5,8 @@
 - [x] Replace text with Text Mesh Pro.
 - [x] Event updates text.
 - [x] Word: Chicken. Tap "C". Expect one C selected. Got both Cs selected.
-- [ ] Press Pause button. Pauses.
+- [x] Press Pause button. Pauses.
+- [ ] Hint, delete, shuffle. Press only selects once.
 - [ ] Convert indent from 1-tab to 4-spaces.
 - [ ] Reduce calls to GetCurrentAnimatorClipInfo, by fewer set states.
     - [ ] Event updates button, select, text state.

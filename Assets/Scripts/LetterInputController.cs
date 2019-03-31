@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,17 +22,29 @@ namespace FineGameDesign.Utils
         // Not public to avoid recursive serialization.
         internal LetterInputView view;
 
+        private Action<Collider2D> m_OnCollisionEnter2D;
+        private Action<Collider2D> m_OnCollisionStay2D;
+
         public void Setup()
         {
             model.backspaceCharacter = KeyInputSystem.backspaceCharacter;
             UpdateButtonKeyText();
 
-            ClickInputSystem.instance.onCollisionEnter2D += OnCollisionEnter2D_UpdateInput;
+            if (m_OnCollisionEnter2D == null)
+                m_OnCollisionEnter2D = UpdateInputEnter;
+            if (m_OnCollisionStay2D == null)
+                m_OnCollisionStay2D = UpdateInputStay;
+
+            ClickInputSystem.instance.onCollisionEnter2D -= m_OnCollisionEnter2D;
+            ClickInputSystem.instance.onCollisionEnter2D += m_OnCollisionEnter2D;
+            ClickInputSystem.instance.onCollisionStay2D -= m_OnCollisionStay2D;
+            ClickInputSystem.instance.onCollisionStay2D += m_OnCollisionStay2D;
         }
 
         ~LetterInputController()
         {
-            ClickInputSystem.instance.onCollisionEnter2D -= OnCollisionEnter2D_UpdateInput;
+            ClickInputSystem.instance.onCollisionEnter2D -= m_OnCollisionEnter2D;
+            ClickInputSystem.instance.onCollisionStay2D -= m_OnCollisionStay2D;
         }
 
         public void UpdateButtonKeyText()
@@ -52,14 +65,17 @@ namespace FineGameDesign.Utils
             TextView.SetText(view.tutorText, model.tutorText);
         }
 
-        private void OnCollisionEnter2D_UpdateInput(Collider2D target)
+        private void UpdateInputStay(Collider2D target)
         {
             int addIndex = view.buttons.buttons.IndexOf(target);
-            if (addIndex >= 0)
-            {
-                model.AddIndex(addIndex, true);
+            if (addIndex < 0)
                 return;
-            }
+
+            model.AddIndex(addIndex, true);
+        }
+
+        private void UpdateInputEnter(Collider2D target)
+        {
             int backspaceIndex = view.selects.buttons.IndexOf(target);
             if (backspaceIndex >= 0 || target == view.backspaceButton)
             {
