@@ -8,7 +8,7 @@
 - [x] Press Pause button. Pauses.
 - [x] Hint, delete, shuffle. Press only selects once.
 - [x] Start on pause screen.
-- [ ] Pause screen has title, "Word Eggspert" or "Word Sizzle".
+- [x] Pause screen has title, "Word Eggspert" or "Word Sizzle".
 - [ ] Drag to select; release to submit. References: Word Cookies, Word Connect, Wordscapes.
 - [ ] Convert indent from 1-tab to 4-spaces.
 - [ ] Reduce calls to GetCurrentAnimatorClipInfo, by fewer set states.
