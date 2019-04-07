@@ -818,7 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Controller:
-    m_IsPaused: 0
+    m_IsPaused: 1
     m_ScaleTime: 0
   m_PauseButtons:
   - {fileID: 114698920552531996}
