@@ -85,7 +85,7 @@ namespace FineGameDesign.Utils
             MayTutorKey(isButton, shuffleKeyText);
         }
 
-        private void ClearSelection()
+        public void ClearSelection()
         {
             int length = DataUtil.Length(buttons.texts);
             int index, end;

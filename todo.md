@@ -9,15 +9,21 @@
 - [x] Hint, delete, shuffle. Press only selects once.
 - [x] Start on pause screen.
 - [x] Pause screen has title, "Word Eggspert" or "Word Sizzle".
-- [ ] Drag to select; release to submit. References: Word Cookies, Word Connect, Wordscapes.
+- [x] Mobile: Drag to select; release to submit. References: Word Cookies, Word Connect, Wordscapes.
+- [ ] Draw line to connected letters. References: Wordscapes, Word Cookies, Word Connect.
 - [ ] Convert indent from 1-tab to 4-spaces.
+- [x] Separate animated canvases.
+- [ ] Tween shuffle.
+- [ ] Particles on draw line.
+- [ ] Particles on shuffle.
+- [ ] Keyboard: Space to advance. Escape to pause or resume.
+- [ ] Keyboard: Pause: Read key to resume, new, quit.
+- [ ] Profile IL2CPP on low-end Android phone.
+- [ ] Cache state string to int.
+- [ ] Build Android 25 or 26.
 - [ ] Reduce calls to GetCurrentAnimatorClipInfo, by fewer set states.
     - [ ] Event updates button, select, text state.
     - [ ] Event updates text.
-- [ ] Cache state string to int.
-- [x] Separate animated canvases.
-- [ ] Profile IL2CPP on low-end Android phone.
-- [ ] Build Android 25 or 26.
 - [ ] Replace GAF animations with Mecanim animations.
 - [x] Displays 3 letters in a circle.
 - [x] Types to select letter.

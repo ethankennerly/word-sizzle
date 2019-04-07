@@ -24,6 +24,7 @@ namespace FineGameDesign.Utils
 
         private Action<Collider2D> m_OnCollisionEnter2D;
         private Action<Collider2D> m_OnCollisionStay2D;
+        private Action m_OnMouseUp;
 
         public void Setup()
         {
@@ -34,17 +35,22 @@ namespace FineGameDesign.Utils
                 m_OnCollisionEnter2D = UpdateInputEnter;
             if (m_OnCollisionStay2D == null)
                 m_OnCollisionStay2D = UpdateInputStay;
+            if (m_OnMouseUp == null)
+                m_OnMouseUp = model.ClearSelection;
 
             ClickInputSystem.instance.onCollisionEnter2D -= m_OnCollisionEnter2D;
             ClickInputSystem.instance.onCollisionEnter2D += m_OnCollisionEnter2D;
             ClickInputSystem.instance.onCollisionStay2D -= m_OnCollisionStay2D;
             ClickInputSystem.instance.onCollisionStay2D += m_OnCollisionStay2D;
+            ClickInputSystem.instance.onMouseUp -= m_OnMouseUp;
+            ClickInputSystem.instance.onMouseUp += m_OnMouseUp;
         }
 
         ~LetterInputController()
         {
             ClickInputSystem.instance.onCollisionEnter2D -= m_OnCollisionEnter2D;
             ClickInputSystem.instance.onCollisionStay2D -= m_OnCollisionStay2D;
+            ClickInputSystem.instance.onMouseUp -= m_OnMouseUp;
         }
 
         public void UpdateButtonKeyText()
