@@ -19,6 +19,7 @@ namespace FineGameDesign.Utils
     {
         public delegate void NextSelected(int previousNumSelected, int selectedIndex);
         public event NextSelected onNextSelected;
+        public event Action onClearSelection;
 
         public int letterMax = 12;
 
@@ -117,6 +118,8 @@ namespace FineGameDesign.Utils
             }
             selection = "";
             buttonIndexes.Clear();
+            if (onClearSelection != null)
+                onClearSelection();
         }
 
         public void Input(List<string> inputs)

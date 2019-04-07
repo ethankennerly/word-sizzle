@@ -7,8 +7,11 @@ namespace FineGameDesign.Utils
     {
         public Transform followerRoot;
         public TrailRenderer trail;
-        public float startWidth = 10f;
+        [Header("Trail render editor clamps at 1.")]
+        public float startWidth = 40f;
+
         public Action<int, Vector3> onNextPosition;
+        public Action onClear;
 
         private void OnEnable()
         {
@@ -18,6 +21,7 @@ namespace FineGameDesign.Utils
         public void Setup()
         {
             onNextPosition = NextPosition;
+            onClear = Clear;
             if (trail != null)
                 trail.startWidth = startWidth;
         }
@@ -25,10 +29,19 @@ namespace FineGameDesign.Utils
         private void NextPosition(int positionIndex, Vector3 position)
         {
             followerRoot.position = position;
+            trail.time = float.MaxValue;
 
             if (positionIndex <= 0)
                 if (trail != null)
                     trail.Clear();
+        }
+
+        private void Clear()
+        {
+            if (trail == null)
+                return;
+
+            trail.Clear();
         }
     }
 }

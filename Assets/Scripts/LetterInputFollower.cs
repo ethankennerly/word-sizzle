@@ -37,6 +37,9 @@ namespace FineGameDesign.Utils
                 follower.Setup();
                 m_OnNextPositionSelected -= follower.onNextPosition;
                 m_OnNextPositionSelected += follower.onNextPosition;
+
+                inputView.controller.model.onClearSelection -= follower.onClear;
+                inputView.controller.model.onClearSelection += follower.onClear;
             }
         }
 
@@ -46,6 +49,7 @@ namespace FineGameDesign.Utils
             if (follower != null)
             {
                 m_OnNextPositionSelected -= follower.onNextPosition;
+                inputView.controller.model.onClearSelection -= follower.onClear;
             }
         }
 
