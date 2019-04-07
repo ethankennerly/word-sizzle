@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -6,6 +7,8 @@ namespace FineGameDesign.Utils
 {
     public sealed class LetterInputView : MonoBehaviour
     {
+        public event Action<int, Vector3> onNextSelected;
+
         public WordView buttons = new WordView();
         public WordView selects = new WordView();
 

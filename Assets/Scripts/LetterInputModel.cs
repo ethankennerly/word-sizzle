@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace FineGameDesign.Utils
@@ -16,6 +17,9 @@ namespace FineGameDesign.Utils
     [System.Serializable]
     public sealed class LetterInputModel
     {
+        public delegate void NextSelected(int previousNumSelected, int selectedIndex);
+        public event NextSelected onNextSelected;
+
         public int letterMax = 12;
 
         public WordViewModel buttons = new WordViewModel();
