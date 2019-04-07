@@ -253,6 +253,10 @@ namespace FineGameDesign.Utils
             }
             buttons.states[index] = selectBeginState;
             buttonIndexes.Add(index);
+            if (onNextSelected != null)
+            {
+                onNextSelected(buttonIndexes.Count - 1, index);
+            }
             return true;
         }
 

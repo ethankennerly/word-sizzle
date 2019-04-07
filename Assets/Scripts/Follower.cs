@@ -5,7 +5,7 @@ namespace FineGameDesign.Utils
 {
     public sealed class Follower : MonoBehaviour
     {
-        public GameObject followerRoot;
+        public Transform followerRoot;
         public TrailRenderer trail;
         public Action<int, Vector3> onNextPosition;
 
@@ -21,7 +21,8 @@ namespace FineGameDesign.Utils
 
         private void NextPosition(int positionIndex, Vector3 position)
         {
-            followerRoot.transform.position = position;
+            followerRoot.position = position;
+
             if (positionIndex <= 0)
                 if (trail != null)
                     trail.Clear();

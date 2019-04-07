@@ -16,8 +16,6 @@ namespace FineGameDesign.WordSizzle
 
         public WordLevelsView[] wordLevels;
 
-        public Follower follower;
-
         private void Start()
         {
             Setup();
@@ -45,19 +43,6 @@ namespace FineGameDesign.WordSizzle
 
             controller.view = this;
             controller.Setup();
-
-            if (follower != null)
-            {
-                follower.Setup();
-                input.onNextSelected -= follower.onNextPosition;
-                input.onNextSelected += follower.onNextPosition;
-            }
-        }
-
-        private void OnDestroy()
-        {
-            if (follower != null)
-                input.onNextSelected -= follower.onNextPosition;
         }
 
         private void Update()
